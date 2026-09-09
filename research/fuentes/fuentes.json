@@ -7,5 +7,97 @@
     "url": "https://www.cdc.gov/adhd/treatment/classroom.html",
     "idiomaOriginal": "en",
     "consultado": "2026-09-09"
+  },
+  {
+    "id": "cast-udl-guidelines",
+    "titulo": "Universal Design for Learning Guidelines",
+    "organizacion": "CAST",
+    "tipo": "guia-oficial",
+    "url": "https://udlguidelines.cast.org/",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09",
+    "nota": "Marco DUA: Compromiso (por qué), Representación (qué) y Acción/Expresión (cómo) del aprendizaje."
+  },
+  {
+    "id": "understood-udl",
+    "titulo": "Universal Design for Learning (UDL): A teacher's guide",
+    "organizacion": "Understood.org",
+    "tipo": "organizacion",
+    "url": "https://www.understood.org/en/articles/understanding-universal-design-for-learning",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "autism-speaks-classroom",
+    "titulo": "Autism in the classroom: Strategies for success",
+    "organizacion": "Autism Speaks",
+    "tipo": "organizacion",
+    "url": "https://www.autismspeaks.org/tool-kit-excerpt/autism-classroom-strategies",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "nea-teaching-autism",
+    "titulo": "Teaching Students with Autism: A Guide for Educators",
+    "organizacion": "National Education Association (NEA)",
+    "tipo": "organizacion",
+    "url": "https://www.nea.org/resource-library/teaching-students-autism-guide-educators",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "national-autistic-society-education",
+    "titulo": "Education and autism — resources for schools",
+    "organizacion": "National Autistic Society (UK)",
+    "tipo": "organizacion",
+    "url": "https://www.autism.org.uk/advice-and-guidance/topics/education",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "chadd-educators",
+    "titulo": "For Educators — ADHD in the classroom",
+    "organizacion": "CHADD (Children and Adults with ADHD)",
+    "tipo": "organizacion",
+    "url": "https://chadd.org/for-educators/overview/",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "cadah-tdah-aula",
+    "titulo": "El manejo del TDAH en el aula: estrategias para el éxito",
+    "organizacion": "Fundación CADAH",
+    "tipo": "organizacion",
+    "url": "https://www.fundacioncadah.org/web/articulo/el-manejo-del-tdah-en-el-aula-estrategias-para-el-exito.html",
+    "idiomaOriginal": "es",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "neuronup-tdah-docentes",
+    "titulo": "Guía para docentes: el TDAH en el aula",
+    "organizacion": "NeuronUP",
+    "tipo": "organizacion",
+    "url": "https://neuronup.com/estimulacion-y-rehabilitacion-cognitiva/trastornos-del-neurodesarrollo/tdah-trastorno-de-atencion-con-hiperactividad/guia-para-docentes-el-tdah-en-el-aula/",
+    "idiomaOriginal": "es",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "autismo-espana",
+    "titulo": "Recursos educativos y educación inclusiva para el alumnado con autismo",
+    "organizacion": "Confederación Autismo España",
+    "tipo": "organizacion",
+    "url": "https://autismo.org.es/",
+    "idiomaOriginal": "es",
+    "consultado": "2026-09-09"
+  },
+  {
+    "id": "dua-colombia-decreto-1421",
+    "titulo": "Diseño Universal para el Aprendizaje (DUA) en el marco de la educación inclusiva (Decreto 1421 de 2017)",
+    "organizacion": "Ministerio de Educación Nacional de Colombia / Educación y Educadores",
+    "tipo": "articulo-academico",
+    "url": "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0123-12942025000102811",
+    "idiomaOriginal": "es",
+    "consultado": "2026-09-09",
+    "nota": "El Decreto 1421 de 2017 regula la atención educativa a la población con discapacidad y promueve el DUA en Colombia."
   }
 ]

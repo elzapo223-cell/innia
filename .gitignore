@@ -33,3 +33,7 @@ Thumbs.db
 
 # SQLite RAG index build artifacts (regenerated)
 *.sqlite-journal
+
+# Generated content bundles (derived from research/)
+desktop/resources/base.bundle.json
+web/lib/content.generated.json

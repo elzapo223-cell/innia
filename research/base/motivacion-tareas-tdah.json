@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tdah-motivacion-iniciar-tarea",
+    "condicion": "TDAH",
+    "area": "motivacion-tareas",
+    "titulo": "Cuando no quiere empezar la actividad",
+    "contextoEducativo": "La negativa a iniciar una tarea rara vez es desafío: suele ser dificultad de la función ejecutiva para 'arrancar', o que la tarea se percibe demasiado grande o aburrida. El estudiante con TDAH responde mejor a metas cortas, novedad y recompensa cercana.",
+    "dificultadesTipicas": [
+      "Se bloquea ante una tarea larga o poco atractiva",
+      "Dice 'no puedo' o 'no quiero' antes de intentarlo",
+      "Necesita mucho más impulso para empezar que para continuar"
+    ],
+    "estrategias": [
+      { "que": "Empezar minúsculo", "como": "Pedir solo el primer paso o los primeros dos minutos, no la tarea completa.", "ejemplo": "'Solo escribe el título y el primer renglón; después vemos.'" },
+      { "que": "Dar a elegir", "como": "Ofrecer opciones acotadas para que sienta control sobre la actividad.", "ejemplo": "'¿Empiezas por los problemas fáciles o por el dibujo?'" },
+      { "que": "Recompensa cercana", "como": "Vincular el esfuerzo a algo positivo e inmediato, no lejano.", "ejemplo": "'Cuando termines estos 3, eliges la siguiente actividad.'" }
+    ],
+    "queEvitar": [
+      "Presentar toda la carga de trabajo de golpe",
+      "Interpretar la negativa como desobediencia y castigar de entrada",
+      "Prometer recompensas muy lejanas ('al final del mes')"
+    ],
+    "comoAdaptar": [
+      "Convertir parte de la tarea en juego, reto o formato distinto",
+      "Permitir formas alternativas de responder (oral, dibujo, audio)"
+    ],
+    "comoComunicar": [
+      "Validar antes de exigir: 'sé que esta se ve larga, hagámosla por partes'",
+      "Enunciar la meta en positivo y concreta, no como reproche"
+    ],
+    "situacionesRapidas": [
+      "El estudiante no quiere realizar la actividad",
+      "No quiere empezar la tarea",
+      "Dice que no puede antes de intentarlo"
+    ],
+    "fuentes": ["cadah-tdah-aula", "neuronup-tdah-docentes", "cast-udl-guidelines"]
+  },
+  {
+    "id": "tdah-motivacion-sostener-esfuerzo",
+    "condicion": "TDAH",
+    "area": "motivacion-tareas",
+    "titulo": "Sostener el esfuerzo hasta terminar",
+    "contextoEducativo": "Al estudiante con TDAH le cuesta mantener el esfuerzo en tareas largas o repetitivas, sobre todo si la recompensa es lejana. El refuerzo frecuente y la sensación de avance visible ayudan a llegar al final.",
+    "dificultadesTipicas": [
+      "Abandona a mitad de camino aunque haya empezado bien",
+      "Rinde mucho al inicio y decae rápido",
+      "Se desmotiva si no ve resultados pronto"
+    ],
+    "estrategias": [
+      { "que": "Refuerzo positivo frecuente", "como": "Reconocer avances pequeños y concretos durante la tarea, no solo al final.", "ejemplo": "'Ya llevas la mitad, buen ritmo.'" },
+      { "que": "Progreso visible", "como": "Mostrar cuánto ha avanzado con una barra, casillas o fichas que se van completando.", "ejemplo": "Tachar cada ejercicio hecho en una tira de 5 casillas." },
+      { "que": "Alternar exigente y ligero", "como": "Intercalar tramos difíciles con otros más fáciles o de su interés para recuperar impulso.", "ejemplo": "Dos problemas de cálculo y luego uno con su tema favorito." }
+    ],
+    "queEvitar": [
+      "Reconocer solo el resultado final y nunca el proceso",
+      "Acumular tareas repetitivas sin variación",
+      "Retirar la ayuda de golpe cuando empieza a fallar"
+    ],
+    "comoAdaptar": [
+      "Fragmentar la tarea en metas con cierre claro",
+      "Reducir la cantidad manteniendo el objetivo de aprendizaje"
+    ],
+    "comoComunicar": [
+      "Nombrar el esfuerzo, no solo el logro: 'te costó y seguiste'",
+      "Recordar la meta cercana cuando decae: 'un ejercicio más y cierras el bloque'"
+    ],
+    "situacionesRapidas": [
+      "Empieza con ganas pero abandona a mitad",
+      "Se desmotiva en tareas largas",
+      "No termina lo que empieza"
+    ],
+    "fuentes": ["chadd-educators", "cadah-tdah-aula", "cdc-adhd-classroom"]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tdah-regulacion-frustracion",
+    "condicion": "TDAH",
+    "area": "regulacion-emocional",
+    "titulo": "Cuando se frustra y no quiere continuar",
+    "contextoEducativo": "El estudiante con TDAH suele tener menor tolerancia a la frustración y reacciones emocionales más intensas y rápidas. Ante un error o una tarea difícil puede 'estallar' o bloquearse. No es manipulación: la regulación emocional también depende de funciones ejecutivas aún en desarrollo.",
+    "dificultadesTipicas": [
+      "Reacciona con enojo o llanto ante un error o dificultad",
+      "Se bloquea y se niega a seguir tras frustrarse",
+      "Le cuesta calmarse solo una vez activado"
+    ],
+    "estrategias": [
+      { "que": "Bajar la activación primero", "como": "Antes de razonar, ofrecer una pausa breve para regularse; validar la emoción sin ceder en el límite.", "ejemplo": "'Veo que te frustraste, respira un momento y seguimos juntos.'" },
+      { "que": "Rincón o pausa de calma", "como": "Tener un lugar o rutina acordada para autorregularse sin que sea un castigo.", "ejemplo": "Beber agua, respirar 3 veces, volver cuando esté listo." },
+      { "que": "Replantear la meta", "como": "Reducir la exigencia inmediata para romper el bloqueo y recuperar la sensación de logro.", "ejemplo": "'Hagamos solo este y lo demás después.'" }
+    ],
+    "queEvitar": [
+      "Razonar o sermonear en pleno pico emocional",
+      "Confrontar en público o ridiculizar la reacción",
+      "Retirar todo apoyo diciendo 'hasta que no te calmes no te ayudo'"
+    ],
+    "comoAdaptar": [
+      "Anticipar los momentos difíciles y acordar de antemano qué hacer",
+      "Enseñar y practicar una rutina de calma cuando está tranquilo, no solo en crisis"
+    ],
+    "comoComunicar": [
+      "Nombrar la emoción para ayudar a identificarla: 'esto te está frustrando'",
+      "Tono bajo y frases cortas; primero calmar, después resolver"
+    ],
+    "situacionesRapidas": [
+      "Se frustró y no quiere continuar",
+      "Se enoja cuando algo le sale mal",
+      "Se bloquea y se niega a seguir tras equivocarse"
+    ],
+    "fuentes": ["cadah-tdah-aula", "chadd-educators", "cast-udl-guidelines"]
+  },
+  {
+    "id": "tdah-regulacion-impulsividad",
+    "condicion": "TDAH",
+    "area": "regulacion-emocional",
+    "titulo": "Impulsividad: responder o actuar sin pensar",
+    "contextoEducativo": "La impulsividad hace que el estudiante responda sin levantar la mano, interrumpa o actúe antes de pensar en las consecuencias. Es parte del perfil, no mala educación deliberada; mejora con estructura, señales y práctica.",
+    "dificultadesTipicas": [
+      "Contesta o interrumpe sin esperar turno",
+      "Actúa antes de escuchar toda la instrucción",
+      "Le cuesta esperar su turno en juegos o diálogos"
+    ],
+    "estrategias": [
+      { "que": "Reglas visibles y turnos claros", "como": "Establecer con apoyo visual cómo se pide la palabra y reforzar cuando lo logra.", "ejemplo": "Un cartel de 'levanto la mano y espero' y reconocimiento cuando lo hace." },
+      { "que": "Canalizar la energía", "como": "Darle un rol activo que use su impulso de forma positiva.", "ejemplo": "Ser el ayudante que reparte materiales o borra la pizarra." },
+      { "que": "Señal de pausa", "como": "Acordar un gesto que signifique 'para y piensa' antes de actuar.", "ejemplo": "Tocarse la sien = cuento hasta 3 antes de responder." }
+    ],
+    "queEvitar": [
+      "Castigar cada interrupción sin enseñar la conducta alternativa",
+      "Exigir quietud total durante períodos largos",
+      "Avergonzarlo frente al grupo por responder sin turno"
+    ],
+    "comoAdaptar": [
+      "Permitir movimiento estructurado (repartir, borrar, entregar)",
+      "Dar oportunidades frecuentes de participación para reducir la espera"
+    ],
+    "comoComunicar": [
+      "Recordar la norma en positivo: 'primero la mano, luego hablas'",
+      "Reforzar de inmediato cuando espera su turno"
+    ],
+    "situacionesRapidas": [
+      "Interrumpe y responde sin esperar turno",
+      "Actúa sin pensar en las consecuencias",
+      "Le cuesta esperar su turno"
+    ],
+    "fuentes": ["cdc-adhd-classroom", "chadd-educators", "neuronup-tdah-docentes"]
+  }
+]

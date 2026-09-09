@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tdah-instrucciones-claras-cortas",
+    "condicion": "TDAH",
+    "area": "instrucciones",
+    "titulo": "Dar instrucciones claras y de a una",
+    "contextoEducativo": "El estudiante con TDAH puede perder parte de una instrucción larga o encadenada porque su memoria de trabajo se satura. No es que no escuche: retiene menos pasos a la vez. Instrucciones cortas, una a la vez y con apoyo visual, marcan la diferencia.",
+    "dificultadesTipicas": [
+      "Olvida los pasos intermedios de una consigna larga",
+      "Hace solo la primera o la última parte de lo pedido",
+      "Parece no escuchar cuando se dan varias órdenes juntas"
+    ],
+    "estrategias": [
+      { "que": "Una instrucción a la vez", "como": "Dividir la consigna en pasos y darlos de a uno, confirmando antes de seguir.", "ejemplo": "'Saca el cuaderno.' (espera) 'Escribe la fecha.' (espera) 'Copia el título.'" },
+      { "que": "Apoyar en lo visual", "como": "Acompañar la instrucción oral con la escrita o con íconos.", "ejemplo": "Los pasos numerados en la pizarra mientras se explican." },
+      { "que": "Verificar la comprensión", "como": "Pedir que repita o muestre qué va a hacer, en vez de preguntar '¿entendiste?'", "ejemplo": "'A ver, ¿qué es lo primero que vas a hacer?'" }
+    ],
+    "queEvitar": [
+      "Dar varias instrucciones encadenadas de una sola vez",
+      "Instrucciones solo orales y rápidas",
+      "Asumir que un 'sí' significa que comprendió"
+    ],
+    "comoAdaptar": [
+      "Dejar los pasos escritos y visibles durante toda la tarea",
+      "Resaltar con color la acción principal de cada instrucción"
+    ],
+    "comoComunicar": [
+      "Asegurar contacto visual o cercanía antes de dar la consigna",
+      "Frases cortas, verbo de acción al inicio: 'subraya', 'encierra', 'copia'"
+    ],
+    "situacionesRapidas": [
+      "No comprende las instrucciones",
+      "Hace solo una parte de lo que se pidió",
+      "Olvida los pasos de la consigna"
+    ],
+    "fuentes": ["cdc-adhd-classroom", "cadah-tdah-aula", "chadd-educators"]
+  },
+  {
+    "id": "tdah-instrucciones-rutinas",
+    "condicion": "TDAH",
+    "area": "instrucciones",
+    "titulo": "Rutinas y anticipación para reducir la carga",
+    "contextoEducativo": "Las rutinas estables convierten en automático lo que de otro modo exige atención y memoria constantes. Cuando el estudiante sabe qué sigue, gasta menos energía en 'adivinar' y más en aprender.",
+    "dificultadesTipicas": [
+      "Se desorganiza en momentos poco estructurados (inicio, cambios, cierre)",
+      "Pregunta una y otra vez qué hay que hacer",
+      "Le cuesta cambiar de una actividad a otra"
+    ],
+    "estrategias": [
+      { "que": "Rutina visible del día", "como": "Mostrar la secuencia de actividades en la pizarra o un panel y repasarla.", "ejemplo": "Agenda del día con íconos: lengua, recreo, matemáticas, cierre." },
+      { "que": "Anticipar los cambios", "como": "Avisar antes de las transiciones para prepararlas.", "ejemplo": "'En 5 minutos guardamos lengua y pasamos a matemáticas.'" },
+      { "que": "Rituales de inicio y cierre", "como": "Usar señales fijas que marquen el comienzo y el fin de cada bloque.", "ejemplo": "Una canción corta o una frase para iniciar; guardar materiales para cerrar." }
+    ],
+    "queEvitar": [
+      "Cambiar la rutina sin avisar",
+      "Dejar los tiempos muertos sin estructura",
+      "Exigir transiciones inmediatas sin preaviso"
+    ],
+    "comoAdaptar": [
+      "Entregar una mini-agenda personal que pueda consultar",
+      "Marcar visualmente el paso en el que va la clase"
+    ],
+    "comoComunicar": [
+      "Repasar la rutina al inicio y anticipar lo que viene",
+      "Usar siempre las mismas señales para las mismas transiciones"
+    ],
+    "situacionesRapidas": [
+      "Se desorganiza en los cambios de actividad",
+      "Pregunta todo el tiempo qué hay que hacer",
+      "Le cuesta pasar de una actividad a otra"
+    ],
+    "fuentes": ["cdc-adhd-classroom", "neuronup-tdah-docentes", "cast-udl-guidelines"]
+  }
+]

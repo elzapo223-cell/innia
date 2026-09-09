@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tdah-grupo-roles-estructura",
+    "condicion": "TDAH",
+    "area": "trabajo-en-grupo",
+    "titulo": "Trabajo en grupo con roles y estructura",
+    "contextoEducativo": "En el trabajo en equipo, el estudiante con TDAH puede acaparar, desengancharse o chocar con los compañeros porque las tareas grupales son abiertas y poco estructuradas. Con roles claros y pasos definidos, aporta y participa mejor.",
+    "dificultadesTipicas": [
+      "Se dispersa cuando la tarea grupal es abierta",
+      "Acapara o, al contrario, se desconecta del equipo",
+      "Genera fricción por impulsividad al interrumpir a los demás"
+    ],
+    "estrategias": [
+      { "que": "Asignar un rol concreto", "como": "Dar a cada integrante una función clara; al estudiante con TDAH, una activa y con movimiento.", "ejemplo": "Encargado de materiales, de tomar el tiempo o de exponer." },
+      { "que": "Pasos y meta visibles", "como": "Entregar al grupo una guía con la secuencia y el producto esperado.", "ejemplo": "Tarjeta: '1) repartir tareas · 2) buscar datos · 3) armar cartel · 4) ensayar.'" },
+      { "que": "Grupos pequeños", "como": "Preferir parejas o tríos para reducir estímulos y facilitar la participación.", "ejemplo": "Trabajar de a dos antes de pasar a grupos mayores." }
+    ],
+    "queEvitar": [
+      "Dejar la organización del grupo totalmente al azar",
+      "Grupos numerosos con consignas vagas",
+      "Culpar solo al estudiante cuando el grupo no funciona"
+    ],
+    "comoAdaptar": [
+      "Rotar roles para que practique distintas funciones",
+      "Definir una norma simple de turnos dentro del grupo"
+    ],
+    "comoComunicar": [
+      "Recordar el rol y la meta al iniciar: 'tú llevas el tiempo, avisas a los 10 minutos'",
+      "Reconocer la contribución concreta al equipo"
+    ],
+    "situacionesRapidas": [
+      "Tiene dificultad para trabajar en grupo",
+      "Se dispersa o choca con los compañeros en equipo",
+      "Acapara o se desconecta del trabajo grupal"
+    ],
+    "fuentes": ["neuronup-tdah-docentes", "cadah-tdah-aula", "cast-udl-guidelines"]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tdah-atencion-entorno-ubicacion",
+    "condicion": "TDAH",
+    "area": "atencion",
+    "titulo": "Reducir distractores y ubicar bien al estudiante",
+    "contextoEducativo": "Un estudiante con TDAH capta con facilidad cualquier estímulo del entorno: ruidos, movimiento, ventanas, objetos sobre la mesa. No es falta de interés; su filtro atencional deja pasar más información y le cuesta sostener el foco en una sola cosa.",
+    "dificultadesTipicas": [
+      "Se distrae con lo que pasa alrededor (ventana, puerta, compañeros)",
+      "Pierde el hilo de la explicación a los pocos minutos",
+      "Deja tareas a medias al aparecer un estímulo nuevo"
+    ],
+    "estrategias": [
+      { "que": "Ubicación estratégica", "como": "Sentarlo cerca del docente y lejos de ventanas, puertas y zonas de paso; rodearlo de compañeros tranquilos que sirvan de modelo.", "ejemplo": "Primera o segunda fila, en el centro, con la pizarra a la vista." },
+      { "que": "Mesa despejada", "como": "Mantener sobre el pupitre solo el material de la actividad en curso; guardar lo demás.", "ejemplo": "Solo el cuaderno y un lápiz mientras escribe; los colores se sacan cuando toca dibujar." },
+      { "que": "Bloques cortos con pausas activas", "como": "Dividir el trabajo en tramos de 10-15 minutos con micro-pausas de movimiento entre ellos.", "ejemplo": "Repartir cuadernos o borrar la pizarra como pausa con propósito." }
+    ],
+    "queEvitar": [
+      "Sentarlo al fondo o junto a la ventana",
+      "Llamar la atención en público por distraerse (aumenta la desconexión)",
+      "Exigir mantener la atención 40 minutos seguidos sin pausas"
+    ],
+    "comoAdaptar": [
+      "Marcar visualmente dónde empieza y termina cada bloque de trabajo",
+      "Permitir un objeto discreto para las manos (fidget) si ayuda a concentrarse"
+    ],
+    "comoComunicar": [
+      "Acordar en privado una señal no verbal para reorientar la atención (tocar el pupitre, un gesto)",
+      "Reconocer los momentos en que sí sostuvo la atención, en vez de señalar solo cuando se distrae"
+    ],
+    "situacionesRapidas": [
+      "Se distrae constantemente durante la actividad",
+      "Mira por la ventana y pierde el hilo",
+      "Empieza la tarea pero la deja a medias al distraerse"
+    ],
+    "fuentes": ["cdc-adhd-classroom", "cadah-tdah-aula", "chadd-educators"]
+  },
+  {
+    "id": "tdah-atencion-apoyos-visuales-tiempo",
+    "condicion": "TDAH",
+    "area": "atencion",
+    "titulo": "Apoyos visuales y manejo del tiempo",
+    "contextoEducativo": "A muchos estudiantes con TDAH el tiempo se les vuelve abstracto: no perciben cuánto llevan ni cuánto falta, así que se dispersan o se apuran. Los apoyos visuales externos hacen el tiempo y la secuencia concretos y liberan atención para la tarea.",
+    "dificultadesTipicas": [
+      "No calcula cuánto tiempo le queda para una actividad",
+      "Olvida los pasos intermedios de una tarea larga",
+      "Se satura cuando ve mucha información en la hoja"
+    ],
+    "estrategias": [
+      { "que": "Temporizador a la vista", "como": "Usar un reloj o temporizador visual que muestre el tiempo restante de forma gráfica.", "ejemplo": "Un temporizador de colores en la mesa: 'cuando el rojo desaparezca, terminamos'." },
+      { "que": "Tarjetas de pasos", "como": "Presentar la secuencia de la tarea con tarjetas o íconos que el estudiante va tachando.", "ejemplo": "1) Escribo el título · 2) Resuelvo 3 ejercicios · 3) Reviso · 4) Guardo." },
+      { "que": "Menos por página", "como": "Reducir la cantidad de ítems visibles a la vez; tapar o entregar por partes.", "ejemplo": "Doblar la hoja para que vea solo 4 ejercicios de los 12." }
+    ],
+    "queEvitar": [
+      "Hojas muy cargadas de texto o ejercicios",
+      "Instrucciones solo orales sobre cuánto tiempo hay",
+      "Cambiar el tiempo acordado a mitad de la actividad sin avisar"
+    ],
+    "comoAdaptar": [
+      "Ofrecer una lista de verificación visible que el estudiante marque",
+      "Resaltar con color la palabra clave de cada instrucción"
+    ],
+    "comoComunicar": [
+      "Avisar las transiciones con anticipación: 'faltan 5 minutos', 'faltan 2 minutos'",
+      "Confirmar que entendió el objetivo antes de empezar el bloque"
+    ],
+    "situacionesRapidas": [
+      "No termina la actividad a tiempo",
+      "Se pierde en los pasos de una tarea larga",
+      "Se agobia al ver la hoja llena de ejercicios"
+    ],
+    "fuentes": ["cdc-adhd-classroom", "cast-udl-guidelines", "neuronup-tdah-docentes"]
+  }
+]

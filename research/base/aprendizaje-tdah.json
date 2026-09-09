@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tdah-aprendizaje-multisensorial",
+    "condicion": "TDAH",
+    "area": "aprendizaje",
+    "titulo": "Aprender haciendo y con varios sentidos",
+    "contextoEducativo": "El estudiante con TDAH aprende mejor cuando puede manipular, moverse y participar activamente, y le cuesta más con explicaciones largas y pasivas. Variar el formato mantiene el interés y da más vías de acceso al contenido.",
+    "dificultadesTipicas": [
+      "Se desconecta en explicaciones largas y expositivas",
+      "Retiene mejor lo que hace que lo que solo escucha",
+      "Se aburre con la repetición monótona"
+    ],
+    "estrategias": [
+      { "que": "Aprendizaje activo", "como": "Convertir el contenido en manipulación, juego o reto con movimiento.", "ejemplo": "Resolver sumas saltando en una recta numérica dibujada en el piso." },
+      { "que": "Varios formatos", "como": "Presentar la misma idea de más de una forma: oral, visual, práctica.", "ejemplo": "Explicar, mostrar un esquema y luego hacer un ejemplo con material concreto." },
+      { "que": "Conexión con sus intereses", "como": "Anclar el contenido a temas que le motivan.", "ejemplo": "Problemas de matemáticas ambientados en su deporte o juego favorito." }
+    ],
+    "queEvitar": [
+      "Clases largas solo expositivas",
+      "Un único formato para todo el contenido",
+      "Penalizar el movimiento cuando ayuda a aprender"
+    ],
+    "comoAdaptar": [
+      "Ofrecer opciones para demostrar lo aprendido (oral, cartel, maqueta, audio)",
+      "Alternar actividades sentadas con otras de movimiento"
+    ],
+    "comoComunicar": [
+      "Explicar el 'para qué' del contenido, no solo el 'qué'",
+      "Dar ejemplos concretos y cercanos a su experiencia"
+    ],
+    "situacionesRapidas": [
+      "Se aburre y se desconecta en la explicación",
+      "¿Cómo puedo explicarle esta actividad de otra manera?",
+      "Retiene poco de las clases solo habladas"
+    ],
+    "fuentes": ["cast-udl-guidelines", "understood-udl", "neuronup-tdah-docentes"]
+  },
+  {
+    "id": "tdah-aprendizaje-evaluacion",
+    "condicion": "TDAH",
+    "area": "aprendizaje",
+    "titulo": "Adaptar la evaluación sin bajar el objetivo",
+    "contextoEducativo": "En las evaluaciones, el estudiante con TDAH puede saber el contenido pero fallar por tiempo, distracción o formato, no por falta de aprendizaje. Ajustar las condiciones permite medir lo que realmente sabe.",
+    "dificultadesTipicas": [
+      "Comete errores por descuido bajo presión de tiempo",
+      "Se satura con exámenes largos o muy cargados visualmente",
+      "Pierde puntos por olvidar partes de la consigna"
+    ],
+    "estrategias": [
+      { "que": "Ajustar tiempo y formato", "como": "Dar tiempo adicional, dividir el examen o reducir ítems manteniendo el objetivo.", "ejemplo": "Entregar el examen en dos partes con una pausa entre ellas." },
+      { "que": "Instrucciones destacadas", "como": "Resaltar los verbos y las palabras clave de cada pregunta.", "ejemplo": "Subrayar 'explica', 'compara', 'elige una'." },
+      { "que": "Formas alternativas de evaluar", "como": "Permitir demostrar el aprendizaje por vías distintas al examen escrito.", "ejemplo": "Exposición oral, proyecto o rúbrica de desempeño." }
+    ],
+    "queEvitar": [
+      "Exámenes largos, densos y a contrarreloj como única forma de evaluar",
+      "Penalizar la presentación por encima del contenido",
+      "Cambiar el formato de evaluación sin previo aviso"
+    ],
+    "comoAdaptar": [
+      "Reducir el número de ítems por página",
+      "Ofrecer un espacio con menos distractores para evaluarse"
+    ],
+    "comoComunicar": [
+      "Explicar antes cómo será evaluado y con qué criterios",
+      "Recordar revisar antes de entregar, con una mini lista de chequeo"
+    ],
+    "situacionesRapidas": [
+      "Sabe el tema pero le va mal en el examen",
+      "Comete errores por descuido en la evaluación",
+      "¿Cómo puedo evaluarlo de otra manera?"
+    ],
+    "fuentes": ["cast-udl-guidelines", "understood-udl", "cadah-tdah-aula"]
+  }
+]

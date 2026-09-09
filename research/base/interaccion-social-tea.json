@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tea-social-normas-explicitas",
+    "condicion": "TEA",
+    "area": "interaccion-social",
+    "titulo": "Enseñar las normas sociales de forma explícita",
+    "contextoEducativo": "El estudiante con TEA puede no captar de forma intuitiva las reglas sociales 'no escritas' (turnos, distancia, saludos, cuándo intervenir). No es desinterés por los demás: necesita que esas normas se enseñen de manera explícita y concreta, como cualquier otro contenido.",
+    "dificultadesTipicas": [
+      "No interpreta señales sociales sutiles (gestos, tono, expresiones)",
+      "Desconoce reglas implícitas de turnos o distancia",
+      "Le cuesta iniciar o sostener una interacción con pares"
+    ],
+    "estrategias": [
+      { "que": "Historias y guiones sociales", "como": "Explicar con narraciones o guiones qué ocurre en una situación social y qué se espera hacer.", "ejemplo": "Un guion breve de 'cómo pedir unirme a un juego en el recreo'." },
+      { "que": "Reglas visibles", "como": "Poner por escrito o con imágenes las normas de convivencia y de turnos.", "ejemplo": "Cartel: 'escucho, espero mi turno, luego hablo'." },
+      { "que": "Práctica guiada", "como": "Ensayar interacciones en situaciones controladas antes del entorno real.", "ejemplo": "Role-play de saludar y presentarse con un compañero de confianza." }
+    ],
+    "queEvitar": [
+      "Dar por hecho que 'ya debería saber' las normas sociales",
+      "Forzar contacto visual o cercanía física",
+      "Exponerlo o corregirlo en público por errores sociales"
+    ],
+    "comoAdaptar": [
+      "Asignar un compañero-guía o sistema de tutoría entre pares",
+      "Estructurar los momentos sociales (recreo, trabajo en equipo) con roles claros"
+    ],
+    "comoComunicar": [
+      "Explicar el porqué de la norma social, no solo la norma",
+      "Reforzar en privado los avances en interacción"
+    ],
+    "situacionesRapidas": [
+      "Le cuesta relacionarse con los compañeros",
+      "No capta las reglas sociales del grupo",
+      "No sabe cómo unirse a un juego o conversación"
+    ],
+    "fuentes": ["autism-speaks-classroom", "nea-teaching-autism", "national-autistic-society-education"]
+  },
+  {
+    "id": "tea-social-trabajo-con-pares",
+    "condicion": "TEA",
+    "area": "interaccion-social",
+    "titulo": "Facilitar la interacción en actividades con otros",
+    "contextoEducativo": "Las actividades sociales abiertas pueden resultar abrumadoras para el estudiante con TEA. Con estructura, previsibilidad y roles claros, la interacción con pares se vuelve más accesible y menos ansiosa.",
+    "dificultadesTipicas": [
+      "Se aísla o se abruma en situaciones sociales poco estructuradas",
+      "No sabe qué hacer en juegos o dinámicas libres",
+      "Prefiere actividades en solitario"
+    ],
+    "estrategias": [
+      { "que": "Interacción estructurada", "como": "Proponer actividades con reglas y turnos claros en lugar de juego libre abierto.", "ejemplo": "Juegos de mesa con turnos frente a 'jueguen libremente en el recreo'." },
+      { "que": "Empezar de a dos", "como": "Iniciar con un compañero afín antes de grupos grandes.", "ejemplo": "Tarea en pareja con un compañero-guía." },
+      { "que": "Aprovechar sus intereses", "como": "Diseñar la interacción alrededor de un tema que le apasiona.", "ejemplo": "Un proyecto en equipo sobre su tema favorito, con él como experto." }
+    ],
+    "queEvitar": [
+      "Obligarlo a integrarse a grupos grandes de golpe",
+      "Dejar los momentos sociales sin ninguna estructura",
+      "Interpretar su necesidad de soledad como rechazo a corregir a la fuerza"
+    ],
+    "comoAdaptar": [
+      "Ofrecer un espacio tranquilo de repliegue cuando lo necesite",
+      "Dar un rol concreto dentro de la actividad grupal"
+    ],
+    "comoComunicar": [
+      "Anticipar cómo será la actividad social y qué se espera",
+      "Respetar sus tiempos de participación sin presionar"
+    ],
+    "situacionesRapidas": [
+      "Tiene dificultad para trabajar en grupo",
+      "Se aísla en las actividades sociales",
+      "Se abruma en dinámicas de grupo grandes"
+    ],
+    "fuentes": ["autism-speaks-classroom", "autismo-espana", "cast-udl-guidelines"]
+  }
+]

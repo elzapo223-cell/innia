@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tea-regulacion-anticipacion-cambios",
+    "condicion": "TEA",
+    "area": "regulacion-emocional",
+    "titulo": "Previsibilidad y anticipación de cambios",
+    "contextoEducativo": "El estudiante con TEA suele apoyarse en la rutina y la previsibilidad para sentirse seguro. Los cambios inesperados (un cambio de horario, un docente distinto, una salida) pueden generar mucha ansiedad. Anticipar y estructurar reduce el malestar y las crisis.",
+    "dificultadesTipicas": [
+      "Se angustia ante cambios imprevistos en la rutina",
+      "Insiste en que las cosas se hagan siempre igual",
+      "Le cuesta la incertidumbre de las actividades nuevas"
+    ],
+    "estrategias": [
+      { "que": "Agenda visual anticipada", "como": "Mostrar la secuencia del día y marcar de antemano cualquier cambio.", "ejemplo": "Panel del día con íconos; señalar 'hoy en vez de patio, biblioteca'." },
+      { "que": "Anticipar lo nuevo", "como": "Explicar con imágenes o guiones qué va a pasar en una situación distinta.", "ejemplo": "Antes de una salida, mostrar fotos del lugar y el plan paso a paso." },
+      { "que": "Avisar transiciones", "como": "Dar preavisos claros antes de cambiar de actividad.", "ejemplo": "'Faltan 5 minutos para terminar y guardar.'" }
+    ],
+    "queEvitar": [
+      "Cambios de última hora sin explicación",
+      "Improvisar sin avisar cuando algo se sale de la rutina",
+      "Minimizar su ansiedad ('no es para tanto')"
+    ],
+    "comoAdaptar": [
+      "Tener una tarjeta de 'imprevisto' que anticipe que hoy algo será distinto",
+      "Mantener estables los elementos que se puedan mantener"
+    ],
+    "comoComunicar": [
+      "Explicar el cambio con antelación y de forma concreta",
+      "Validar la incomodidad y ofrecer previsibilidad en lo demás"
+    ],
+    "situacionesRapidas": [
+      "Se angustia con los cambios de rutina",
+      "Reacciona mal ante lo imprevisto",
+      "Necesita saber siempre qué sigue"
+    ],
+    "fuentes": ["nice-cg170-autism", "autism-speaks-classroom", "autismo-espana"]
+  },
+  {
+    "id": "tea-regulacion-intereses-calma",
+    "condicion": "TEA",
+    "area": "regulacion-emocional",
+    "titulo": "Intereses propios y estrategias de calma",
+    "contextoEducativo": "Los intereses intensos y las conductas repetitivas o de autorregulación (a veces llamadas 'stimming') cumplen una función de calma para muchos estudiantes con TEA. Bien encauzados, son aliados para regularse y para motivar el aprendizaje, no algo a eliminar.",
+    "dificultadesTipicas": [
+      "Recurre a movimientos repetitivos para calmarse",
+      "Se ancla en su tema de interés y le cuesta soltarlo",
+      "Se desregula cuando se le impide su forma de autorregularse"
+    ],
+    "estrategias": [
+      { "que": "Permitir la autorregulación", "como": "Aceptar conductas de calma que no dañan ni interrumpen gravemente; darles un espacio.", "ejemplo": "Permitir apretar una pelota o balancearse mientras escucha." },
+      { "que": "Usar sus intereses", "como": "Integrar el tema que le apasiona como puente hacia el contenido y como recompensa.", "ejemplo": "Si le encantan los trenes, usar trenes en los problemas de matemáticas." },
+      { "que": "Enseñar estrategias de calma", "como": "Practicar en momentos tranquilos técnicas simples de regulación.", "ejemplo": "Respiración, rincón de calma, tarjeta de 'necesito una pausa'." }
+    ],
+    "queEvitar": [
+      "Prohibir toda conducta de autorregulación que no molesta",
+      "Retirar bruscamente su tema de interés como castigo",
+      "Ridiculizar sus intereses o formas de calmarse"
+    ],
+    "comoAdaptar": [
+      "Acordar cuándo y cómo puede usar sus estrategias de calma",
+      "Canalizar el interés intenso hacia tareas y roles"
+    ],
+    "comoComunicar": [
+      "Mostrar interés genuino por su tema para conectar",
+      "Ofrecer alternativas en vez de solo prohibir"
+    ],
+    "situacionesRapidas": [
+      "Hace movimientos repetitivos para calmarse",
+      "Solo quiere hablar de su tema de interés",
+      "Se desregula si se le corta su forma de autorregularse"
+    ],
+    "fuentes": ["national-autistic-society-education", "nice-cg170-autism", "cast-udl-guidelines"]
+  }
+]

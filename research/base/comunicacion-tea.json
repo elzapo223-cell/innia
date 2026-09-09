@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tea-comunicacion-lenguaje-claro",
+    "condicion": "TEA",
+    "area": "comunicacion",
+    "titulo": "Lenguaje claro, literal y sin dobles sentidos",
+    "contextoEducativo": "Muchos estudiantes con TEA procesan el lenguaje de forma literal y pueden confundirse con ironías, metáforas o instrucciones ambiguas. También pueden necesitar más tiempo para procesar lo que se les dice. No es falta de inteligencia: es una forma distinta de procesar el lenguaje.",
+    "dificultadesTipicas": [
+      "Interpreta de forma literal expresiones figuradas ('se te fue el santo al cielo')",
+      "Se confunde con instrucciones vagas o con doble sentido",
+      "Necesita más tiempo para procesar y responder"
+    ],
+    "estrategias": [
+      { "que": "Lenguaje concreto y directo", "como": "Decir exactamente lo que se espera, evitando ironía, sarcasmo y metáforas.", "ejemplo": "En vez de '¿te parece que es hora de trabajar?', decir 'abre el cuaderno en la página 10'." },
+      { "que": "Dar tiempo de procesamiento", "como": "Formular una idea, esperar en silencio unos segundos y no repetir de inmediato con otras palabras.", "ejemplo": "Contar mentalmente hasta 5-10 antes de reformular." },
+      { "que": "Apoyar con lo visual", "como": "Acompañar la palabra con imágenes, gestos o texto escrito.", "ejemplo": "Mostrar la tarjeta de la acción mientras se nombra." }
+    ],
+    "queEvitar": [
+      "Ironías, sarcasmo y frases hechas sin explicarlas",
+      "Bombardear con muchas palabras o reformular una y otra vez",
+      "Interpretar la demora en responder como que ignora"
+    ],
+    "comoAdaptar": [
+      "Dejar la instrucción también por escrito o con pictogramas",
+      "Enseñar de forma explícita el significado de expresiones figuradas cuando surjan"
+    ],
+    "comoComunicar": [
+      "Una idea por frase, con vocabulario concreto",
+      "Verificar la comprensión pidiendo que muestre qué hará, no un 'sí' automático"
+    ],
+    "situacionesRapidas": [
+      "No comprende las instrucciones cuando son ambiguas",
+      "Entiende todo de forma literal",
+      "Tarda en responder a lo que se le dice"
+    ],
+    "fuentes": ["autism-speaks-classroom", "nea-teaching-autism", "national-autistic-society-education"]
+  },
+  {
+    "id": "tea-comunicacion-alternativa",
+    "condicion": "TEA",
+    "area": "comunicacion",
+    "titulo": "Apoyar la comunicación cuando el lenguaje oral es limitado",
+    "contextoEducativo": "Algunos estudiantes con TEA tienen lenguaje oral limitado o prefieren otras vías para comunicarse. Ofrecer canales alternativos reduce la frustración y les permite participar y expresar necesidades.",
+    "dificultadesTipicas": [
+      "Le cuesta expresar oralmente lo que necesita o siente",
+      "Se frustra al no poder hacerse entender",
+      "Participa poco cuando solo se admite respuesta oral"
+    ],
+    "estrategias": [
+      { "que": "Sistemas de apoyo visual", "como": "Ofrecer tableros de comunicación, pictogramas o tarjetas para elegir y expresar.", "ejemplo": "Un panel con imágenes de 'baño', 'agua', 'ayuda', 'pausa'." },
+      { "que": "Aceptar múltiples vías", "como": "Permitir responder señalando, escribiendo, dibujando o con dispositivos.", "ejemplo": "Responder eligiendo una tarjeta o escribiendo en una tablet." },
+      { "que": "Anticipar necesidades", "como": "Enseñar y tener a mano formas rápidas de pedir lo esencial.", "ejemplo": "Tarjeta de 'necesito una pausa' siempre disponible en su mesa." }
+    ],
+    "queEvitar": [
+      "Forzar la respuesta oral como única opción válida",
+      "Completar sus frases o presionarlo a hablar rápido",
+      "Ignorar sus intentos de comunicación no verbal"
+    ],
+    "comoAdaptar": [
+      "Integrar sus apoyos de comunicación en todas las actividades",
+      "Coordinar con la familia/equipo el sistema que ya usa"
+    ],
+    "comoComunicar": [
+      "Dar tiempo y atención a cualquier forma en que se exprese",
+      "Confirmar que se entendió su mensaje antes de continuar"
+    ],
+    "situacionesRapidas": [
+      "Se frustra porque no logra hacerse entender",
+      "Participa poco si solo vale respuesta oral",
+      "Le cuesta pedir lo que necesita"
+    ],
+    "fuentes": ["national-autistic-society-education", "autismo-espana", "cast-udl-guidelines"]
+  }
+]

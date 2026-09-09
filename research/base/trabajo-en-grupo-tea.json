@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tea-grupo-roles-previsibilidad",
+    "condicion": "TEA",
+    "area": "trabajo-en-grupo",
+    "titulo": "Trabajo en grupo con rol claro y previsible",
+    "contextoEducativo": "El trabajo en equipo combina demandas sociales y de incertidumbre que pueden abrumar al estudiante con TEA. Con un rol definido, expectativas explícitas y previsibilidad, puede aportar desde sus fortalezas y participar con menos ansiedad.",
+    "dificultadesTipicas": [
+      "No sabe cómo negociar o repartir tareas con el grupo",
+      "Se abruma con la dinámica social del equipo",
+      "Puede rechazar el trabajo grupal por su carácter impredecible"
+    ],
+    "estrategias": [
+      { "que": "Rol concreto y afín", "como": "Asignarle una función clara y acorde a sus fortalezas.", "ejemplo": "Encargado de datos, de la parte visual o del registro escrito." },
+      { "que": "Reglas de interacción explícitas", "como": "Definir por escrito cómo se piden turnos y se toman decisiones en el grupo.", "ejemplo": "Guion: 'cada uno propone una idea por turno'." },
+      { "que": "Grupo pequeño y estable", "como": "Trabajar en parejas o tríos con compañeros conocidos y previsibles.", "ejemplo": "Un compañero-guía fijo para las tareas en equipo." }
+    ],
+    "queEvitar": [
+      "Grupos numerosos y consignas sociales ambiguas",
+      "Cambiar de grupo o de reglas sin avisar",
+      "Forzar la interacción social sin estructura"
+    ],
+    "comoAdaptar": [
+      "Anticipar cómo será la actividad y su rol",
+      "Permitir una vía de repliegue si se sobrecarga"
+    ],
+    "comoComunicar": [
+      "Explicitar expectativas y turnos antes de empezar",
+      "Reconocer su aporte concreto al equipo"
+    ],
+    "situacionesRapidas": [
+      "Tiene dificultad para trabajar en grupo",
+      "Se abruma con la dinámica social del equipo",
+      "Rechaza el trabajo grupal por lo impredecible"
+    ],
+    "fuentes": ["nea-teaching-autism", "autismo-espana", "cast-udl-guidelines"]
+  }
+]

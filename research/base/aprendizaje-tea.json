@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tea-aprendizaje-fortalezas-intereses",
+    "condicion": "TEA",
+    "area": "aprendizaje",
+    "titulo": "Enseñar desde las fortalezas e intereses",
+    "contextoEducativo": "Muchos estudiantes con TEA tienen fortalezas marcadas (memoria, atención al detalle, pensamiento visual, interés profundo en un tema). Partir de esas fortalezas y de sus intereses aumenta la motivación y el acceso al contenido, en lugar de centrarse solo en las dificultades.",
+    "dificultadesTipicas": [
+      "Se desmotiva con contenidos alejados de sus intereses",
+      "Rinde de forma muy desigual según el formato",
+      "Le cuesta generalizar lo aprendido a otros contextos"
+    ],
+    "estrategias": [
+      { "que": "Anclar en intereses", "como": "Usar su tema favorito como vehículo del contenido.", "ejemplo": "Enseñar categorías clasificando su colección favorita." },
+      { "que": "Apoyo visual del contenido", "como": "Presentar la información con esquemas, imágenes y organizadores gráficos.", "ejemplo": "Mapas visuales, líneas de tiempo, diagramas." },
+      { "que": "Enseñar la generalización", "como": "Practicar lo aprendido en varios contextos de forma explícita.", "ejemplo": "Aplicar la misma suma en el juego, en la tienda y en el cuaderno." }
+    ],
+    "queEvitar": [
+      "Centrarse solo en corregir déficits e ignorar fortalezas",
+      "Un único formato de enseñanza para todo",
+      "Asumir que lo aprendido en un contexto se traslada solo a otro"
+    ],
+    "comoAdaptar": [
+      "Ofrecer varias formas de acceder y de demostrar el aprendizaje (DUA)",
+      "Descomponer objetivos amplios en metas concretas y observables"
+    ],
+    "comoComunicar": [
+      "Reconocer y nombrar sus fortalezas",
+      "Explicar el propósito y el contexto de uso del contenido"
+    ],
+    "situacionesRapidas": [
+      "Se desmotiva si el tema no le interesa",
+      "¿Cómo puedo explicarle esta actividad de otra manera?",
+      "Le cuesta aplicar lo aprendido en otras situaciones"
+    ],
+    "fuentes": ["nea-teaching-autism", "cast-udl-guidelines", "understood-udl"]
+  }
+]

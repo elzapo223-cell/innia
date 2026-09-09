@@ -1,0 +1,38 @@
+[
+  {
+    "id": "tea-instrucciones-estructura-visual",
+    "condicion": "TEA",
+    "area": "instrucciones",
+    "titulo": "Estructurar y hacer visibles las instrucciones",
+    "contextoEducativo": "El estudiante con TEA se apoya mucho en la información visual y en la estructura para comprender qué se espera. Las instrucciones abstractas o solo orales pueden no bastar. Hacer visible la secuencia y el resultado esperado reduce la incertidumbre.",
+    "dificultadesTipicas": [
+      "No sabe por dónde empezar una tarea abierta",
+      "Necesita ver un modelo del resultado esperado",
+      "Se pierde con instrucciones solo verbales"
+    ],
+    "estrategias": [
+      { "que": "Instrucciones paso a paso visibles", "como": "Presentar la secuencia con pasos numerados, imágenes o pictogramas.", "ejemplo": "Tarjetas: 1) leo · 2) subrayo · 3) respondo · 4) reviso." },
+      { "que": "Mostrar un modelo", "como": "Dar un ejemplo terminado de cómo debe quedar el trabajo.", "ejemplo": "Un ejercicio ya resuelto como referencia." },
+      { "que": "Definir el 'terminado'", "como": "Aclarar cómo se ve la tarea cuando está completa.", "ejemplo": "'Terminas cuando las 4 casillas están llenas.'" }
+    ],
+    "queEvitar": [
+      "Consignas abiertas y ambiguas ('haz algo sobre el tema')",
+      "Instrucciones solo orales y largas",
+      "Dar por hecho que sabe cómo debe quedar el resultado"
+    ],
+    "comoAdaptar": [
+      "Dejar la secuencia visible durante toda la tarea",
+      "Descomponer las tareas abiertas en pasos concretos"
+    ],
+    "comoComunicar": [
+      "Concreto y literal; una acción por paso",
+      "Confirmar comprensión pidiendo que muestre el primer paso"
+    ],
+    "situacionesRapidas": [
+      "No comprende las instrucciones si son abstractas",
+      "No sabe por dónde empezar la tarea",
+      "Necesita ver un ejemplo de cómo debe quedar"
+    ],
+    "fuentes": ["autism-speaks-classroom", "nea-teaching-autism", "cast-udl-guidelines"]
+  }
+]

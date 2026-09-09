@@ -99,5 +99,45 @@
     "idiomaOriginal": "es",
     "consultado": "2026-09-09",
     "nota": "El Decreto 1421 de 2017 regula la atención educativa a la población con discapacidad y promueve el DUA en Colombia."
+  },
+  {
+    "id": "dsm-5-tr-apa",
+    "titulo": "Manual Diagnóstico y Estadístico de los Trastornos Mentales (DSM-5-TR)",
+    "organizacion": "American Psychiatric Association (APA)",
+    "tipo": "libro",
+    "url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09",
+    "nota": "Referencia clínica de autoridad para las características del TDAH y el TEA. INNIA la usa para fundamentar descripciones en contexto EDUCATIVO; no la usa para diagnosticar. Contenido con derechos de autor: se cita y se parafrasea, no se reproduce."
+  },
+  {
+    "id": "who-icd-11",
+    "titulo": "Clasificación Internacional de Enfermedades, 11.ª revisión (CIE-11 / ICD-11)",
+    "organizacion": "Organización Mundial de la Salud (OMS)",
+    "tipo": "guia-oficial",
+    "url": "https://icd.who.int/",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09",
+    "nota": "Clasificación internacional de referencia (uso frecuente en Colombia/Latinoamérica). Fundamenta características; no se usa para diagnosticar."
+  },
+  {
+    "id": "nice-ng87-adhd",
+    "titulo": "Attention deficit hyperactivity disorder: diagnosis and management (NG87)",
+    "organizacion": "National Institute for Health and Care Excellence (NICE)",
+    "tipo": "guia-oficial",
+    "url": "https://www.nice.org.uk/guidance/ng87",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09",
+    "nota": "Guía clínica basada en evidencia sobre TDAH; sustenta recomendaciones de apoyo en el entorno educativo."
+  },
+  {
+    "id": "nice-cg170-autism",
+    "titulo": "Autism spectrum disorder in under 19s: support and management (CG170)",
+    "organizacion": "National Institute for Health and Care Excellence (NICE)",
+    "tipo": "guia-oficial",
+    "url": "https://www.nice.org.uk/guidance/cg170",
+    "idiomaOriginal": "en",
+    "consultado": "2026-09-09",
+    "nota": "Guía clínica basada en evidencia sobre TEA en menores; sustenta recomendaciones de apoyo educativo."
   }
 ]

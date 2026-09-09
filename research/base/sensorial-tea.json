@@ -1,0 +1,74 @@
+[
+  {
+    "id": "tea-sensorial-regular-estimulos",
+    "condicion": "TEA",
+    "area": "sensorial",
+    "titulo": "Ajustar el entorno a la sensibilidad sensorial",
+    "contextoEducativo": "Las diferencias en el procesamiento sensorial son una característica reconocida del TEA: ciertos ruidos, luces, texturas u olores pueden resultar dolorosos o abrumadores (hipersensibilidad), o el estudiante puede buscar estímulos (hiposensibilidad). Una reacción intensa a un estímulo no es un capricho: puede ser una sobrecarga sensorial real.",
+    "dificultadesTipicas": [
+      "Se tapa los oídos o se altera con ruidos fuertes o inesperados",
+      "Le molestan luces intensas, etiquetas de ropa o ciertas texturas",
+      "Busca movimiento o presión (balanceo, apretar) para regularse"
+    ],
+    "estrategias": [
+      { "que": "Reducir la carga sensorial", "como": "Identificar los estímulos que le afectan y disminuirlos en su entorno inmediato.", "ejemplo": "Ubicarlo lejos del timbre/altavoz; permitir audífonos de aislamiento en momentos ruidosos." },
+      { "que": "Anticipar estímulos intensos", "como": "Avisar antes de ruidos o cambios sensoriales previsibles.", "ejemplo": "'En un momento va a sonar el timbre, será fuerte.'" },
+      { "que": "Espacio y pausas sensoriales", "como": "Tener un rincón tranquilo y permitir pausas para autorregularse.", "ejemplo": "Rincón de calma con luz tenue al que puede ir con una tarjeta." }
+    ],
+    "queEvitar": [
+      "Interpretar la reacción sensorial como berrinche o desobediencia",
+      "Obligarlo a tolerar el estímulo 'para que se acostumbre'",
+      "Ambientes sobrecargados de estímulos visuales y sonoros"
+    ],
+    "comoAdaptar": [
+      "Permitir herramientas de regulación (audífonos, objeto de presión) sin estigma",
+      "Coordinar con la familia/terapeuta ocupacional los apoyos que ya usa"
+    ],
+    "comoComunicar": [
+      "Validar la experiencia sensorial: 'ese ruido te molesta mucho, está bien'",
+      "Ofrecer la salida a la pausa antes de que llegue a la sobrecarga"
+    ],
+    "situacionesRapidas": [
+      "Se altera con ruidos o luces fuertes",
+      "Se tapa los oídos y se abruma",
+      "Reacciona intensamente a texturas u olores"
+    ],
+    "fuentes": ["nice-cg170-autism", "national-autistic-society-education", "autismo-espana"]
+  },
+  {
+    "id": "tea-sensorial-sobrecarga-crisis",
+    "condicion": "TEA",
+    "area": "sensorial",
+    "titulo": "Prevenir y acompañar la sobrecarga sensorial",
+    "contextoEducativo": "Cuando la acumulación de estímulos supera lo que el estudiante puede procesar, puede llegar a una crisis o bloqueo (a veces llamado 'meltdown' o 'shutdown'). No es una rabieta buscada: es una respuesta de sobrecarga. Prevenir y acompañar es más eficaz que corregir.",
+    "dificultadesTipicas": [
+      "Pasa de estar bien a una crisis intensa aparentemente 'de repente'",
+      "Puede bloquearse y desconectarse en vez de estallar",
+      "Le cuesta recuperarse tras la sobrecarga"
+    ],
+    "estrategias": [
+      { "que": "Detectar señales tempranas", "como": "Aprender sus primeras señales de sobrecarga y actuar antes de la crisis.", "ejemplo": "Inquietud, taparse oídos, repetir movimientos → ofrecer la pausa ya." },
+      { "que": "Reducir demandas en el momento", "como": "Durante la sobrecarga, bajar estímulos y exigencias; no razonar ni insistir.", "ejemplo": "Llevarlo al rincón de calma, bajar la voz, dar espacio." },
+      { "que": "Plan acordado de crisis", "como": "Tener de antemano un protocolo simple y conocido por el estudiante.", "ejemplo": "Tarjeta de 'necesito salir' y un lugar seguro definido." }
+    ],
+    "queEvitar": [
+      "Sujetar, gritar o castigar durante la crisis",
+      "Aglomerar personas o estímulos alrededor",
+      "Exigir explicaciones en pleno episodio"
+    ],
+    "comoAdaptar": [
+      "Diseñar el día para evitar acumulación de estímulos intensos",
+      "Prever transiciones y momentos ruidosos con antelación"
+    ],
+    "comoComunicar": [
+      "Durante la crisis: pocas palabras, tono calmado, presencia tranquila",
+      "Después, reconstruir con él qué pasó cuando ya esté regulado"
+    ],
+    "situacionesRapidas": [
+      "Tiene una crisis por sobrecarga de estímulos",
+      "Se bloquea y se desconecta",
+      "Le cuesta calmarse tras alterarse"
+    ],
+    "fuentes": ["nice-cg170-autism", "autism-speaks-classroom", "national-autistic-society-education"]
+  }
+]

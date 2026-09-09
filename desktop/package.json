@@ -1,0 +1,48 @@
+{
+  "name": "innia-desktop",
+  "version": "0.1.0",
+  "private": true,
+  "description": "INNIA — asistente pedagógico de escritorio (TDAH/TEA), 100% local con Ollama.",
+  "author": "INNIA",
+  "main": "electron/main.cjs",
+  "type": "module",
+  "scripts": {
+    "bundle:base": "node scripts/bundle-base.mjs",
+    "dev:renderer": "vite",
+    "dev": "concurrently -k \"npm:dev:renderer\" \"npm:dev:electron\"",
+    "dev:electron": "cross-env INNIA_DEV=1 wait-on tcp:5173 && electron .",
+    "build": "npm run bundle:base && vite build",
+    "build:app": "npm run build && electron-builder",
+    "lint:typecheck": "vite build --mode development"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "autoprefixer": "^10.4.20",
+    "concurrently": "^9.0.1",
+    "cross-env": "^7.0.3",
+    "electron": "^32.1.2",
+    "electron-builder": "^25.1.7",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13",
+    "vite": "^5.4.8",
+    "wait-on": "^8.0.1"
+  },
+  "build": {
+    "appId": "org.innia.desktop",
+    "productName": "INNIA",
+    "files": ["dist/**", "electron/**", "resources/**", "package.json"],
+    "extraResources": [{ "from": "resources", "to": "resources" }],
+    "win": {
+      "target": ["nsis"],
+      "artifactName": "INNIA-Setup-${version}.${ext}"
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  }
+}

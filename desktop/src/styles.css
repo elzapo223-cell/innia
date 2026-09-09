@@ -1,0 +1,61 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, "Segoe UI", system-ui, sans-serif;
+  color: #e8edf6;
+  background:
+    radial-gradient(1200px 600px at 15% -10%, rgba(110, 168, 254, 0.25), transparent 60%),
+    radial-gradient(1000px 500px at 100% 0%, rgba(167, 139, 250, 0.22), transparent 55%),
+    linear-gradient(160deg, #0b1020 0%, #0a0e1a 100%);
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+/* Liquid glass */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(18px) saturate(140%);
+  -webkit-backdrop-filter: blur(18px) saturate(140%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.35), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+}
+
+.prose-innia p {
+  margin: 0.4rem 0;
+}
+.prose-innia ul {
+  margin: 0.3rem 0 0.3rem 1.1rem;
+  list-style: disc;
+}
+.prose-innia strong {
+  color: #cfe0ff;
+}
+.prose-innia h1,
+.prose-innia h2,
+.prose-innia h3 {
+  color: #dbe6ff;
+  margin: 0.6rem 0 0.3rem;
+  font-weight: 600;
+}
+
+/* Scrollbar sutil */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+*::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.14);
+  border-radius: 10px;
+}

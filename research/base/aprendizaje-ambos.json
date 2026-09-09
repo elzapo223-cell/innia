@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ambos-aprendizaje-dua-explicar-de-otra-manera",
+    "condicion": "ambos",
+    "area": "aprendizaje",
+    "titulo": "Explicar la misma actividad de otra manera",
+    "contextoEducativo": "Cuando un estudiante no accede a un contenido por una vía, el DUA invita a ofrecer otra: cambiar el formato, el ejemplo o el nivel de apoyo sin bajar el objetivo de aprendizaje. Sirve tanto para TDAH como para TEA y suele ayudar a todo el grupo.",
+    "dificultadesTipicas": [
+      "El estudiante no comprende con la explicación estándar",
+      "Se pierde el objetivo al 'simplificar' quitando contenido",
+      "Un mismo ejemplo no conecta con todos"
+    ],
+    "estrategias": [
+      { "que": "Cambiar el formato, no el objetivo", "como": "Reexplicar con otro canal (visual, manipulativo, oral, ejemplo real) manteniendo la meta.", "ejemplo": "Si no entendió las fracciones en el cuaderno, mostrarlas partiendo una fruta o con bloques." },
+      { "que": "Del concreto a lo abstracto", "como": "Empezar por material concreto y ejemplos cercanos antes del símbolo abstracto.", "ejemplo": "Contar objetos reales antes de escribir la operación." },
+      { "que": "Andamiaje graduado", "como": "Dar más apoyo al inicio y retirarlo poco a poco a medida que avanza.", "ejemplo": "Primero con un modelo resuelto al lado, luego sin él." }
+    ],
+    "queEvitar": [
+      "Repetir la misma explicación más fuerte o más rápido",
+      "Reducir el objetivo de aprendizaje al adaptar",
+      "Un solo ejemplo o formato para todo el grupo"
+    ],
+    "comoAdaptar": [
+      "Tener lista una segunda y tercera forma de explicar cada tema clave",
+      "Ofrecer opciones de cómo demostrar lo aprendido"
+    ],
+    "comoComunicar": [
+      "Presentar la nueva explicación sin transmitir frustración",
+      "Conectar el contenido con su experiencia e intereses"
+    ],
+    "situacionesRapidas": [
+      "¿Cómo puedo explicarle esta actividad de otra manera?",
+      "No entiende con la explicación normal",
+      "Necesito adaptar la actividad sin bajar el objetivo"
+    ],
+    "fuentes": ["cast-udl-guidelines", "understood-udl", "dua-colombia-decreto-1421"]
+  }
+]

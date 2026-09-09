@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ambos-instrucciones-dua-multiples-formas",
+    "condicion": "ambos",
+    "area": "instrucciones",
+    "titulo": "Múltiples formas de presentar una misma instrucción",
+    "contextoEducativo": "El Diseño Universal para el Aprendizaje (DUA) propone ofrecer la información de varias maneras para reducir barreras de acceso. Presentar una instrucción en formato oral, visual y escrito a la vez beneficia tanto a estudiantes con TDAH como con TEA, y al grupo entero.",
+    "dificultadesTipicas": [
+      "Un solo formato de instrucción deja fuera a parte del grupo",
+      "Las consignas solo orales se olvidan o se malinterpretan",
+      "La misma instrucción funciona distinto según el estudiante"
+    ],
+    "estrategias": [
+      { "que": "Doble o triple canal", "como": "Dar la instrucción oral y, a la vez, dejarla escrita y/o con apoyo visual.", "ejemplo": "Decirla, escribirla en la pizarra y mostrar un ícono de la acción." },
+      { "que": "Verificación activa", "como": "Comprobar la comprensión pidiendo que muestren o expliquen qué harán.", "ejemplo": "'Muéstrame el primer paso que vas a hacer.'" },
+      { "que": "Instrucción disponible", "como": "Mantener la consigna visible durante toda la tarea para poder consultarla.", "ejemplo": "Pasos numerados en la pizarra o en una tarjeta en la mesa." }
+    ],
+    "queEvitar": [
+      "Confiar todo a la instrucción oral única",
+      "Retirar la consigna de la vista apenas se empieza",
+      "Preguntar '¿entendieron?' y asumir que un sí basta"
+    ],
+    "comoAdaptar": [
+      "Ofrecer la misma información en texto, imagen y ejemplo",
+      "Permitir consultar la instrucción cuantas veces se necesite"
+    ],
+    "comoComunicar": [
+      "Una idea por frase, verbo de acción al inicio",
+      "Confirmar comprensión con evidencia, no con un 'sí' automático"
+    ],
+    "situacionesRapidas": [
+      "No comprende las instrucciones",
+      "¿Cómo puedo dar la instrucción de otra manera?",
+      "La consigna oral no le alcanza"
+    ],
+    "fuentes": ["cast-udl-guidelines", "understood-udl", "dua-colombia-decreto-1421"]
+  }
+]

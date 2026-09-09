@@ -25,9 +25,11 @@ Meta v1: ≥ 2 entradas por celda **relevante**. No todas las celdas aplican por
 El validador (`node scripts/validate.mjs --strict`) exige que cada una aparezca en al
 menos un `situacionesRapidas`.
 
-- [ ] "El estudiante no quiere realizar la actividad."
-- [ ] "No comprende las instrucciones."
-- [ ] "Se distrae constantemente."
-- [ ] "Se frustró y no quiere continuar."
-- [ ] "Tiene dificultad para trabajar en grupo."
-- [ ] "¿Cómo puedo explicarle esta actividad de otra manera?"
+- [x] "El estudiante no quiere realizar la actividad." → `tdah-motivacion-iniciar-tarea`
+- [x] "No comprende las instrucciones." → `tdah-instrucciones-claras-cortas`, `tea-comunicacion-lenguaje-claro`, `ambos-instrucciones-dua-multiples-formas`
+- [x] "Se distrae constantemente." → `tdah-atencion-entorno-ubicacion`
+- [x] "Se frustró y no quiere continuar." → `tdah-regulacion-frustracion`
+- [x] "Tiene dificultad para trabajar en grupo." → `tdah-grupo-roles-estructura`, `tea-grupo-roles-previsibilidad`
+- [x] "¿Cómo puedo explicarle esta actividad de otra manera?" → `ambos-aprendizaje-dua-explicar-de-otra-manera`, `tdah-aprendizaje-multisensorial`
+
+**Cobertura de situaciones del cliente verificada: 6/6** (`node scripts/validate.mjs --strict` pasa).

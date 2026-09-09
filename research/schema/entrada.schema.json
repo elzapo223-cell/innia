@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://innia.local/schema/entrada.json",
+  "title": "EntradaBaseCurada",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "condicion",
+    "area",
+    "titulo",
+    "contextoEducativo",
+    "dificultadesTipicas",
+    "estrategias",
+    "queEvitar",
+    "comoAdaptar",
+    "comoComunicar",
+    "situacionesRapidas",
+    "fuentes"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "description": "Identificador único en kebab-case."
+    },
+    "condicion": { "type": "string", "enum": ["TDAH", "TEA", "ambos"] },
+    "area": {
+      "type": "string",
+      "enum": [
+        "atencion",
+        "comunicacion",
+        "interaccion-social",
+        "regulacion-emocional",
+        "instrucciones",
+        "aprendizaje",
+        "trabajo-en-grupo",
+        "motivacion-tareas",
+        "sensorial"
+      ]
+    },
+    "titulo": { "type": "string", "minLength": 4 },
+    "contextoEducativo": { "type": "string", "minLength": 20 },
+    "dificultadesTipicas": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 4 }
+    },
+    "estrategias": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["que", "como"],
+        "properties": {
+          "que": { "type": "string", "minLength": 4 },
+          "como": { "type": "string", "minLength": 8 },
+          "ejemplo": { "type": "string" }
+        }
+      }
+    },
+    "queEvitar": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 4 } },
+    "comoAdaptar": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 4 } },
+    "comoComunicar": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 4 } },
+    "situacionesRapidas": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "minLength": 4 }
+    },
+    "fuentes": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "type": "string", "pattern": "^[a-z0-9-]+$" }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --bg-0: #0a0e1a;
+  --bg-1: #0b1020;
+  --spec-1: #6ea8fe; /* azul */
+  --spec-2: #a78bfa; /* violeta */
+  --spec-3: #f0abfc; /* rosa */
+  --mint: #5eead4;
+  --ink: #e8edf6;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-body: Inter, "Segoe UI", system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: var(--font-body);
+  background: linear-gradient(160deg, var(--bg-1) 0%, var(--bg-0) 100%);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.font-display { font-family: var(--font-display); }
+
+/* --- Aurora de fondo (movimiento ambiental) --- */
+.aurora {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.aurora span {
+  position: absolute;
+  display: block;
+  width: 55vw;
+  height: 55vw;
+  border-radius: 50%;
+  filter: blur(90px);
+  opacity: 0.45;
+}
+.aurora-a { background: radial-gradient(circle, var(--spec-1), transparent 60%); top: -18vw; left: -10vw; animation: drift 26s ease-in-out infinite; }
+.aurora-b { background: radial-gradient(circle, var(--spec-2), transparent 60%); top: -6vw; right: -14vw; animation: drift 32s ease-in-out infinite reverse; }
+.aurora-c { background: radial-gradient(circle, var(--spec-3), transparent 62%); bottom: -22vw; left: 24vw; opacity: 0.28; animation: drift 38s ease-in-out infinite; }
+
+@keyframes drift {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(6vw, 4vw) scale(1.08); }
+  66% { transform: translate(-5vw, 2vw) scale(0.96); }
+}
+
+/* --- Contenedor --- */
+.wrap { width: 100%; max-width: 72rem; margin: 0 auto; padding: 0 1rem; }
+.wrap-narrow { width: 100%; max-width: 46rem; margin: 0 auto; padding: 0 1rem; }
+
+/* --- Liquid glass --- */
+.glass {
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(20px) saturate(150%);
+  -webkit-backdrop-filter: blur(20px) saturate(150%);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 8px 44px rgba(0, 0, 0, 0.38), inset 0 1px 0 rgba(255, 255, 255, 0.09);
+}
+.glass-hover { transition: transform 0.25s ease, background 0.25s ease, border-color 0.25s ease; }
+.glass-hover:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-3px);
+}
+
+/* --- Espectro (motivo de marca) --- */
+.text-spectrum {
+  background: linear-gradient(100deg, var(--spec-1), var(--spec-2) 55%, var(--spec-3));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.ribbon {
+  height: 4px;
+  border-radius: 999px;
+  background: linear-gradient(100deg, var(--spec-1), var(--spec-2) 55%, var(--spec-3));
+}
+.chip-spectrum { border: 1px solid transparent; background:
+    linear-gradient(var(--bg-1), var(--bg-1)) padding-box,
+    linear-gradient(100deg, var(--spec-1), var(--spec-3)) border-box; }
+
+/* --- Reveal al hacer scroll --- */
+.reveal { opacity: 0; transform: translateY(18px); transition: opacity 0.6s ease, transform 0.6s ease; }
+.reveal.in { opacity: 1; transform: none; }
+
+/* --- Prosa --- */
+.prose-innia p { margin: 0.6rem 0; line-height: 1.75; }
+.prose-innia h1 { font-family: var(--font-display); font-size: 1.7rem; font-weight: 600; margin: 1rem 0 0.5rem; }
+.prose-innia h2 { font-family: var(--font-display); font-size: 1.3rem; font-weight: 600; margin: 1rem 0 0.4rem; color: #dbe6ff; }
+.prose-innia h3 { font-size: 1.02rem; font-weight: 600; margin: 0.8rem 0 0.3rem; color: #cfe0ff; }
+.prose-innia ul { margin: 0.4rem 0 0.4rem 1.2rem; list-style: disc; }
+.prose-innia strong { color: #cfe0ff; }
+.prose-innia blockquote {
+  border-left: 3px solid rgba(110, 168, 254, 0.6);
+  padding: 0.5rem 0.9rem; margin: 0.9rem 0; background: rgba(255, 255, 255, 0.04); border-radius: 8px;
+}
+.prose-innia a { color: var(--spec-1); }
+
+a { color: inherit; text-decoration: none; }
+
+*::-webkit-scrollbar { width: 10px; height: 10px; }
+*::-webkit-scrollbar-thumb { background: rgba(255, 255, 255, 0.14); border-radius: 10px; }
+
+:focus-visible { outline: 2px solid var(--spec-1); outline-offset: 2px; border-radius: 6px; }
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora span { animation: none; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .glass-hover:hover { transform: none; }
+  * { scroll-behavior: auto !important; }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "innia-web",
+  "version": "0.1.0",
+  "private": true,
+  "description": "INNIA — sitio hub (landing, descarga y contenido educativo).",
+  "scripts": {
+    "gen:content": "node scripts/gen-content.mjs",
+    "dev": "npm run gen:content && next dev",
+    "build": "npm run gen:content && next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "@sanity/client": "^6.21.3",
+    "next": "14.2.35",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.47",
+    "tailwindcss": "^3.4.13"
+  }
+}

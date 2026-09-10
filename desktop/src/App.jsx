@@ -1,5 +1,6 @@
 import React, { useEffect, useMemo, useRef, useState } from "react";
 import { MODOS, CONDICIONES } from "./modes.js";
+import { MODE_ICONS } from "./icons.jsx";
 import { renderMarkdown } from "./lib/markdown.js";
 
 // --- Puente con el proceso principal (o mock para vista en navegador) ---
@@ -146,6 +147,7 @@ export default function App() {
   const scrollRef = useRef(null);
 
   const modo = useMemo(() => MODOS.find((m) => m.id === modoId), [modoId]);
+  const ModoIcon = MODE_ICONS[modoId];
 
   const cargarEstado = async () => {
     const s = await bridge.status();
@@ -242,26 +244,34 @@ export default function App() {
       {/* Sidebar */}
       <aside className="w-64 shrink-0 glass m-3 rounded-2xl flex flex-col">
         <div className="px-4 pt-4 pb-3">
-          <div className="text-2xl font-bold tracking-tight">
+          <div className="font-display text-2xl font-semibold tracking-tight">
             INN<span className="text-innia-accent">IA</span>
           </div>
           <div className="text-[11.5px] text-white/50">Asistente pedagógico · TDAH y TEA</div>
         </div>
         <nav className="flex-1 px-2 space-y-1 overflow-y-auto">
-          {MODOS.map((m) => (
-            <button
-              key={m.id}
-              onClick={() => setModoId(m.id)}
-              className={`w-full text-left rounded-xl px-3 py-2 transition ${
-                m.id === modoId ? "bg-white/12 border border-white/20" : "glass-hover"
-              }`}
-            >
-              <div className="text-sm font-medium">
-                {m.emoji} {m.nombre}
-              </div>
-              <div className="text-[11px] text-white/50 leading-tight">{m.tagline}</div>
-            </button>
-          ))}
+          {MODOS.map((m) => {
+            const Icon = MODE_ICONS[m.id];
+            const on = m.id === modoId;
+            return (
+              <button
+                key={m.id}
+                onClick={() => setModoId(m.id)}
+                className={`w-full text-left rounded-xl px-3 py-2.5 transition flex items-start gap-3 ${
+                  on ? "bg-white/10 border border-white/15" : "border border-transparent glass-hover"
+                }`}
+              >
+                <Icon className={`mt-0.5 shrink-0 ${on ? "text-innia-accent" : "text-white/45"}`} />
+                <span>
+                  <span className={`block text-sm font-medium ${on ? "text-white" : "text-white/80"}`}>
+                    {m.nombre}
+                  </span>
+                  <span className="block text-[11px] text-white/45 leading-tight">{m.tagline}</span>
+                </span>
+                {on && <span className="ribbon w-5 ml-auto mt-2" />}
+              </button>
+            );
+          })}
         </nav>
         <button
           onClick={nuevoChat}
@@ -275,8 +285,9 @@ export default function App() {
       <main className="flex-1 flex flex-col m-3 ml-0">
         {/* Top bar */}
         <header className="glass rounded-2xl px-4 py-2.5 flex items-center gap-3 mb-3">
-          <div className="text-sm font-semibold">
-            {modo.emoji} {modo.nombre}
+          <div className="text-sm font-semibold flex items-center gap-2">
+            <ModoIcon className="text-innia-accent" width={18} height={18} />
+            {modo.nombre}
           </div>
           <div className="text-[12px] text-white/50 flex-1 truncate">{modo.descripcion}</div>
           <select
@@ -319,7 +330,7 @@ export default function App() {
               {mensajes.length === 0 && (
                 <div className="h-full grid place-items-center text-center px-8">
                   <div>
-                    <div className="text-4xl mb-2">{modo.emoji}</div>
+                    <div className="flex justify-center mb-3 text-innia-accent"><ModoIcon width={40} height={40} /></div>
                     <div className="text-white/70 max-w-md">{modo.descripcion}</div>
                     {modo.atajos && (
                       <div className="mt-4 flex flex-wrap gap-2 justify-center">
@@ -368,7 +379,7 @@ export default function App() {
                 ) : (
                   <button
                     onClick={() => enviar()}
-                    className="rounded-xl px-4 py-2 text-sm font-medium bg-innia-accent/25 border border-innia-accent/40 hover:bg-innia-accent/35"
+                    className="rounded-xl px-5 py-2 text-sm font-medium text-[#0a0e1a] bg-gradient-to-r from-[#6ea8fe] to-[#a78bfa] hover:brightness-110 transition"
                   >
                     Enviar
                   </button>

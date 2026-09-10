@@ -26,6 +26,7 @@ export default function RootLayout({ children }) {
           <span className="aurora-b" />
           <span className="aurora-c" />
         </div>
+        <div className="grain" aria-hidden="true" />
         <Nav />
         <main>{children}</main>
         <Footer />

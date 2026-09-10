@@ -111,10 +111,14 @@ export default function Probador() {
   const html = useMemo(() => renderMarkdown(text), [text]);
 
   return (
-    <div className="glass rounded-3xl p-4 sm:p-5 w-full">
+    <div className="card-spectrum glow p-4 sm:p-5 w-full">
       <div className="flex items-center gap-2 mb-3">
-        <span className="ribbon w-8" />
-        <span className="text-[12px] uppercase tracking-widest text-white/50">Probador</span>
+        <span className="winbar" aria-hidden="true">
+          <i style={{ background: "#ff6b6b" }} />
+          <i style={{ background: "#ffd166" }} />
+          <i style={{ background: "#5eead4" }} />
+        </span>
+        <span className="ml-2 text-[12px] uppercase tracking-widest text-white/55">Probador</span>
         <span className="ml-auto text-[11px] text-white/40">demo · respuestas de la base</span>
       </div>
 

@@ -1,3 +1,5 @@
+import { FadeUp, Stagger, Item, Magnetic } from "../../components/Anim.jsx";
+
 export const metadata = { title: "Descargar · INNIA" };
 
 const DOWNLOAD_URL = process.env.NEXT_PUBLIC_DOWNLOAD_URL || null;
@@ -10,59 +12,73 @@ const REQUISITOS = [
 ];
 
 const PASOS = [
-  "Descarga el instalador (.exe) y ejecútalo.",
-  "Abre INNIA. La primera vez te guiará para instalar el motor local (Ollama).",
-  "INNIA descargará el modelo adecuado a tu equipo con una barra de progreso.",
-  "Listo: empieza a consultar. A partir de aquí funciona sin internet.",
+  ["01", "Descarga el instalador (.exe) y ejecútalo."],
+  ["02", "Abre INNIA. La primera vez te guía para instalar el motor local (Ollama)."],
+  ["03", "INNIA descarga el modelo adecuado a tu equipo, con barra de progreso."],
+  ["04", "Listo: empieza a consultar. A partir de aquí funciona sin internet."],
 ];
 
 export default function Descargar() {
   return (
-    <div className="wrap py-12">
-      <h1 className="font-display text-4xl">Descargar INNIA</h1>
-      <p className="text-white/65 mt-2 max-w-2xl">
-        Gratuito y privado. Por ahora disponible para <strong className="text-white/90">Windows</strong>.
-      </p>
-
-      <div className="glass rounded-2xl p-6 mt-6 flex flex-col items-start gap-3">
-        {DOWNLOAD_URL ? (
-          <a
-            href={DOWNLOAD_URL}
-            className="rounded-xl px-6 py-3 font-medium bg-innia-accent/25 border border-innia-accent/40 hover:bg-innia-accent/35"
-          >
-            Descargar para Windows (.exe)
-          </a>
-        ) : (
-          <div className="rounded-xl px-4 py-3 border border-amber-400/30 text-amber-200/90 text-sm">
-            El enlace de descarga se publicará aquí cuando esté la primera versión en GitHub Releases.
-            (Configura <code>NEXT_PUBLIC_DOWNLOAD_URL</code> para activarlo.)
-          </div>
-        )}
-        <div className="text-[12.5px] text-white/50">
-          Al instalar, se descargará también el motor local Ollama y un modelo de IA.
+    <div className="wrap py-24">
+      <FadeUp>
+        <span className="kicker">Descargar</span>
+        <h1 className="display-xl text-4xl md:text-6xl mt-5">INNIA para Windows</h1>
+        <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
+          Gratuito y privado. El motor de IA se instala y corre en tu propio equipo.
+        </p>
+        <div className="mt-9 flex flex-wrap items-center gap-4">
+          {DOWNLOAD_URL ? (
+            <Magnetic>
+              <a
+                href={DOWNLOAD_URL}
+                className="inline-block rounded-full px-8 py-4 font-medium text-[#0a0e1a] bg-gradient-to-r from-[#6ea8fe] to-[#a78bfa] hover:brightness-110 transition"
+              >
+                Descargar para Windows (.exe)
+              </a>
+            </Magnetic>
+          ) : (
+            <span className="text-amber-200/90 text-sm border-b border-amber-400/30 pb-1">
+              El enlace de descarga se publicará aquí con la primera versión.
+            </span>
+          )}
+          <span className="text-[13px] text-white/45">
+            Al instalar se descarga también el motor local (Ollama) y el modelo de IA.
+          </span>
         </div>
-      </div>
+      </FadeUp>
 
-      <div className="grid md:grid-cols-2 gap-3 mt-8">
-        <div className="glass rounded-2xl p-6">
-          <h2 className="text-xl font-semibold">Requisitos</h2>
-          <dl className="mt-3 space-y-2 text-[14px]">
-            {REQUISITOS.map(([k, v]) => (
-              <div key={k} className="flex gap-3">
-                <dt className="w-24 shrink-0 text-white/55">{k}</dt>
-                <dd className="text-white/80">{v}</dd>
+      {/* Requisitos */}
+      <FadeUp>
+        <div className="mt-24 pt-14 hairline">
+          <span className="kicker">Requisitos</span>
+          <dl className="mt-8 max-w-3xl">
+            {REQUISITOS.map(([k, v], i) => (
+              <div key={k} className={`grid grid-cols-[7rem_1fr] md:grid-cols-[10rem_1fr] gap-4 py-5 ${i > 0 ? "hairline" : ""}`}>
+                <dt className="text-white/50">{k}</dt>
+                <dd className="text-white/85">{v}</dd>
               </div>
             ))}
           </dl>
         </div>
-        <div className="glass rounded-2xl p-6">
-          <h2 className="text-xl font-semibold">Instalación en 4 pasos</h2>
-          <ol className="mt-3 space-y-2 text-[14px] list-decimal ml-5 text-white/80">
-            {PASOS.map((p) => (
-              <li key={p}>{p}</li>
-            ))}
-          </ol>
-        </div>
+      </FadeUp>
+
+      {/* Instalación */}
+      <div className="mt-24 pt-14 hairline">
+        <FadeUp>
+          <span className="kicker">Instalación</span>
+          <h2 className="display-xl text-2xl md:text-4xl mt-5 mb-10">En cuatro pasos</h2>
+        </FadeUp>
+        <Stagger className="grid md:grid-cols-2 gap-x-14 gap-y-10">
+          {PASOS.map(([n, t]) => (
+            <Item key={n}>
+              <div className="flex items-baseline gap-5">
+                <span className="font-display text-4xl text-spectrum shrink-0">{n}</span>
+                <p className="text-white/80 text-lg leading-relaxed">{t}</p>
+              </div>
+            </Item>
+          ))}
+        </Stagger>
       </div>
     </div>
   );

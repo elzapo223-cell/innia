@@ -1,62 +1,71 @@
 import { getFuentes } from "../../lib/content.js";
+import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
+import { IconLock, IconShield, IconCompass, IconBook } from "../../components/Icons.jsx";
 
 export const metadata = { title: "Confianza y privacidad · INNIA" };
 
 const PRINCIPIOS = [
-  {
-    t: "Cero datos de estudiantes",
-    d: "INNIA nunca solicita ni almacena nombres, documentos, fotos, diagnósticos ni historias clínicas. Trabaja únicamente con situaciones educativas generales y anónimas.",
-  },
-  {
-    t: "No diagnostica, no etiqueta, no receta",
-    d: "Su función es exclusivamente educativa y pedagógica. No determina si un estudiante tiene una condición ni sugiere tratamientos. Eso corresponde a profesionales de la salud.",
-  },
-  {
-    t: "Privacidad por arquitectura",
-    d: "En la app de escritorio, el motor de IA corre localmente en tu computador (Ollama). Ningún dato sale de tu equipo y funciona sin conexión.",
-  },
-  {
-    t: "Contenido con fuentes",
-    d: "Las estrategias y la información se apoyan en fuentes públicas reputadas y en marcos y guías clínicas de referencia, usadas para fundamentar —no para diagnosticar.",
-  },
+  { Icon: IconShield, t: "Cero datos de estudiantes", d: "INNIA nunca solicita ni almacena nombres, documentos, fotos, diagnósticos ni historias clínicas. Trabaja únicamente con situaciones educativas generales y anónimas." },
+  { Icon: IconCompass, t: "No diagnostica, no etiqueta, no receta", d: "Su función es exclusivamente educativa y pedagógica. No determina si un estudiante tiene una condición ni sugiere tratamientos. Eso corresponde a profesionales de la salud." },
+  { Icon: IconLock, t: "Privacidad por arquitectura", d: "En la app de escritorio, el motor de IA corre localmente en tu computador (Ollama). Ningún dato sale de tu equipo y funciona sin conexión." },
+  { Icon: IconBook, t: "Contenido con fuentes", d: "Las estrategias y la información se apoyan en fuentes públicas reputadas y en marcos y guías clínicas de referencia, usadas para fundamentar —no para diagnosticar." },
 ];
 
 export default function Confianza() {
   const fuentes = getFuentes();
   return (
-    <div className="wrap py-12">
-      <h1 className="font-display text-4xl">Confianza y privacidad</h1>
-      <p className="text-white/65 mt-2 max-w-2xl">
-        INNIA se diseñó con reglas que protegen a estudiantes y docentes. Estas no son opcionales.
-      </p>
+    <div className="wrap py-24">
+      <FadeUp>
+        <span className="kicker">Confianza y privacidad</span>
+        <h1 className="display-xl text-4xl md:text-6xl mt-5 max-w-3xl">
+          Reglas que protegen a estudiantes y docentes
+        </h1>
+        <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
+          No son opcionales: gobiernan cada respuesta de INNIA.
+        </p>
+      </FadeUp>
 
-      <div className="grid md:grid-cols-2 gap-3 mt-8">
-        {PRINCIPIOS.map((p) => (
-          <div key={p.t} className="glass rounded-2xl p-5">
-            <div className="font-semibold text-white/90">{p.t}</div>
-            <div className="text-[14px] text-white/65 mt-1">{p.d}</div>
-          </div>
+      <Stagger className="mt-20">
+        {PRINCIPIOS.map((p, i) => (
+          <Item key={p.t}>
+            <div className={`grid md:grid-cols-[auto_1fr] gap-6 md:gap-10 items-start py-9 ${i > 0 ? "hairline" : ""}`}>
+              <div className="flex items-center gap-4 md:w-80">
+                <p.Icon width={26} height={26} className="text-innia-accent shrink-0" />
+                <h2 className="font-display text-xl md:text-2xl">{p.t}</h2>
+              </div>
+              <p className="text-white/70 leading-relaxed max-w-2xl">{p.d}</p>
+            </div>
+          </Item>
         ))}
-      </div>
+      </Stagger>
 
-      <h2 className="text-xl font-semibold mt-10 mb-3">Fuentes</h2>
-      <div className="glass rounded-2xl p-5">
-        <ul className="space-y-2 text-[13.5px]">
-          {fuentes.map((f) => (
-            <li key={f.id}>
-              <a href={f.url} target="_blank" rel="noreferrer" className="text-innia-accent hover:underline">
-                {f.titulo}
-              </a>
-              <span className="text-white/50"> — {f.organizacion}</span>
-            </li>
-          ))}
-        </ul>
-      </div>
-
-      <p className="text-[12.5px] text-white/45 mt-6 max-w-2xl">
-        Las referencias clínicas (como DSM-5-TR o CIE-11) se citan y parafrasean con fines
-        educativos; no se reproduce su contenido protegido por derechos de autor.
-      </p>
+      <FadeUp>
+        <div className="mt-24 pt-14 hairline">
+          <span className="kicker">Fuentes</span>
+          <ul className="mt-8 max-w-3xl">
+            {fuentes.map((f, i) => (
+              <li key={f.id} className={i > 0 ? "hairline" : ""}>
+                <a
+                  href={f.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="group flex items-baseline justify-between gap-6 py-4"
+                >
+                  <span>
+                    <span className="text-white/85 group-hover:text-white transition">{f.titulo}</span>
+                    <span className="text-white/45 text-[13px]"> — {f.organizacion}</span>
+                  </span>
+                  <span className="text-white/30 group-hover:text-innia-accent transition shrink-0" aria-hidden>↗</span>
+                </a>
+              </li>
+            ))}
+          </ul>
+          <p className="text-[12.5px] text-white/45 mt-8 max-w-2xl leading-relaxed">
+            Las referencias clínicas (como DSM-5-TR o CIE-11) se citan y parafrasean con fines
+            educativos; no se reproduce su contenido protegido por derechos de autor.
+          </p>
+        </div>
+      </FadeUp>
     </div>
   );
 }

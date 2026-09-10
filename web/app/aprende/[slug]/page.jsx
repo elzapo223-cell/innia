@@ -17,18 +17,18 @@ export default async function FichaPage({ params }) {
   const ficha = await getFicha(params.slug);
   if (!ficha) notFound();
   return (
-    <article className="wrap-narrow py-12">
-      <Link href="/aprende" className="text-[13px] text-white/50 hover:text-white/80">
-        ← Aprende
+    <article className="wrap-narrow py-24">
+      <Link href="/aprende" className="link-arrow text-[13px] text-white/50">
+        <span aria-hidden>←</span> Aprende
       </Link>
-      <div className="glass rounded-2xl p-6 md:p-8 mt-3">
-        <div className="text-[12px] text-innia-accent">{ficha.condicion}</div>
-        <h1 className="text-2xl md:text-3xl font-bold mt-1">{ficha.titulo}</h1>
-        <div
-          className="prose-innia mt-4 text-white/85"
-          dangerouslySetInnerHTML={{ __html: renderMarkdown(ficha.body) }}
-        />
+      <div className="mt-8 pb-8 hairline" style={{ borderTop: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
+        <span className="text-[12px] uppercase tracking-widest text-innia-accent">{ficha.condicion}</span>
+        <h1 className="display-xl text-3xl md:text-5xl mt-3">{ficha.titulo}</h1>
       </div>
+      <div
+        className="prose-innia mt-8 text-white/85 text-[15.5px]"
+        dangerouslySetInnerHTML={{ __html: renderMarkdown(ficha.body) }}
+      />
     </article>
   );
 }

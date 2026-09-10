@@ -3,7 +3,7 @@ import Probador from "../components/Probador.jsx";
 import ModosTabs from "../components/ModosTabs.jsx";
 import { FadeUp, Stagger, Item, Magnetic } from "../components/Anim.jsx";
 import { IconLock, IconShield, IconCompass, IconBook } from "../components/Icons.jsx";
-import { getFichas } from "../lib/content.js";
+import { getFichas, getFuentes } from "../lib/content.js";
 
 const PILARES = [
   { Icon: IconLock, t: "100% local", d: "El motor corre en tu computador. Nada sale de tu equipo y funciona sin internet." },
@@ -18,15 +18,26 @@ const PASOS = [
   { n: "03", t: "Consulta sin límites", d: "Escribe una situación y recibe estrategias. Sin internet." },
 ];
 
-const FUENTES = ["DUA · CAST", "CDC", "NICE", "DSM-5-TR", "CIE-11", "Autismo España", "Understood", "CHADD"];
+const FUENTES_LABELS = [
+  { label: "DUA · CAST", id: "cast-udl-guidelines" },
+  { label: "CDC", id: "cdc-adhd-classroom" },
+  { label: "NICE", id: "nice-ng87-adhd" },
+  { label: "DSM-5-TR", id: "dsm-5-tr-apa" },
+  { label: "CIE-11", id: "who-icd-11" },
+  { label: "Autismo España", id: "autismo-espana" },
+  { label: "Understood", id: "understood-udl" },
+  { label: "CHADD", id: "chadd-educators" },
+];
 
 export default async function Home() {
   const fichas = await getFichas();
+  const fuentesById = Object.fromEntries(getFuentes().map((f) => [f.id, f]));
+  const fuentes = FUENTES_LABELS.map((x) => ({ ...x, url: fuentesById[x.id]?.url })).filter((x) => x.url);
 
   return (
     <div>
       {/* ---------- HERO ---------- */}
-      <section className="wrap pt-16 pb-16 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+      <section className="wrap pt-14 pb-24 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
         <div>
           <FadeUp>
             <span className="kicker">Educación inclusiva · TDAH y TEA</span>
@@ -72,7 +83,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- TRANSFORMACIÓN (a pantalla, sin caja) ---------- */}
-      <section className="wrap py-24 text-center">
+      <section className="wrap py-36 text-center">
         <FadeUp>
           <p className="text-white/40 text-lg md:text-xl">Muchos docentes nunca recibieron formación específica.</p>
         </FadeUp>
@@ -85,7 +96,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- MODOS ---------- */}
-      <section className="wrap py-16 hairline">
+      <section className="wrap py-28 hairline">
         <FadeUp>
           <div className="mb-12">
             <span className="kicker">Un asistente, cinco modos</span>
@@ -96,7 +107,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- PILARES (fila con divisores, sin cajas) ---------- */}
-      <section className="wrap py-20 hairline">
+      <section className="wrap py-28 hairline">
         <FadeUp>
           <div className="mb-12 max-w-2xl">
             <span className="kicker">Por qué confiar</span>
@@ -115,16 +126,22 @@ export default async function Home() {
       </section>
 
       {/* ---------- FUNDAMENTADO EN (marquee) ---------- */}
-      <section className="py-14 hairline">
+      <section className="py-24 hairline">
         <div className="wrap text-center mb-7">
           <span className="kicker">Fundamentado en fuentes reputadas</span>
         </div>
         <div className="marquee">
-          <div className="marquee__track font-display text-2xl md:text-3xl text-white/25">
-            {[...FUENTES, ...FUENTES].map((f, i) => (
-              <span key={i} className="flex items-center gap-12">
-                {f} <span className="text-innia-accent/40 text-base">◆</span>
-              </span>
+          <div className="marquee__track">
+            {[...fuentes, ...fuentes].map((f, i) => (
+              <a
+                key={i}
+                href={f.url}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center gap-12 font-display text-2xl md:text-3xl text-white/30 hover:text-white transition-colors"
+              >
+                {f.label} <span className="text-innia-accent/40 text-base">◆</span>
+              </a>
             ))}
           </div>
         </div>
@@ -136,7 +153,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- PASOS (timeline) ---------- */}
-      <section className="wrap py-20 hairline">
+      <section className="wrap py-28 hairline">
         <FadeUp>
           <div className="mb-14 text-center">
             <span className="kicker">En minutos</span>
@@ -155,7 +172,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- APRENDE (lista editorial) ---------- */}
-      <section className="wrap py-20 hairline">
+      <section className="wrap py-28 hairline">
         <FadeUp>
           <div className="flex items-end justify-between mb-10">
             <div>
@@ -185,7 +202,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- CTA ---------- */}
-      <section className="wrap py-28 text-center glow">
+      <section className="wrap py-36 text-center glow">
         <FadeUp>
           <h2 className="display-xl text-[2.4rem] md:text-[3.6rem] max-w-3xl mx-auto">
             Empieza hoy a <span className="text-spectrum">incluir mejor</span>

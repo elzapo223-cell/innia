@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { getFichas, getEstrategias } from "../../lib/content.js";
 import AprendeFiltro from "../../components/AprendeFiltro.jsx";
+import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
 
 export const metadata = { title: "Aprende · INNIA" };
 
@@ -9,26 +10,46 @@ export default async function Aprende() {
   const estrategias = getEstrategias();
 
   return (
-    <div className="wrap py-12">
-      <h1 className="font-display text-4xl">Aprende</h1>
-      <p className="text-white/65 mt-2 max-w-2xl">
-        Información educativa sobre TDAH y TEA en el aula, y estrategias por área. Material
-        educativo con fuentes públicas — no reemplaza el criterio de un profesional.
-      </p>
+    <div className="wrap py-24">
+      <FadeUp>
+        <span className="kicker">Contenido educativo</span>
+        <h1 className="display-xl text-4xl md:text-6xl mt-5 max-w-3xl">Aprende sobre TDAH y TEA</h1>
+        <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
+          Información educativa sobre TDAH y TEA en el aula, y estrategias por área. Material
+          educativo con fuentes públicas — no reemplaza el criterio de un profesional.
+        </p>
+      </FadeUp>
 
-      <h2 className="font-display text-2xl mt-10 mb-3">Fichas</h2>
-      <div className="grid md:grid-cols-2 gap-3">
-        {fichas.map((f) => (
-          <Link key={f.id} href={`/aprende/${f.id}`} className="glass glass-hover rounded-2xl p-5 block">
-            <div className="text-[12px] text-innia-accent">{f.condicion}</div>
-            <div className="font-display text-xl mt-1">{f.titulo}</div>
-            <div className="text-[13px] text-white/55 mt-1">Leer ficha →</div>
-          </Link>
-        ))}
+      {/* Fichas */}
+      <div className="mt-20">
+        <FadeUp>
+          <span className="kicker">Fichas</span>
+        </FadeUp>
+        <Stagger className="mt-6">
+          {fichas.map((f) => (
+            <Item key={f.id}>
+              <Link href={`/aprende/${f.id}`} className="group flex items-baseline gap-5 py-6 hairline">
+                <span className="text-innia-accent text-[12px] uppercase tracking-widest w-16 shrink-0">
+                  {f.condicion}
+                </span>
+                <span className="font-display text-2xl md:text-3xl text-white/85 group-hover:text-white transition flex-1">
+                  {f.titulo}
+                </span>
+                <span className="text-white/40 group-hover:text-innia-accent transition shrink-0" aria-hidden>→</span>
+              </Link>
+            </Item>
+          ))}
+        </Stagger>
       </div>
 
-      <h2 className="font-display text-2xl mt-12 mb-4">Estrategias por área</h2>
-      <AprendeFiltro estrategias={estrategias} />
+      {/* Estrategias con filtro */}
+      <div className="mt-24 pt-14 hairline">
+        <FadeUp>
+          <span className="kicker">Estrategias por área</span>
+          <h2 className="display-xl text-2xl md:text-4xl mt-5 mb-10">Filtra por condición y área</h2>
+        </FadeUp>
+        <AprendeFiltro estrategias={estrategias} />
+      </div>
     </div>
   );
 }

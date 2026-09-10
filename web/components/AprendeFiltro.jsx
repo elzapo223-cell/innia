@@ -17,10 +17,7 @@ export default function AprendeFiltro({ estrategias }) {
   const [cond, setCond] = useState("todas");
   const [area, setArea] = useState("todas");
 
-  const areasDisponibles = useMemo(
-    () => [...new Set(estrategias.map((e) => e.area))],
-    [estrategias]
-  );
+  const areasDisponibles = useMemo(() => [...new Set(estrategias.map((e) => e.area))], [estrategias]);
 
   const filtradas = estrategias.filter((e) => {
     const okC = cond === "todas" || e.condicion === cond || e.condicion === "ambos";
@@ -31,8 +28,10 @@ export default function AprendeFiltro({ estrategias }) {
   const Btn = ({ activo, onClick, children }) => (
     <button
       onClick={onClick}
-      className={`rounded-full px-3.5 py-1.5 text-[12.5px] transition ${
-        activo ? "bg-white/14 border border-white/25" : "glass glass-hover text-white/70"
+      className={`rounded-full px-4 py-1.5 text-[13px] transition border ${
+        activo
+          ? "text-white border-white/25 bg-white/10"
+          : "text-white/55 border-white/10 hover:text-white/85 hover:border-white/20"
       }`}
     >
       {children}
@@ -42,13 +41,13 @@ export default function AprendeFiltro({ estrategias }) {
   return (
     <div>
       <div className="flex flex-wrap gap-2 items-center">
-        <span className="text-[12px] uppercase tracking-widest text-white/40 mr-1">Condición</span>
+        <span className="kicker mr-1">Condición</span>
         <Btn activo={cond === "todas"} onClick={() => setCond("todas")}>Todas</Btn>
         <Btn activo={cond === "TDAH"} onClick={() => setCond("TDAH")}>TDAH</Btn>
         <Btn activo={cond === "TEA"} onClick={() => setCond("TEA")}>TEA</Btn>
       </div>
-      <div className="flex flex-wrap gap-2 items-center mt-3">
-        <span className="text-[12px] uppercase tracking-widest text-white/40 mr-1">Área</span>
+      <div className="flex flex-wrap gap-2 items-center mt-4">
+        <span className="kicker mr-1">Área</span>
         <Btn activo={area === "todas"} onClick={() => setArea("todas")}>Todas</Btn>
         {areasDisponibles.map((a) => (
           <Btn key={a} activo={area === a} onClick={() => setArea(a)}>
@@ -57,19 +56,23 @@ export default function AprendeFiltro({ estrategias }) {
         ))}
       </div>
 
-      <div className="text-[12.5px] text-white/40 mt-4">{filtradas.length} estrategias</div>
+      <div className="text-[12.5px] text-white/40 mt-6">{filtradas.length} estrategias</div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-3 mt-3">
+      <div className="mt-2">
         {filtradas.map((e) => (
-          <div key={e.id} className="glass glass-hover rounded-2xl p-4">
-            <div className="text-[11.5px] text-white/50">
-              {e.condicion} · {AREAS[e.area] || e.area}
+          <div key={e.id} className="py-7 hairline">
+            <div className="flex items-baseline gap-4 flex-wrap">
+              <span className="text-innia-accent text-[11.5px] uppercase tracking-widest">
+                {e.condicion} · {AREAS[e.area] || e.area}
+              </span>
+              <h3 className="font-display text-xl md:text-2xl text-white/90">{e.titulo}</h3>
             </div>
-            <div className="font-medium mt-1">{e.titulo}</div>
-            <ul className="mt-2 text-[13px] text-white/65 list-disc ml-4 space-y-1">
-              {(e.estrategias || []).slice(0, 2).map((s, i) => (
-                <li key={i}>
-                  <strong className="text-white/85">{s.que}:</strong> {s.como}
+            <p className="text-white/55 text-[14px] mt-2 max-w-3xl">{e.contextoEducativo}</p>
+            <ul className="mt-4 grid md:grid-cols-2 gap-x-10 gap-y-2 max-w-4xl">
+              {(e.estrategias || []).map((s, i) => (
+                <li key={i} className="flex gap-3 text-[14px] text-white/70">
+                  <span className="ribbon w-4 mt-2.5 shrink-0" />
+                  <span><strong className="text-white/90">{s.que}:</strong> {s.como}</span>
                 </li>
               ))}
             </ul>

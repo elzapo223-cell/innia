@@ -13,7 +13,7 @@ const LINKS = [
 export default function Nav() {
   const [abierto, setAbierto] = useState(false);
   return (
-    <header className="sticky top-0 z-30 px-3 sm:px-4 py-3">
+    <header className="sticky top-0 z-40 px-3 sm:px-4 py-3">
       <nav className="glass rounded-2xl max-w-6xl mx-auto px-4 py-2.5">
         <div className="flex items-center gap-4">
           <Link href="/" className="text-xl font-bold tracking-tight" onClick={() => setAbierto(false)}>
@@ -28,12 +28,13 @@ export default function Nav() {
           </div>
           <Link
             href="/descargar"
-            className="ml-auto rounded-xl px-4 py-2 text-sm font-medium bg-innia-accent/25 border border-innia-accent/40 hover:bg-innia-accent/35"
+            className="ml-auto rounded-full px-5 py-2 text-sm font-medium text-[#0a0e1a] bg-gradient-to-r from-[#6ea8fe] to-[#a78bfa] hover:brightness-110 transition"
           >
             Descargar
           </Link>
           <button
-            aria-label="Menú"
+            aria-label="Abrir menú"
+            aria-expanded={abierto}
             onClick={() => setAbierto((v) => !v)}
             className="md:hidden rounded-lg px-3 py-2 glass glass-hover text-lg leading-none"
           >
@@ -41,7 +42,6 @@ export default function Nav() {
           </button>
         </div>
 
-        {/* Menú móvil */}
         {abierto && (
           <div className="md:hidden mt-2 pt-2 border-t border-white/10 flex flex-col gap-1 text-sm">
             {LINKS.map((l) => (

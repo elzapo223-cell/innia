@@ -1,5 +1,6 @@
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
 import { MODE_ICONS, IconLock } from "../../components/Icons.jsx";
+import { DeviceLocal } from "../../components/Art.jsx";
 
 export const metadata = { title: "Cómo funciona · INNIA" };
 
@@ -50,14 +51,17 @@ export default function ComoFunciona() {
       </Stagger>
 
       <FadeUp>
-        <div className="mt-24 pt-16 hairline max-w-3xl">
-          <IconLock width={28} height={28} className="text-innia-accent" />
-          <h2 className="display-xl text-2xl md:text-4xl mt-5">¿Por qué funciona en tu computador?</h2>
-          <p className="text-white/70 mt-4 leading-relaxed">
-            INNIA usa un motor de IA local (Ollama) que se instala en tu equipo. Al abrir la app por
-            primera vez, te guía para instalarlo y descargar el modelo adecuado a tu computador. Desde
-            ahí, todo ocurre localmente: no se envía nada a internet y funciona sin conexión.
-          </p>
+        <div className="mt-24 grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <IconLock width={28} height={28} className="text-innia-accent" />
+            <h2 className="display-xl text-2xl md:text-4xl mt-5">¿Por qué funciona en tu computador?</h2>
+            <p className="text-white/70 mt-4 leading-relaxed">
+              INNIA usa un motor de IA local (Ollama) que se instala en tu equipo. Al abrir la app por
+              primera vez, te guía para instalarlo y descargar el modelo adecuado a tu computador. Desde
+              ahí, todo ocurre localmente: no se envía nada a internet y funciona sin conexión.
+            </p>
+          </div>
+          <DeviceLocal className="w-full h-auto" />
         </div>
       </FadeUp>
     </div>

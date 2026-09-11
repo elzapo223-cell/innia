@@ -2,6 +2,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getFicha, getFichas } from "../../../lib/content.js";
 import { renderMarkdown } from "../../../lib/markdown.js";
+import { MOTIF_BY_CONDICION } from "../../../components/Art.jsx";
 
 export async function generateStaticParams() {
   const fichas = await getFichas();
@@ -16,11 +17,15 @@ export async function generateMetadata({ params }) {
 export default async function FichaPage({ params }) {
   const ficha = await getFicha(params.slug);
   if (!ficha) notFound();
+  const Motif = MOTIF_BY_CONDICION[ficha.condicion] || MOTIF_BY_CONDICION.ambos;
   return (
     <article className="wrap-narrow py-24">
       <Link href="/aprende" className="link-arrow text-[13px] text-white/50">
         <span aria-hidden>←</span> Aprende
       </Link>
+      <div className="mt-6 rounded-2xl overflow-hidden glass">
+        <Motif className="w-full h-52 md:h-60 block" />
+      </div>
       <div className="mt-8 pb-8 hairline" style={{ borderTop: "none", borderBottom: "1px solid rgba(255,255,255,0.1)" }}>
         <span className="text-[12px] uppercase tracking-widest text-innia-accent">{ficha.condicion}</span>
         <h1 className="display-xl text-3xl md:text-5xl mt-3">{ficha.titulo}</h1>

@@ -2,6 +2,7 @@ import Link from "next/link";
 import { getFichas, getEstrategias } from "../../lib/content.js";
 import AprendeFiltro from "../../components/AprendeFiltro.jsx";
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
+import { MOTIF_BY_CONDICION } from "../../components/Art.jsx";
 
 export const metadata = { title: "Aprende · INNIA" };
 
@@ -26,19 +27,25 @@ export default async function Aprende() {
           <span className="kicker">Fichas</span>
         </FadeUp>
         <Stagger className="mt-6">
-          {fichas.map((f) => (
-            <Item key={f.id}>
-              <Link href={`/aprende/${f.id}`} className="group flex items-baseline gap-5 py-6 hairline">
-                <span className="text-innia-accent text-[12px] uppercase tracking-widest w-16 shrink-0">
-                  {f.condicion}
-                </span>
-                <span className="font-display text-2xl md:text-3xl text-white/85 group-hover:text-white transition flex-1">
-                  {f.titulo}
-                </span>
-                <span className="text-white/40 group-hover:text-innia-accent transition shrink-0" aria-hidden>→</span>
-              </Link>
-            </Item>
-          ))}
+          {fichas.map((f) => {
+            const Motif = MOTIF_BY_CONDICION[f.condicion] || MOTIF_BY_CONDICION.ambos;
+            return (
+              <Item key={f.id}>
+                <Link href={`/aprende/${f.id}`} className="group flex items-center gap-5 py-5 hairline">
+                  <span className="w-24 md:w-28 shrink-0 rounded-xl overflow-hidden glass">
+                    <Motif className="w-full h-auto block" />
+                  </span>
+                  <span className="text-innia-accent text-[12px] uppercase tracking-widest w-16 shrink-0 hidden sm:block">
+                    {f.condicion}
+                  </span>
+                  <span className="font-display text-2xl md:text-3xl text-white/85 group-hover:text-white transition flex-1">
+                    {f.titulo}
+                  </span>
+                  <span className="text-white/40 group-hover:text-innia-accent transition shrink-0" aria-hidden>→</span>
+                </Link>
+              </Item>
+            );
+          })}
         </Stagger>
       </div>
 

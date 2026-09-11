@@ -3,6 +3,7 @@ import Probador from "../components/Probador.jsx";
 import ModosTabs from "../components/ModosTabs.jsx";
 import { FadeUp, Stagger, Item, Magnetic } from "../components/Anim.jsx";
 import { IconLock, IconShield, IconCompass, IconBook } from "../components/Icons.jsx";
+import { MOTIF_BY_CONDICION, HeroScene } from "../components/Art.jsx";
 import { getFichas, getFuentes } from "../lib/content.js";
 
 const PILARES = [
@@ -78,7 +79,22 @@ export default async function Home() {
         </div>
 
         <FadeUp delay={0.2}>
-          <Probador />
+          <HeroScene className="w-full h-auto" />
+        </FadeUp>
+      </section>
+
+      {/* ---------- PRUÉBALO ---------- */}
+      <section className="wrap pb-8">
+        <FadeUp>
+          <div className="text-center mb-8">
+            <span className="kicker">Pruébalo aquí</span>
+            <h2 className="display-xl text-3xl md:text-5xl mt-3">Escribe una situación, mira la respuesta</h2>
+          </div>
+        </FadeUp>
+        <FadeUp delay={0.1}>
+          <div className="max-w-2xl mx-auto">
+            <Probador />
+          </div>
         </FadeUp>
       </section>
 
@@ -187,19 +203,25 @@ export default async function Home() {
           </div>
         </FadeUp>
         <Stagger>
-          {fichas.map((f) => (
-            <Item key={f.id}>
-              <Link href={`/aprende/${f.id}`} className="group flex items-baseline gap-5 py-6 hairline">
-                <span className="text-innia-accent text-[12px] uppercase tracking-widest w-16 shrink-0">
-                  {f.condicion}
-                </span>
-                <span className="font-display text-2xl md:text-3xl text-white/85 group-hover:text-white transition flex-1">
-                  {f.titulo}
-                </span>
-                <span className="link-arrow text-white/40 group-hover:text-innia-accent" aria-hidden>→</span>
-              </Link>
-            </Item>
-          ))}
+          {fichas.map((f) => {
+            const Motif = MOTIF_BY_CONDICION[f.condicion] || MOTIF_BY_CONDICION.ambos;
+            return (
+              <Item key={f.id}>
+                <Link href={`/aprende/${f.id}`} className="group flex items-center gap-5 py-5 hairline">
+                  <span className="w-24 md:w-28 shrink-0 rounded-xl overflow-hidden glass">
+                    <Motif className="w-full h-auto block" />
+                  </span>
+                  <span className="text-innia-accent text-[12px] uppercase tracking-widest w-16 shrink-0 hidden sm:block">
+                    {f.condicion}
+                  </span>
+                  <span className="font-display text-2xl md:text-3xl text-white/85 group-hover:text-white transition flex-1">
+                    {f.titulo}
+                  </span>
+                  <span className="link-arrow text-white/40 group-hover:text-innia-accent" aria-hidden>→</span>
+                </Link>
+              </Item>
+            );
+          })}
         </Stagger>
       </section>
 

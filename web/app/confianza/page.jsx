@@ -1,6 +1,7 @@
 import { getFuentes } from "../../lib/content.js";
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
 import { IconLock, IconShield, IconCompass, IconBook } from "../../components/Icons.jsx";
+import { ShieldCare } from "../../components/Art.jsx";
 
 export const metadata = { title: "Confianza y privacidad · INNIA" };
 
@@ -16,13 +17,18 @@ export default function Confianza() {
   return (
     <div className="wrap py-24">
       <FadeUp>
-        <span className="kicker">Confianza y privacidad</span>
-        <h1 className="display-xl text-4xl md:text-6xl mt-5 max-w-3xl">
-          Reglas que protegen a estudiantes y docentes
-        </h1>
-        <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
-          No son opcionales: gobiernan cada respuesta de INNIA.
-        </p>
+        <div className="grid md:grid-cols-2 gap-10 items-center">
+          <div>
+            <span className="kicker">Confianza y privacidad</span>
+            <h1 className="display-xl text-4xl md:text-6xl mt-5">
+              Reglas que protegen a estudiantes y docentes
+            </h1>
+            <p className="mt-6 text-white/65 text-lg leading-relaxed">
+              No son opcionales: gobiernan cada respuesta de INNIA.
+            </p>
+          </div>
+          <ShieldCare className="w-full h-auto max-w-sm mx-auto" />
+        </div>
       </FadeUp>
 
       <Stagger className="mt-20">

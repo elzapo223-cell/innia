@@ -37,7 +37,7 @@ export default async function Home() {
   return (
     <div>
       {/* ---------- HERO ---------- */}
-      <section className="wrap pt-14 pb-24 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
+      <section className="wrap pt-16 pb-32 grid lg:grid-cols-[1.05fr_0.95fr] gap-14 items-center">
         <div>
           <FadeUp>
             <span className="kicker">Educación inclusiva · TDAH y TEA</span>
@@ -83,7 +83,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- TRANSFORMACIÓN (a pantalla, sin caja) ---------- */}
-      <section className="wrap py-36 text-center">
+      <section className="wrap py-48 text-center">
         <FadeUp>
           <p className="text-white/40 text-lg md:text-xl">Muchos docentes nunca recibieron formación específica.</p>
         </FadeUp>
@@ -96,7 +96,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- MODOS ---------- */}
-      <section className="wrap py-28">
+      <section className="wrap py-40">
         <FadeUp>
           <div className="mb-12">
             <span className="kicker">Un asistente, cinco modos</span>
@@ -107,7 +107,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- PILARES (fila con divisores, sin cajas) ---------- */}
-      <section className="wrap py-28">
+      <section className="wrap py-40">
         <FadeUp>
           <div className="mb-12 max-w-2xl">
             <span className="kicker">Por qué confiar</span>
@@ -126,7 +126,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- FUNDAMENTADO EN (marquee) ---------- */}
-      <section className="py-24">
+      <section className="py-36">
         <div className="wrap text-center mb-7">
           <span className="kicker" style={{ color: "rgba(255,255,255,0.82)" }}>
             Fundamentado en fuentes reputadas
@@ -155,7 +155,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- PASOS (timeline) ---------- */}
-      <section className="wrap py-28">
+      <section className="wrap py-40">
         <FadeUp>
           <div className="mb-14 text-center">
             <span className="kicker">En minutos</span>
@@ -174,7 +174,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- APRENDE (lista editorial) ---------- */}
-      <section className="wrap py-28">
+      <section className="wrap py-40">
         <FadeUp>
           <div className="flex items-end justify-between mb-10">
             <div>
@@ -204,7 +204,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- CTA ---------- */}
-      <section className="wrap py-36 text-center glow">
+      <section className="wrap py-48 text-center glow">
         <FadeUp>
           <h2 className="display-xl text-[2.4rem] md:text-[3.6rem] max-w-3xl mx-auto">
             Empieza hoy a <span className="text-spectrum">incluir mejor</span>

@@ -56,8 +56,8 @@ body {
 }
 
 /* --- Contenedor --- */
-.wrap { width: 100%; max-width: 74rem; margin: 0 auto; padding: 0 1.5rem; }
-.wrap-narrow { width: 100%; max-width: 46rem; margin: 0 auto; padding: 0 1.5rem; }
+.wrap { width: 100%; max-width: 74rem; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
+.wrap-narrow { width: 100%; max-width: 46rem; margin: 0 auto; padding-left: 1.5rem; padding-right: 1.5rem; }
 
 /* --- Editorial: líneas finas, escala, enlaces --- */
 .hairline { border-top: 1px solid rgba(255, 255, 255, 0.1); }

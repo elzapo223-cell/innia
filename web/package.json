@@ -12,9 +12,11 @@
   "dependencies": {
     "@sanity/client": "^6.21.3",
     "framer-motion": "^13.2.0",
+    "lenis": "^1.3.26",
     "next": "14.2.35",
     "react": "^18.3.1",
-    "react-dom": "^18.3.1"
+    "react-dom": "^18.3.1",
+    "whatamesh": "^0.2.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.20",

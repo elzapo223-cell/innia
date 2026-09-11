@@ -88,18 +88,18 @@ export function MotifTDAH({ className = "" }) {
       <defs><Grad id="t_spec" /><radialGradient id="t_glow" cx="0.72" cy="0.4" r="0.5"><stop offset="0" stopColor="#6ea8fe" stopOpacity="0.3"/><stop offset="1" stopColor="#6ea8fe" stopOpacity="0"/></radialGradient></defs>
       <rect width="400" height="300" fill="url(#t_spec)" opacity="0.05" />
       <circle cx="290" cy="120" r="120" fill="url(#t_glow)" />
-      {/* estelas de movimiento */}
-      <path d="M30 230 C 120 90, 180 250, 290 120" stroke="url(#t_spec)" strokeWidth="2.5" strokeDasharray="4 10" opacity="0.55" />
-      <path d="M50 150 C 150 200, 200 70, 290 120" stroke="url(#t_spec)" strokeWidth="2" strokeDasharray="3 9" opacity="0.4" />
-      <path d="M70 260 C 160 230, 210 180, 288 130" stroke="url(#t_spec)" strokeWidth="1.6" strokeDasharray="2 8" opacity="0.3" />
-      {/* partículas dispersas */}
+      {/* estelas de movimiento — corriente que fluye hacia el foco */}
+      <path className="a-flow" d="M30 230 C 120 90, 180 250, 290 120" stroke="url(#t_spec)" strokeWidth="2.5" strokeDasharray="4 10" opacity="0.55" />
+      <path className="a-flow" style={{ animationDelay: "0.6s" }} d="M50 150 C 150 200, 200 70, 290 120" stroke="url(#t_spec)" strokeWidth="2" strokeDasharray="3 9" opacity="0.4" />
+      <path className="a-flow" style={{ animationDelay: "1.1s" }} d="M70 260 C 160 230, 210 180, 288 130" stroke="url(#t_spec)" strokeWidth="1.6" strokeDasharray="2 8" opacity="0.3" />
+      {/* nodos (estáticos, parte de la composición) */}
       {[[70,110,10],[120,200,6],[160,90,5],[200,175,8],[95,255,4],[240,70,4],[180,240,5],[130,140,3],[50,190,4],[215,225,6]].map(([x,y,r],i)=>(
-        <circle key={i} className={i % 2 ? "a-float" : "a-float2"} style={{ animationDelay: `${i * 0.35}s` }} cx={x} cy={y} r={r} fill="url(#t_spec)" opacity={0.3 + (i%3)*0.18} />
+        <circle key={i} cx={x} cy={y} r={r} fill="url(#t_spec)" opacity={0.3 + (i%3)*0.18} />
       ))}
-      {/* foco nítido */}
+      {/* foco nítido (respira suave) */}
       <circle className="a-pulse" cx="290" cy="120" r="34" stroke="url(#t_spec)" strokeWidth="3" />
       <circle cx="290" cy="120" r="20" stroke="url(#t_spec)" strokeWidth="1.6" opacity="0.6" />
-      <circle className="a-twinkle" cx="290" cy="120" r="9" fill="url(#t_spec)" />
+      <circle cx="290" cy="120" r="9" fill="url(#t_spec)" />
     </svg>
   );
 }
@@ -124,7 +124,7 @@ export function MotifTEA({ className = "" }) {
           const x = 60 + c * 35;
           const y = 55 + r * 30;
           const on = (r + c) % 3 === 0;
-          return <circle key={`${r}-${c}`} className={on ? "a-twinkle" : undefined} style={on ? { animationDelay: `${(r + c) * 0.25}s` } : undefined} cx={x} cy={y} r={on ? 6 : 3} fill="url(#e_spec)" opacity={on ? 0.9 : 0.28} />;
+          return <circle key={`${r}-${c}`} cx={x} cy={y} r={on ? 6 : 3} fill="url(#e_spec)" opacity={on ? 0.9 : 0.28} />;
         })
       )}
       {/* camino estructurado resaltado */}
@@ -185,6 +185,72 @@ export function SpectrumWave({ className = "" }) {
       <defs><Grad id="w_spec" /></defs>
       <path d="M0 70 C 120 20, 200 110, 320 60 S 520 10, 600 60" stroke="url(#w_spec)" strokeWidth="2" opacity="0.6" />
       <path d="M0 90 C 130 50, 220 120, 340 80 S 520 40, 600 84" stroke="url(#w_spec)" strokeWidth="2" opacity="0.35" />
+    </svg>
+  );
+}
+
+/* Descargar — ventana de la app con flecha de descarga y aura del espectro. */
+export function AppWindow({ className = "" }) {
+  return (
+    <svg viewBox="0 0 400 320" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: descargar la app">
+      <defs><Grad id="aw_spec" /><radialGradient id="aw_glow" cx="0.5" cy="0.4" r="0.6"><stop offset="0" stopColor="#6ea8fe" stopOpacity="0.28"/><stop offset="1" stopColor="#6ea8fe" stopOpacity="0"/></radialGradient></defs>
+      <ellipse cx="200" cy="150" rx="170" ry="120" fill="url(#aw_glow)" />
+      <rect x="70" y="70" width="260" height="176" rx="16" fill="#ffffff" fillOpacity="0.03" stroke="url(#aw_spec)" strokeWidth="2.2" />
+      <path d="M70 100 H 330" stroke="url(#aw_spec)" strokeWidth="1.6" opacity="0.5" />
+      <circle className="a-twinkle" cx="90" cy="85" r="4" fill="url(#aw_spec)" />
+      <circle className="a-twinkle" style={{ animationDelay: "0.6s" }} cx="106" cy="85" r="4" fill="#ffffff" opacity="0.4" />
+      <circle className="a-twinkle" style={{ animationDelay: "1.2s" }} cx="122" cy="85" r="4" fill="#ffffff" opacity="0.3" />
+      {/* flecha de descarga */}
+      <g className="a-float">
+        <circle cx="200" cy="168" r="46" stroke="url(#aw_spec)" strokeWidth="2.4" fill="#ffffff" fillOpacity="0.03" />
+        <path d="M200 146 v34 M186 168 l14 14 14 -14" stroke="url(#aw_spec)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+      <rect x="150" y="224" width="100" height="4" rx="2" fill="url(#aw_spec)" opacity="0.4" />
+    </svg>
+  );
+}
+
+/* FAQ — burbujas de pregunta y respuesta con signo del espectro. */
+export function QuestionScene({ className = "" }) {
+  return (
+    <svg viewBox="0 0 400 300" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: preguntas frecuentes">
+      <defs><Grad id="q_spec" /><radialGradient id="q_glow" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stopColor="#a78bfa" stopOpacity="0.26"/><stop offset="1" stopColor="#a78bfa" stopOpacity="0"/></radialGradient></defs>
+      <circle cx="200" cy="150" r="140" fill="url(#q_glow)" />
+      <g className="a-float">
+        <rect x="70" y="80" width="150" height="96" rx="18" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
+        <path d="M100 176 l0 22 22 -22 z" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
+        <path d="M120 118 a 22 22 0 1 1 25 22 v 8" stroke="url(#q_spec)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
+        <circle cx="145" cy="158" r="3.5" fill="url(#q_spec)" />
+      </g>
+      <g className="a-float2">
+        <rect x="200" y="150" width="150" height="86" rx="18" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
+        <path d="M320 236 l0 20 -22 -20 z" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
+        <rect x="220" y="176" width="90" height="8" rx="4" fill="url(#q_spec)" opacity="0.6" />
+        <rect x="220" y="196" width="110" height="6" rx="3" fill="#ffffff" opacity="0.2" />
+        <rect x="220" y="210" width="80" height="6" rx="3" fill="#ffffff" opacity="0.16" />
+      </g>
+    </svg>
+  );
+}
+
+/* Blog — páginas apiladas con destello (contenido por venir). */
+export function BlogScene({ className = "" }) {
+  return (
+    <svg viewBox="0 0 400 260" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: blog y novedades">
+      <defs><Grad id="b_spec" /><radialGradient id="b_glow" cx="0.5" cy="0.5" r="0.6"><stop offset="0" stopColor="#f0abfc" stopOpacity="0.22"/><stop offset="1" stopColor="#f0abfc" stopOpacity="0"/></radialGradient></defs>
+      <circle cx="200" cy="130" r="120" fill="url(#b_glow)" />
+      <g transform="rotate(-6 200 130)">
+        <rect x="120" y="60" width="160" height="150" rx="12" fill="#ffffff" fillOpacity="0.03" stroke="url(#b_spec)" strokeWidth="2" opacity="0.5" />
+      </g>
+      <g className="a-float" transform="rotate(4 200 130)">
+        <rect x="130" y="70" width="160" height="150" rx="12" fill="#ffffff" fillOpacity="0.04" stroke="url(#b_spec)" strokeWidth="2.2" />
+        <rect x="150" y="96" width="70" height="10" rx="5" fill="url(#b_spec)" opacity="0.7" />
+        <rect x="150" y="120" width="120" height="7" rx="3.5" fill="#ffffff" opacity="0.2" />
+        <rect x="150" y="136" width="110" height="7" rx="3.5" fill="#ffffff" opacity="0.16" />
+        <rect x="150" y="152" width="120" height="7" rx="3.5" fill="#ffffff" opacity="0.16" />
+        <rect x="150" y="180" width="60" height="12" rx="6" fill="url(#b_spec)" opacity="0.4" />
+      </g>
+      <path className="a-twinkle" d="M312 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" fill="url(#b_spec)" />
     </svg>
   );
 }

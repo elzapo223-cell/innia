@@ -2,6 +2,8 @@ import "./globals.css";
 import { Fraunces, Inter } from "next/font/google";
 import Nav from "../components/Nav.jsx";
 import Footer from "../components/Footer.jsx";
+import MeshGradient from "../components/MeshGradient.jsx";
+import SmoothScroll from "../components/SmoothScroll.jsx";
 
 const display = Fraunces({
   subsets: ["latin"],
@@ -21,12 +23,9 @@ export default function RootLayout({ children }) {
   return (
     <html lang="es" className={`${display.variable} ${body.variable}`}>
       <body>
-        <div className="aurora" aria-hidden="true">
-          <span className="aurora-a" />
-          <span className="aurora-b" />
-          <span className="aurora-c" />
-        </div>
+        <MeshGradient />
         <div className="grain" aria-hidden="true" />
+        <SmoothScroll />
         <Nav />
         <main>{children}</main>
         <Footer />

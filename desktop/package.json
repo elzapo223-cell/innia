@@ -34,6 +34,7 @@
   "build": {
     "appId": "org.innia.desktop",
     "productName": "INNIA",
+    "directories": { "output": "release" },
     "files": ["dist/**", "electron/**", "resources/**", "package.json"],
     "extraResources": [{ "from": "resources", "to": "resources" }],
     "win": {

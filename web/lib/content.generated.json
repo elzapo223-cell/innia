@@ -1,0 +1,1428 @@
+{
+  "generado": "2026-09-11T22:46:38.029Z",
+  "fuentes": [
+    {
+      "id": "cdc-adhd-classroom",
+      "titulo": "ADHD in the Classroom: Helping Children Succeed in School",
+      "organizacion": "Centers for Disease Control and Prevention (CDC)",
+      "tipo": "guia-oficial",
+      "url": "https://www.cdc.gov/adhd/treatment/classroom.html",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "cast-udl-guidelines",
+      "titulo": "Universal Design for Learning Guidelines",
+      "organizacion": "CAST",
+      "tipo": "guia-oficial",
+      "url": "https://udlguidelines.cast.org/",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09",
+      "nota": "Marco DUA: Compromiso (por qué), Representación (qué) y Acción/Expresión (cómo) del aprendizaje."
+    },
+    {
+      "id": "understood-udl",
+      "titulo": "Universal Design for Learning (UDL): A teacher's guide",
+      "organizacion": "Understood.org",
+      "tipo": "organizacion",
+      "url": "https://www.understood.org/en/articles/understanding-universal-design-for-learning",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "autism-speaks-classroom",
+      "titulo": "Autism in the classroom: Strategies for success",
+      "organizacion": "Autism Speaks",
+      "tipo": "organizacion",
+      "url": "https://www.autismspeaks.org/tool-kit-excerpt/autism-classroom-strategies",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "nea-teaching-autism",
+      "titulo": "Teaching Students with Autism: A Guide for Educators",
+      "organizacion": "National Education Association (NEA)",
+      "tipo": "organizacion",
+      "url": "https://www.nea.org/resource-library/teaching-students-autism-guide-educators",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "national-autistic-society-education",
+      "titulo": "Education and autism — resources for schools",
+      "organizacion": "National Autistic Society (UK)",
+      "tipo": "organizacion",
+      "url": "https://www.autism.org.uk/advice-and-guidance/topics/education",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "chadd-educators",
+      "titulo": "For Educators — ADHD in the classroom",
+      "organizacion": "CHADD (Children and Adults with ADHD)",
+      "tipo": "organizacion",
+      "url": "https://chadd.org/for-educators/overview/",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "cadah-tdah-aula",
+      "titulo": "El manejo del TDAH en el aula: estrategias para el éxito",
+      "organizacion": "Fundación CADAH",
+      "tipo": "organizacion",
+      "url": "https://www.fundacioncadah.org/web/articulo/el-manejo-del-tdah-en-el-aula-estrategias-para-el-exito.html",
+      "idiomaOriginal": "es",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "neuronup-tdah-docentes",
+      "titulo": "Guía para docentes: el TDAH en el aula",
+      "organizacion": "NeuronUP",
+      "tipo": "organizacion",
+      "url": "https://neuronup.com/estimulacion-y-rehabilitacion-cognitiva/trastornos-del-neurodesarrollo/tdah-trastorno-de-atencion-con-hiperactividad/guia-para-docentes-el-tdah-en-el-aula/",
+      "idiomaOriginal": "es",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "autismo-espana",
+      "titulo": "Recursos educativos y educación inclusiva para el alumnado con autismo",
+      "organizacion": "Confederación Autismo España",
+      "tipo": "organizacion",
+      "url": "https://autismo.org.es/",
+      "idiomaOriginal": "es",
+      "consultado": "2026-09-09"
+    },
+    {
+      "id": "dua-colombia-decreto-1421",
+      "titulo": "Diseño Universal para el Aprendizaje (DUA) en el marco de la educación inclusiva (Decreto 1421 de 2017)",
+      "organizacion": "Ministerio de Educación Nacional de Colombia / Educación y Educadores",
+      "tipo": "articulo-academico",
+      "url": "http://www.scielo.org.co/scielo.php?script=sci_arttext&pid=S0123-12942025000102811",
+      "idiomaOriginal": "es",
+      "consultado": "2026-09-09",
+      "nota": "El Decreto 1421 de 2017 regula la atención educativa a la población con discapacidad y promueve el DUA en Colombia."
+    },
+    {
+      "id": "dsm-5-tr-apa",
+      "titulo": "Manual Diagnóstico y Estadístico de los Trastornos Mentales (DSM-5-TR)",
+      "organizacion": "American Psychiatric Association (APA)",
+      "tipo": "libro",
+      "url": "https://www.psychiatry.org/psychiatrists/practice/dsm",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09",
+      "nota": "Referencia clínica de autoridad para las características del TDAH y el TEA. INNIA la usa para fundamentar descripciones en contexto EDUCATIVO; no la usa para diagnosticar. Contenido con derechos de autor: se cita y se parafrasea, no se reproduce."
+    },
+    {
+      "id": "who-icd-11",
+      "titulo": "Clasificación Internacional de Enfermedades, 11.ª revisión (CIE-11 / ICD-11)",
+      "organizacion": "Organización Mundial de la Salud (OMS)",
+      "tipo": "guia-oficial",
+      "url": "https://icd.who.int/",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09",
+      "nota": "Clasificación internacional de referencia (uso frecuente en Colombia/Latinoamérica). Fundamenta características; no se usa para diagnosticar."
+    },
+    {
+      "id": "nice-ng87-adhd",
+      "titulo": "Attention deficit hyperactivity disorder: diagnosis and management (NG87)",
+      "organizacion": "National Institute for Health and Care Excellence (NICE)",
+      "tipo": "guia-oficial",
+      "url": "https://www.nice.org.uk/guidance/ng87",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09",
+      "nota": "Guía clínica basada en evidencia sobre TDAH; sustenta recomendaciones de apoyo en el entorno educativo."
+    },
+    {
+      "id": "nice-cg170-autism",
+      "titulo": "Autism spectrum disorder in under 19s: support and management (CG170)",
+      "organizacion": "National Institute for Health and Care Excellence (NICE)",
+      "tipo": "guia-oficial",
+      "url": "https://www.nice.org.uk/guidance/cg170",
+      "idiomaOriginal": "en",
+      "consultado": "2026-09-09",
+      "nota": "Guía clínica basada en evidencia sobre TEA en menores; sustenta recomendaciones de apoyo educativo."
+    }
+  ],
+  "entradas": [
+    {
+      "id": "tdah-atencion-entorno-ubicacion",
+      "condicion": "TDAH",
+      "area": "atencion",
+      "titulo": "Reducir distractores y ubicar bien al estudiante",
+      "contextoEducativo": "Un estudiante con TDAH capta con facilidad cualquier estímulo del entorno: ruidos, movimiento, ventanas, objetos sobre la mesa. No es falta de interés; su filtro atencional deja pasar más información y le cuesta sostener el foco en una sola cosa.",
+      "dificultadesTipicas": [
+        "Se distrae con lo que pasa alrededor (ventana, puerta, compañeros)",
+        "Pierde el hilo de la explicación a los pocos minutos",
+        "Deja tareas a medias al aparecer un estímulo nuevo"
+      ],
+      "estrategias": [
+        {
+          "que": "Ubicación estratégica",
+          "como": "Sentarlo cerca del docente y lejos de ventanas, puertas y zonas de paso; rodearlo de compañeros tranquilos que sirvan de modelo.",
+          "ejemplo": "Primera o segunda fila, en el centro, con la pizarra a la vista."
+        },
+        {
+          "que": "Mesa despejada",
+          "como": "Mantener sobre el pupitre solo el material de la actividad en curso; guardar lo demás.",
+          "ejemplo": "Solo el cuaderno y un lápiz mientras escribe; los colores se sacan cuando toca dibujar."
+        },
+        {
+          "que": "Bloques cortos con pausas activas",
+          "como": "Dividir el trabajo en tramos de 10-15 minutos con micro-pausas de movimiento entre ellos.",
+          "ejemplo": "Repartir cuadernos o borrar la pizarra como pausa con propósito."
+        }
+      ],
+      "queEvitar": [
+        "Sentarlo al fondo o junto a la ventana",
+        "Llamar la atención en público por distraerse (aumenta la desconexión)",
+        "Exigir mantener la atención 40 minutos seguidos sin pausas"
+      ],
+      "comoAdaptar": [
+        "Marcar visualmente dónde empieza y termina cada bloque de trabajo",
+        "Permitir un objeto discreto para las manos (fidget) si ayuda a concentrarse"
+      ],
+      "comoComunicar": [
+        "Acordar en privado una señal no verbal para reorientar la atención (tocar el pupitre, un gesto)",
+        "Reconocer los momentos en que sí sostuvo la atención, en vez de señalar solo cuando se distrae"
+      ],
+      "situacionesRapidas": [
+        "Se distrae constantemente durante la actividad",
+        "Mira por la ventana y pierde el hilo",
+        "Empieza la tarea pero la deja a medias al distraerse"
+      ],
+      "fuentes": [
+        "cdc-adhd-classroom",
+        "cadah-tdah-aula",
+        "chadd-educators"
+      ]
+    },
+    {
+      "id": "tdah-atencion-apoyos-visuales-tiempo",
+      "condicion": "TDAH",
+      "area": "atencion",
+      "titulo": "Apoyos visuales y manejo del tiempo",
+      "contextoEducativo": "A muchos estudiantes con TDAH el tiempo se les vuelve abstracto: no perciben cuánto llevan ni cuánto falta, así que se dispersan o se apuran. Los apoyos visuales externos hacen el tiempo y la secuencia concretos y liberan atención para la tarea.",
+      "dificultadesTipicas": [
+        "No calcula cuánto tiempo le queda para una actividad",
+        "Olvida los pasos intermedios de una tarea larga",
+        "Se satura cuando ve mucha información en la hoja"
+      ],
+      "estrategias": [
+        {
+          "que": "Temporizador a la vista",
+          "como": "Usar un reloj o temporizador visual que muestre el tiempo restante de forma gráfica.",
+          "ejemplo": "Un temporizador de colores en la mesa: 'cuando el rojo desaparezca, terminamos'."
+        },
+        {
+          "que": "Tarjetas de pasos",
+          "como": "Presentar la secuencia de la tarea con tarjetas o íconos que el estudiante va tachando.",
+          "ejemplo": "1) Escribo el título · 2) Resuelvo 3 ejercicios · 3) Reviso · 4) Guardo."
+        },
+        {
+          "que": "Menos por página",
+          "como": "Reducir la cantidad de ítems visibles a la vez; tapar o entregar por partes.",
+          "ejemplo": "Doblar la hoja para que vea solo 4 ejercicios de los 12."
+        }
+      ],
+      "queEvitar": [
+        "Hojas muy cargadas de texto o ejercicios",
+        "Instrucciones solo orales sobre cuánto tiempo hay",
+        "Cambiar el tiempo acordado a mitad de la actividad sin avisar"
+      ],
+      "comoAdaptar": [
+        "Ofrecer una lista de verificación visible que el estudiante marque",
+        "Resaltar con color la palabra clave de cada instrucción"
+      ],
+      "comoComunicar": [
+        "Avisar las transiciones con anticipación: 'faltan 5 minutos', 'faltan 2 minutos'",
+        "Confirmar que entendió el objetivo antes de empezar el bloque"
+      ],
+      "situacionesRapidas": [
+        "No termina la actividad a tiempo",
+        "Se pierde en los pasos de una tarea larga",
+        "Se agobia al ver la hoja llena de ejercicios"
+      ],
+      "fuentes": [
+        "cdc-adhd-classroom",
+        "cast-udl-guidelines",
+        "neuronup-tdah-docentes"
+      ]
+    },
+    {
+      "id": "tdah-motivacion-iniciar-tarea",
+      "condicion": "TDAH",
+      "area": "motivacion-tareas",
+      "titulo": "Cuando no quiere empezar la actividad",
+      "contextoEducativo": "La negativa a iniciar una tarea rara vez es desafío: suele ser dificultad de la función ejecutiva para 'arrancar', o que la tarea se percibe demasiado grande o aburrida. El estudiante con TDAH responde mejor a metas cortas, novedad y recompensa cercana.",
+      "dificultadesTipicas": [
+        "Se bloquea ante una tarea larga o poco atractiva",
+        "Dice 'no puedo' o 'no quiero' antes de intentarlo",
+        "Necesita mucho más impulso para empezar que para continuar"
+      ],
+      "estrategias": [
+        {
+          "que": "Empezar minúsculo",
+          "como": "Pedir solo el primer paso o los primeros dos minutos, no la tarea completa.",
+          "ejemplo": "'Solo escribe el título y el primer renglón; después vemos.'"
+        },
+        {
+          "que": "Dar a elegir",
+          "como": "Ofrecer opciones acotadas para que sienta control sobre la actividad.",
+          "ejemplo": "'¿Empiezas por los problemas fáciles o por el dibujo?'"
+        },
+        {
+          "que": "Recompensa cercana",
+          "como": "Vincular el esfuerzo a algo positivo e inmediato, no lejano.",
+          "ejemplo": "'Cuando termines estos 3, eliges la siguiente actividad.'"
+        }
+      ],
+      "queEvitar": [
+        "Presentar toda la carga de trabajo de golpe",
+        "Interpretar la negativa como desobediencia y castigar de entrada",
+        "Prometer recompensas muy lejanas ('al final del mes')"
+      ],
+      "comoAdaptar": [
+        "Convertir parte de la tarea en juego, reto o formato distinto",
+        "Permitir formas alternativas de responder (oral, dibujo, audio)"
+      ],
+      "comoComunicar": [
+        "Validar antes de exigir: 'sé que esta se ve larga, hagámosla por partes'",
+        "Enunciar la meta en positivo y concreta, no como reproche"
+      ],
+      "situacionesRapidas": [
+        "El estudiante no quiere realizar la actividad",
+        "No quiere empezar la tarea",
+        "Dice que no puede antes de intentarlo"
+      ],
+      "fuentes": [
+        "cadah-tdah-aula",
+        "neuronup-tdah-docentes",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tdah-motivacion-sostener-esfuerzo",
+      "condicion": "TDAH",
+      "area": "motivacion-tareas",
+      "titulo": "Sostener el esfuerzo hasta terminar",
+      "contextoEducativo": "Al estudiante con TDAH le cuesta mantener el esfuerzo en tareas largas o repetitivas, sobre todo si la recompensa es lejana. El refuerzo frecuente y la sensación de avance visible ayudan a llegar al final.",
+      "dificultadesTipicas": [
+        "Abandona a mitad de camino aunque haya empezado bien",
+        "Rinde mucho al inicio y decae rápido",
+        "Se desmotiva si no ve resultados pronto"
+      ],
+      "estrategias": [
+        {
+          "que": "Refuerzo positivo frecuente",
+          "como": "Reconocer avances pequeños y concretos durante la tarea, no solo al final.",
+          "ejemplo": "'Ya llevas la mitad, buen ritmo.'"
+        },
+        {
+          "que": "Progreso visible",
+          "como": "Mostrar cuánto ha avanzado con una barra, casillas o fichas que se van completando.",
+          "ejemplo": "Tachar cada ejercicio hecho en una tira de 5 casillas."
+        },
+        {
+          "que": "Alternar exigente y ligero",
+          "como": "Intercalar tramos difíciles con otros más fáciles o de su interés para recuperar impulso.",
+          "ejemplo": "Dos problemas de cálculo y luego uno con su tema favorito."
+        }
+      ],
+      "queEvitar": [
+        "Reconocer solo el resultado final y nunca el proceso",
+        "Acumular tareas repetitivas sin variación",
+        "Retirar la ayuda de golpe cuando empieza a fallar"
+      ],
+      "comoAdaptar": [
+        "Fragmentar la tarea en metas con cierre claro",
+        "Reducir la cantidad manteniendo el objetivo de aprendizaje"
+      ],
+      "comoComunicar": [
+        "Nombrar el esfuerzo, no solo el logro: 'te costó y seguiste'",
+        "Recordar la meta cercana cuando decae: 'un ejercicio más y cierras el bloque'"
+      ],
+      "situacionesRapidas": [
+        "Empieza con ganas pero abandona a mitad",
+        "Se desmotiva en tareas largas",
+        "No termina lo que empieza"
+      ],
+      "fuentes": [
+        "chadd-educators",
+        "cadah-tdah-aula",
+        "cdc-adhd-classroom"
+      ]
+    },
+    {
+      "id": "tdah-regulacion-frustracion",
+      "condicion": "TDAH",
+      "area": "regulacion-emocional",
+      "titulo": "Cuando se frustra y no quiere continuar",
+      "contextoEducativo": "El estudiante con TDAH suele tener menor tolerancia a la frustración y reacciones emocionales más intensas y rápidas. Ante un error o una tarea difícil puede 'estallar' o bloquearse. No es manipulación: la regulación emocional también depende de funciones ejecutivas aún en desarrollo.",
+      "dificultadesTipicas": [
+        "Reacciona con enojo o llanto ante un error o dificultad",
+        "Se bloquea y se niega a seguir tras frustrarse",
+        "Le cuesta calmarse solo una vez activado"
+      ],
+      "estrategias": [
+        {
+          "que": "Bajar la activación primero",
+          "como": "Antes de razonar, ofrecer una pausa breve para regularse; validar la emoción sin ceder en el límite.",
+          "ejemplo": "'Veo que te frustraste, respira un momento y seguimos juntos.'"
+        },
+        {
+          "que": "Rincón o pausa de calma",
+          "como": "Tener un lugar o rutina acordada para autorregularse sin que sea un castigo.",
+          "ejemplo": "Beber agua, respirar 3 veces, volver cuando esté listo."
+        },
+        {
+          "que": "Replantear la meta",
+          "como": "Reducir la exigencia inmediata para romper el bloqueo y recuperar la sensación de logro.",
+          "ejemplo": "'Hagamos solo este y lo demás después.'"
+        }
+      ],
+      "queEvitar": [
+        "Razonar o sermonear en pleno pico emocional",
+        "Confrontar en público o ridiculizar la reacción",
+        "Retirar todo apoyo diciendo 'hasta que no te calmes no te ayudo'"
+      ],
+      "comoAdaptar": [
+        "Anticipar los momentos difíciles y acordar de antemano qué hacer",
+        "Enseñar y practicar una rutina de calma cuando está tranquilo, no solo en crisis"
+      ],
+      "comoComunicar": [
+        "Nombrar la emoción para ayudar a identificarla: 'esto te está frustrando'",
+        "Tono bajo y frases cortas; primero calmar, después resolver"
+      ],
+      "situacionesRapidas": [
+        "Se frustró y no quiere continuar",
+        "Se enoja cuando algo le sale mal",
+        "Se bloquea y se niega a seguir tras equivocarse"
+      ],
+      "fuentes": [
+        "cadah-tdah-aula",
+        "chadd-educators",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tdah-regulacion-impulsividad",
+      "condicion": "TDAH",
+      "area": "regulacion-emocional",
+      "titulo": "Impulsividad: responder o actuar sin pensar",
+      "contextoEducativo": "La impulsividad hace que el estudiante responda sin levantar la mano, interrumpa o actúe antes de pensar en las consecuencias. Es parte del perfil, no mala educación deliberada; mejora con estructura, señales y práctica.",
+      "dificultadesTipicas": [
+        "Contesta o interrumpe sin esperar turno",
+        "Actúa antes de escuchar toda la instrucción",
+        "Le cuesta esperar su turno en juegos o diálogos"
+      ],
+      "estrategias": [
+        {
+          "que": "Reglas visibles y turnos claros",
+          "como": "Establecer con apoyo visual cómo se pide la palabra y reforzar cuando lo logra.",
+          "ejemplo": "Un cartel de 'levanto la mano y espero' y reconocimiento cuando lo hace."
+        },
+        {
+          "que": "Canalizar la energía",
+          "como": "Darle un rol activo que use su impulso de forma positiva.",
+          "ejemplo": "Ser el ayudante que reparte materiales o borra la pizarra."
+        },
+        {
+          "que": "Señal de pausa",
+          "como": "Acordar un gesto que signifique 'para y piensa' antes de actuar.",
+          "ejemplo": "Tocarse la sien = cuento hasta 3 antes de responder."
+        }
+      ],
+      "queEvitar": [
+        "Castigar cada interrupción sin enseñar la conducta alternativa",
+        "Exigir quietud total durante períodos largos",
+        "Avergonzarlo frente al grupo por responder sin turno"
+      ],
+      "comoAdaptar": [
+        "Permitir movimiento estructurado (repartir, borrar, entregar)",
+        "Dar oportunidades frecuentes de participación para reducir la espera"
+      ],
+      "comoComunicar": [
+        "Recordar la norma en positivo: 'primero la mano, luego hablas'",
+        "Reforzar de inmediato cuando espera su turno"
+      ],
+      "situacionesRapidas": [
+        "Interrumpe y responde sin esperar turno",
+        "Actúa sin pensar en las consecuencias",
+        "Le cuesta esperar su turno"
+      ],
+      "fuentes": [
+        "cdc-adhd-classroom",
+        "chadd-educators",
+        "neuronup-tdah-docentes"
+      ]
+    },
+    {
+      "id": "tdah-grupo-roles-estructura",
+      "condicion": "TDAH",
+      "area": "trabajo-en-grupo",
+      "titulo": "Trabajo en grupo con roles y estructura",
+      "contextoEducativo": "En el trabajo en equipo, el estudiante con TDAH puede acaparar, desengancharse o chocar con los compañeros porque las tareas grupales son abiertas y poco estructuradas. Con roles claros y pasos definidos, aporta y participa mejor.",
+      "dificultadesTipicas": [
+        "Se dispersa cuando la tarea grupal es abierta",
+        "Acapara o, al contrario, se desconecta del equipo",
+        "Genera fricción por impulsividad al interrumpir a los demás"
+      ],
+      "estrategias": [
+        {
+          "que": "Asignar un rol concreto",
+          "como": "Dar a cada integrante una función clara; al estudiante con TDAH, una activa y con movimiento.",
+          "ejemplo": "Encargado de materiales, de tomar el tiempo o de exponer."
+        },
+        {
+          "que": "Pasos y meta visibles",
+          "como": "Entregar al grupo una guía con la secuencia y el producto esperado.",
+          "ejemplo": "Tarjeta: '1) repartir tareas · 2) buscar datos · 3) armar cartel · 4) ensayar.'"
+        },
+        {
+          "que": "Grupos pequeños",
+          "como": "Preferir parejas o tríos para reducir estímulos y facilitar la participación.",
+          "ejemplo": "Trabajar de a dos antes de pasar a grupos mayores."
+        }
+      ],
+      "queEvitar": [
+        "Dejar la organización del grupo totalmente al azar",
+        "Grupos numerosos con consignas vagas",
+        "Culpar solo al estudiante cuando el grupo no funciona"
+      ],
+      "comoAdaptar": [
+        "Rotar roles para que practique distintas funciones",
+        "Definir una norma simple de turnos dentro del grupo"
+      ],
+      "comoComunicar": [
+        "Recordar el rol y la meta al iniciar: 'tú llevas el tiempo, avisas a los 10 minutos'",
+        "Reconocer la contribución concreta al equipo"
+      ],
+      "situacionesRapidas": [
+        "Tiene dificultad para trabajar en grupo",
+        "Se dispersa o choca con los compañeros en equipo",
+        "Acapara o se desconecta del trabajo grupal"
+      ],
+      "fuentes": [
+        "neuronup-tdah-docentes",
+        "cadah-tdah-aula",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tdah-instrucciones-claras-cortas",
+      "condicion": "TDAH",
+      "area": "instrucciones",
+      "titulo": "Dar instrucciones claras y de a una",
+      "contextoEducativo": "El estudiante con TDAH puede perder parte de una instrucción larga o encadenada porque su memoria de trabajo se satura. No es que no escuche: retiene menos pasos a la vez. Instrucciones cortas, una a la vez y con apoyo visual, marcan la diferencia.",
+      "dificultadesTipicas": [
+        "Olvida los pasos intermedios de una consigna larga",
+        "Hace solo la primera o la última parte de lo pedido",
+        "Parece no escuchar cuando se dan varias órdenes juntas"
+      ],
+      "estrategias": [
+        {
+          "que": "Una instrucción a la vez",
+          "como": "Dividir la consigna en pasos y darlos de a uno, confirmando antes de seguir.",
+          "ejemplo": "'Saca el cuaderno.' (espera) 'Escribe la fecha.' (espera) 'Copia el título.'"
+        },
+        {
+          "que": "Apoyar en lo visual",
+          "como": "Acompañar la instrucción oral con la escrita o con íconos.",
+          "ejemplo": "Los pasos numerados en la pizarra mientras se explican."
+        },
+        {
+          "que": "Verificar la comprensión",
+          "como": "Pedir que repita o muestre qué va a hacer, en vez de preguntar '¿entendiste?'",
+          "ejemplo": "'A ver, ¿qué es lo primero que vas a hacer?'"
+        }
+      ],
+      "queEvitar": [
+        "Dar varias instrucciones encadenadas de una sola vez",
+        "Instrucciones solo orales y rápidas",
+        "Asumir que un 'sí' significa que comprendió"
+      ],
+      "comoAdaptar": [
+        "Dejar los pasos escritos y visibles durante toda la tarea",
+        "Resaltar con color la acción principal de cada instrucción"
+      ],
+      "comoComunicar": [
+        "Asegurar contacto visual o cercanía antes de dar la consigna",
+        "Frases cortas, verbo de acción al inicio: 'subraya', 'encierra', 'copia'"
+      ],
+      "situacionesRapidas": [
+        "No comprende las instrucciones",
+        "Hace solo una parte de lo que se pidió",
+        "Olvida los pasos de la consigna"
+      ],
+      "fuentes": [
+        "cdc-adhd-classroom",
+        "cadah-tdah-aula",
+        "chadd-educators"
+      ]
+    },
+    {
+      "id": "tdah-instrucciones-rutinas",
+      "condicion": "TDAH",
+      "area": "instrucciones",
+      "titulo": "Rutinas y anticipación para reducir la carga",
+      "contextoEducativo": "Las rutinas estables convierten en automático lo que de otro modo exige atención y memoria constantes. Cuando el estudiante sabe qué sigue, gasta menos energía en 'adivinar' y más en aprender.",
+      "dificultadesTipicas": [
+        "Se desorganiza en momentos poco estructurados (inicio, cambios, cierre)",
+        "Pregunta una y otra vez qué hay que hacer",
+        "Le cuesta cambiar de una actividad a otra"
+      ],
+      "estrategias": [
+        {
+          "que": "Rutina visible del día",
+          "como": "Mostrar la secuencia de actividades en la pizarra o un panel y repasarla.",
+          "ejemplo": "Agenda del día con íconos: lengua, recreo, matemáticas, cierre."
+        },
+        {
+          "que": "Anticipar los cambios",
+          "como": "Avisar antes de las transiciones para prepararlas.",
+          "ejemplo": "'En 5 minutos guardamos lengua y pasamos a matemáticas.'"
+        },
+        {
+          "que": "Rituales de inicio y cierre",
+          "como": "Usar señales fijas que marquen el comienzo y el fin de cada bloque.",
+          "ejemplo": "Una canción corta o una frase para iniciar; guardar materiales para cerrar."
+        }
+      ],
+      "queEvitar": [
+        "Cambiar la rutina sin avisar",
+        "Dejar los tiempos muertos sin estructura",
+        "Exigir transiciones inmediatas sin preaviso"
+      ],
+      "comoAdaptar": [
+        "Entregar una mini-agenda personal que pueda consultar",
+        "Marcar visualmente el paso en el que va la clase"
+      ],
+      "comoComunicar": [
+        "Repasar la rutina al inicio y anticipar lo que viene",
+        "Usar siempre las mismas señales para las mismas transiciones"
+      ],
+      "situacionesRapidas": [
+        "Se desorganiza en los cambios de actividad",
+        "Pregunta todo el tiempo qué hay que hacer",
+        "Le cuesta pasar de una actividad a otra"
+      ],
+      "fuentes": [
+        "cdc-adhd-classroom",
+        "neuronup-tdah-docentes",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tdah-aprendizaje-multisensorial",
+      "condicion": "TDAH",
+      "area": "aprendizaje",
+      "titulo": "Aprender haciendo y con varios sentidos",
+      "contextoEducativo": "El estudiante con TDAH aprende mejor cuando puede manipular, moverse y participar activamente, y le cuesta más con explicaciones largas y pasivas. Variar el formato mantiene el interés y da más vías de acceso al contenido.",
+      "dificultadesTipicas": [
+        "Se desconecta en explicaciones largas y expositivas",
+        "Retiene mejor lo que hace que lo que solo escucha",
+        "Se aburre con la repetición monótona"
+      ],
+      "estrategias": [
+        {
+          "que": "Aprendizaje activo",
+          "como": "Convertir el contenido en manipulación, juego o reto con movimiento.",
+          "ejemplo": "Resolver sumas saltando en una recta numérica dibujada en el piso."
+        },
+        {
+          "que": "Varios formatos",
+          "como": "Presentar la misma idea de más de una forma: oral, visual, práctica.",
+          "ejemplo": "Explicar, mostrar un esquema y luego hacer un ejemplo con material concreto."
+        },
+        {
+          "que": "Conexión con sus intereses",
+          "como": "Anclar el contenido a temas que le motivan.",
+          "ejemplo": "Problemas de matemáticas ambientados en su deporte o juego favorito."
+        }
+      ],
+      "queEvitar": [
+        "Clases largas solo expositivas",
+        "Un único formato para todo el contenido",
+        "Penalizar el movimiento cuando ayuda a aprender"
+      ],
+      "comoAdaptar": [
+        "Ofrecer opciones para demostrar lo aprendido (oral, cartel, maqueta, audio)",
+        "Alternar actividades sentadas con otras de movimiento"
+      ],
+      "comoComunicar": [
+        "Explicar el 'para qué' del contenido, no solo el 'qué'",
+        "Dar ejemplos concretos y cercanos a su experiencia"
+      ],
+      "situacionesRapidas": [
+        "Se aburre y se desconecta en la explicación",
+        "¿Cómo puedo explicarle esta actividad de otra manera?",
+        "Retiene poco de las clases solo habladas"
+      ],
+      "fuentes": [
+        "cast-udl-guidelines",
+        "understood-udl",
+        "neuronup-tdah-docentes"
+      ]
+    },
+    {
+      "id": "tdah-aprendizaje-evaluacion",
+      "condicion": "TDAH",
+      "area": "aprendizaje",
+      "titulo": "Adaptar la evaluación sin bajar el objetivo",
+      "contextoEducativo": "En las evaluaciones, el estudiante con TDAH puede saber el contenido pero fallar por tiempo, distracción o formato, no por falta de aprendizaje. Ajustar las condiciones permite medir lo que realmente sabe.",
+      "dificultadesTipicas": [
+        "Comete errores por descuido bajo presión de tiempo",
+        "Se satura con exámenes largos o muy cargados visualmente",
+        "Pierde puntos por olvidar partes de la consigna"
+      ],
+      "estrategias": [
+        {
+          "que": "Ajustar tiempo y formato",
+          "como": "Dar tiempo adicional, dividir el examen o reducir ítems manteniendo el objetivo.",
+          "ejemplo": "Entregar el examen en dos partes con una pausa entre ellas."
+        },
+        {
+          "que": "Instrucciones destacadas",
+          "como": "Resaltar los verbos y las palabras clave de cada pregunta.",
+          "ejemplo": "Subrayar 'explica', 'compara', 'elige una'."
+        },
+        {
+          "que": "Formas alternativas de evaluar",
+          "como": "Permitir demostrar el aprendizaje por vías distintas al examen escrito.",
+          "ejemplo": "Exposición oral, proyecto o rúbrica de desempeño."
+        }
+      ],
+      "queEvitar": [
+        "Exámenes largos, densos y a contrarreloj como única forma de evaluar",
+        "Penalizar la presentación por encima del contenido",
+        "Cambiar el formato de evaluación sin previo aviso"
+      ],
+      "comoAdaptar": [
+        "Reducir el número de ítems por página",
+        "Ofrecer un espacio con menos distractores para evaluarse"
+      ],
+      "comoComunicar": [
+        "Explicar antes cómo será evaluado y con qué criterios",
+        "Recordar revisar antes de entregar, con una mini lista de chequeo"
+      ],
+      "situacionesRapidas": [
+        "Sabe el tema pero le va mal en el examen",
+        "Comete errores por descuido en la evaluación",
+        "¿Cómo puedo evaluarlo de otra manera?"
+      ],
+      "fuentes": [
+        "cast-udl-guidelines",
+        "understood-udl",
+        "cadah-tdah-aula"
+      ]
+    },
+    {
+      "id": "tea-comunicacion-lenguaje-claro",
+      "condicion": "TEA",
+      "area": "comunicacion",
+      "titulo": "Lenguaje claro, literal y sin dobles sentidos",
+      "contextoEducativo": "Muchos estudiantes con TEA procesan el lenguaje de forma literal y pueden confundirse con ironías, metáforas o instrucciones ambiguas. También pueden necesitar más tiempo para procesar lo que se les dice. No es falta de inteligencia: es una forma distinta de procesar el lenguaje.",
+      "dificultadesTipicas": [
+        "Interpreta de forma literal expresiones figuradas ('se te fue el santo al cielo')",
+        "Se confunde con instrucciones vagas o con doble sentido",
+        "Necesita más tiempo para procesar y responder"
+      ],
+      "estrategias": [
+        {
+          "que": "Lenguaje concreto y directo",
+          "como": "Decir exactamente lo que se espera, evitando ironía, sarcasmo y metáforas.",
+          "ejemplo": "En vez de '¿te parece que es hora de trabajar?', decir 'abre el cuaderno en la página 10'."
+        },
+        {
+          "que": "Dar tiempo de procesamiento",
+          "como": "Formular una idea, esperar en silencio unos segundos y no repetir de inmediato con otras palabras.",
+          "ejemplo": "Contar mentalmente hasta 5-10 antes de reformular."
+        },
+        {
+          "que": "Apoyar con lo visual",
+          "como": "Acompañar la palabra con imágenes, gestos o texto escrito.",
+          "ejemplo": "Mostrar la tarjeta de la acción mientras se nombra."
+        }
+      ],
+      "queEvitar": [
+        "Ironías, sarcasmo y frases hechas sin explicarlas",
+        "Bombardear con muchas palabras o reformular una y otra vez",
+        "Interpretar la demora en responder como que ignora"
+      ],
+      "comoAdaptar": [
+        "Dejar la instrucción también por escrito o con pictogramas",
+        "Enseñar de forma explícita el significado de expresiones figuradas cuando surjan"
+      ],
+      "comoComunicar": [
+        "Una idea por frase, con vocabulario concreto",
+        "Verificar la comprensión pidiendo que muestre qué hará, no un 'sí' automático"
+      ],
+      "situacionesRapidas": [
+        "No comprende las instrucciones cuando son ambiguas",
+        "Entiende todo de forma literal",
+        "Tarda en responder a lo que se le dice"
+      ],
+      "fuentes": [
+        "autism-speaks-classroom",
+        "nea-teaching-autism",
+        "national-autistic-society-education"
+      ]
+    },
+    {
+      "id": "tea-comunicacion-alternativa",
+      "condicion": "TEA",
+      "area": "comunicacion",
+      "titulo": "Apoyar la comunicación cuando el lenguaje oral es limitado",
+      "contextoEducativo": "Algunos estudiantes con TEA tienen lenguaje oral limitado o prefieren otras vías para comunicarse. Ofrecer canales alternativos reduce la frustración y les permite participar y expresar necesidades.",
+      "dificultadesTipicas": [
+        "Le cuesta expresar oralmente lo que necesita o siente",
+        "Se frustra al no poder hacerse entender",
+        "Participa poco cuando solo se admite respuesta oral"
+      ],
+      "estrategias": [
+        {
+          "que": "Sistemas de apoyo visual",
+          "como": "Ofrecer tableros de comunicación, pictogramas o tarjetas para elegir y expresar.",
+          "ejemplo": "Un panel con imágenes de 'baño', 'agua', 'ayuda', 'pausa'."
+        },
+        {
+          "que": "Aceptar múltiples vías",
+          "como": "Permitir responder señalando, escribiendo, dibujando o con dispositivos.",
+          "ejemplo": "Responder eligiendo una tarjeta o escribiendo en una tablet."
+        },
+        {
+          "que": "Anticipar necesidades",
+          "como": "Enseñar y tener a mano formas rápidas de pedir lo esencial.",
+          "ejemplo": "Tarjeta de 'necesito una pausa' siempre disponible en su mesa."
+        }
+      ],
+      "queEvitar": [
+        "Forzar la respuesta oral como única opción válida",
+        "Completar sus frases o presionarlo a hablar rápido",
+        "Ignorar sus intentos de comunicación no verbal"
+      ],
+      "comoAdaptar": [
+        "Integrar sus apoyos de comunicación en todas las actividades",
+        "Coordinar con la familia/equipo el sistema que ya usa"
+      ],
+      "comoComunicar": [
+        "Dar tiempo y atención a cualquier forma en que se exprese",
+        "Confirmar que se entendió su mensaje antes de continuar"
+      ],
+      "situacionesRapidas": [
+        "Se frustra porque no logra hacerse entender",
+        "Participa poco si solo vale respuesta oral",
+        "Le cuesta pedir lo que necesita"
+      ],
+      "fuentes": [
+        "national-autistic-society-education",
+        "autismo-espana",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tea-social-normas-explicitas",
+      "condicion": "TEA",
+      "area": "interaccion-social",
+      "titulo": "Enseñar las normas sociales de forma explícita",
+      "contextoEducativo": "El estudiante con TEA puede no captar de forma intuitiva las reglas sociales 'no escritas' (turnos, distancia, saludos, cuándo intervenir). No es desinterés por los demás: necesita que esas normas se enseñen de manera explícita y concreta, como cualquier otro contenido.",
+      "dificultadesTipicas": [
+        "No interpreta señales sociales sutiles (gestos, tono, expresiones)",
+        "Desconoce reglas implícitas de turnos o distancia",
+        "Le cuesta iniciar o sostener una interacción con pares"
+      ],
+      "estrategias": [
+        {
+          "que": "Historias y guiones sociales",
+          "como": "Explicar con narraciones o guiones qué ocurre en una situación social y qué se espera hacer.",
+          "ejemplo": "Un guion breve de 'cómo pedir unirme a un juego en el recreo'."
+        },
+        {
+          "que": "Reglas visibles",
+          "como": "Poner por escrito o con imágenes las normas de convivencia y de turnos.",
+          "ejemplo": "Cartel: 'escucho, espero mi turno, luego hablo'."
+        },
+        {
+          "que": "Práctica guiada",
+          "como": "Ensayar interacciones en situaciones controladas antes del entorno real.",
+          "ejemplo": "Role-play de saludar y presentarse con un compañero de confianza."
+        }
+      ],
+      "queEvitar": [
+        "Dar por hecho que 'ya debería saber' las normas sociales",
+        "Forzar contacto visual o cercanía física",
+        "Exponerlo o corregirlo en público por errores sociales"
+      ],
+      "comoAdaptar": [
+        "Asignar un compañero-guía o sistema de tutoría entre pares",
+        "Estructurar los momentos sociales (recreo, trabajo en equipo) con roles claros"
+      ],
+      "comoComunicar": [
+        "Explicar el porqué de la norma social, no solo la norma",
+        "Reforzar en privado los avances en interacción"
+      ],
+      "situacionesRapidas": [
+        "Le cuesta relacionarse con los compañeros",
+        "No capta las reglas sociales del grupo",
+        "No sabe cómo unirse a un juego o conversación"
+      ],
+      "fuentes": [
+        "autism-speaks-classroom",
+        "nea-teaching-autism",
+        "national-autistic-society-education"
+      ]
+    },
+    {
+      "id": "tea-social-trabajo-con-pares",
+      "condicion": "TEA",
+      "area": "interaccion-social",
+      "titulo": "Facilitar la interacción en actividades con otros",
+      "contextoEducativo": "Las actividades sociales abiertas pueden resultar abrumadoras para el estudiante con TEA. Con estructura, previsibilidad y roles claros, la interacción con pares se vuelve más accesible y menos ansiosa.",
+      "dificultadesTipicas": [
+        "Se aísla o se abruma en situaciones sociales poco estructuradas",
+        "No sabe qué hacer en juegos o dinámicas libres",
+        "Prefiere actividades en solitario"
+      ],
+      "estrategias": [
+        {
+          "que": "Interacción estructurada",
+          "como": "Proponer actividades con reglas y turnos claros en lugar de juego libre abierto.",
+          "ejemplo": "Juegos de mesa con turnos frente a 'jueguen libremente en el recreo'."
+        },
+        {
+          "que": "Empezar de a dos",
+          "como": "Iniciar con un compañero afín antes de grupos grandes.",
+          "ejemplo": "Tarea en pareja con un compañero-guía."
+        },
+        {
+          "que": "Aprovechar sus intereses",
+          "como": "Diseñar la interacción alrededor de un tema que le apasiona.",
+          "ejemplo": "Un proyecto en equipo sobre su tema favorito, con él como experto."
+        }
+      ],
+      "queEvitar": [
+        "Obligarlo a integrarse a grupos grandes de golpe",
+        "Dejar los momentos sociales sin ninguna estructura",
+        "Interpretar su necesidad de soledad como rechazo a corregir a la fuerza"
+      ],
+      "comoAdaptar": [
+        "Ofrecer un espacio tranquilo de repliegue cuando lo necesite",
+        "Dar un rol concreto dentro de la actividad grupal"
+      ],
+      "comoComunicar": [
+        "Anticipar cómo será la actividad social y qué se espera",
+        "Respetar sus tiempos de participación sin presionar"
+      ],
+      "situacionesRapidas": [
+        "Tiene dificultad para trabajar en grupo",
+        "Se aísla en las actividades sociales",
+        "Se abruma en dinámicas de grupo grandes"
+      ],
+      "fuentes": [
+        "autism-speaks-classroom",
+        "autismo-espana",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tea-sensorial-regular-estimulos",
+      "condicion": "TEA",
+      "area": "sensorial",
+      "titulo": "Ajustar el entorno a la sensibilidad sensorial",
+      "contextoEducativo": "Las diferencias en el procesamiento sensorial son una característica reconocida del TEA: ciertos ruidos, luces, texturas u olores pueden resultar dolorosos o abrumadores (hipersensibilidad), o el estudiante puede buscar estímulos (hiposensibilidad). Una reacción intensa a un estímulo no es un capricho: puede ser una sobrecarga sensorial real.",
+      "dificultadesTipicas": [
+        "Se tapa los oídos o se altera con ruidos fuertes o inesperados",
+        "Le molestan luces intensas, etiquetas de ropa o ciertas texturas",
+        "Busca movimiento o presión (balanceo, apretar) para regularse"
+      ],
+      "estrategias": [
+        {
+          "que": "Reducir la carga sensorial",
+          "como": "Identificar los estímulos que le afectan y disminuirlos en su entorno inmediato.",
+          "ejemplo": "Ubicarlo lejos del timbre/altavoz; permitir audífonos de aislamiento en momentos ruidosos."
+        },
+        {
+          "que": "Anticipar estímulos intensos",
+          "como": "Avisar antes de ruidos o cambios sensoriales previsibles.",
+          "ejemplo": "'En un momento va a sonar el timbre, será fuerte.'"
+        },
+        {
+          "que": "Espacio y pausas sensoriales",
+          "como": "Tener un rincón tranquilo y permitir pausas para autorregularse.",
+          "ejemplo": "Rincón de calma con luz tenue al que puede ir con una tarjeta."
+        }
+      ],
+      "queEvitar": [
+        "Interpretar la reacción sensorial como berrinche o desobediencia",
+        "Obligarlo a tolerar el estímulo 'para que se acostumbre'",
+        "Ambientes sobrecargados de estímulos visuales y sonoros"
+      ],
+      "comoAdaptar": [
+        "Permitir herramientas de regulación (audífonos, objeto de presión) sin estigma",
+        "Coordinar con la familia/terapeuta ocupacional los apoyos que ya usa"
+      ],
+      "comoComunicar": [
+        "Validar la experiencia sensorial: 'ese ruido te molesta mucho, está bien'",
+        "Ofrecer la salida a la pausa antes de que llegue a la sobrecarga"
+      ],
+      "situacionesRapidas": [
+        "Se altera con ruidos o luces fuertes",
+        "Se tapa los oídos y se abruma",
+        "Reacciona intensamente a texturas u olores"
+      ],
+      "fuentes": [
+        "nice-cg170-autism",
+        "national-autistic-society-education",
+        "autismo-espana"
+      ]
+    },
+    {
+      "id": "tea-sensorial-sobrecarga-crisis",
+      "condicion": "TEA",
+      "area": "sensorial",
+      "titulo": "Prevenir y acompañar la sobrecarga sensorial",
+      "contextoEducativo": "Cuando la acumulación de estímulos supera lo que el estudiante puede procesar, puede llegar a una crisis o bloqueo (a veces llamado 'meltdown' o 'shutdown'). No es una rabieta buscada: es una respuesta de sobrecarga. Prevenir y acompañar es más eficaz que corregir.",
+      "dificultadesTipicas": [
+        "Pasa de estar bien a una crisis intensa aparentemente 'de repente'",
+        "Puede bloquearse y desconectarse en vez de estallar",
+        "Le cuesta recuperarse tras la sobrecarga"
+      ],
+      "estrategias": [
+        {
+          "que": "Detectar señales tempranas",
+          "como": "Aprender sus primeras señales de sobrecarga y actuar antes de la crisis.",
+          "ejemplo": "Inquietud, taparse oídos, repetir movimientos → ofrecer la pausa ya."
+        },
+        {
+          "que": "Reducir demandas en el momento",
+          "como": "Durante la sobrecarga, bajar estímulos y exigencias; no razonar ni insistir.",
+          "ejemplo": "Llevarlo al rincón de calma, bajar la voz, dar espacio."
+        },
+        {
+          "que": "Plan acordado de crisis",
+          "como": "Tener de antemano un protocolo simple y conocido por el estudiante.",
+          "ejemplo": "Tarjeta de 'necesito salir' y un lugar seguro definido."
+        }
+      ],
+      "queEvitar": [
+        "Sujetar, gritar o castigar durante la crisis",
+        "Aglomerar personas o estímulos alrededor",
+        "Exigir explicaciones en pleno episodio"
+      ],
+      "comoAdaptar": [
+        "Diseñar el día para evitar acumulación de estímulos intensos",
+        "Prever transiciones y momentos ruidosos con antelación"
+      ],
+      "comoComunicar": [
+        "Durante la crisis: pocas palabras, tono calmado, presencia tranquila",
+        "Después, reconstruir con él qué pasó cuando ya esté regulado"
+      ],
+      "situacionesRapidas": [
+        "Tiene una crisis por sobrecarga de estímulos",
+        "Se bloquea y se desconecta",
+        "Le cuesta calmarse tras alterarse"
+      ],
+      "fuentes": [
+        "nice-cg170-autism",
+        "autism-speaks-classroom",
+        "national-autistic-society-education"
+      ]
+    },
+    {
+      "id": "tea-regulacion-anticipacion-cambios",
+      "condicion": "TEA",
+      "area": "regulacion-emocional",
+      "titulo": "Previsibilidad y anticipación de cambios",
+      "contextoEducativo": "El estudiante con TEA suele apoyarse en la rutina y la previsibilidad para sentirse seguro. Los cambios inesperados (un cambio de horario, un docente distinto, una salida) pueden generar mucha ansiedad. Anticipar y estructurar reduce el malestar y las crisis.",
+      "dificultadesTipicas": [
+        "Se angustia ante cambios imprevistos en la rutina",
+        "Insiste en que las cosas se hagan siempre igual",
+        "Le cuesta la incertidumbre de las actividades nuevas"
+      ],
+      "estrategias": [
+        {
+          "que": "Agenda visual anticipada",
+          "como": "Mostrar la secuencia del día y marcar de antemano cualquier cambio.",
+          "ejemplo": "Panel del día con íconos; señalar 'hoy en vez de patio, biblioteca'."
+        },
+        {
+          "que": "Anticipar lo nuevo",
+          "como": "Explicar con imágenes o guiones qué va a pasar en una situación distinta.",
+          "ejemplo": "Antes de una salida, mostrar fotos del lugar y el plan paso a paso."
+        },
+        {
+          "que": "Avisar transiciones",
+          "como": "Dar preavisos claros antes de cambiar de actividad.",
+          "ejemplo": "'Faltan 5 minutos para terminar y guardar.'"
+        }
+      ],
+      "queEvitar": [
+        "Cambios de última hora sin explicación",
+        "Improvisar sin avisar cuando algo se sale de la rutina",
+        "Minimizar su ansiedad ('no es para tanto')"
+      ],
+      "comoAdaptar": [
+        "Tener una tarjeta de 'imprevisto' que anticipe que hoy algo será distinto",
+        "Mantener estables los elementos que se puedan mantener"
+      ],
+      "comoComunicar": [
+        "Explicar el cambio con antelación y de forma concreta",
+        "Validar la incomodidad y ofrecer previsibilidad en lo demás"
+      ],
+      "situacionesRapidas": [
+        "Se angustia con los cambios de rutina",
+        "Reacciona mal ante lo imprevisto",
+        "Necesita saber siempre qué sigue"
+      ],
+      "fuentes": [
+        "nice-cg170-autism",
+        "autism-speaks-classroom",
+        "autismo-espana"
+      ]
+    },
+    {
+      "id": "tea-regulacion-intereses-calma",
+      "condicion": "TEA",
+      "area": "regulacion-emocional",
+      "titulo": "Intereses propios y estrategias de calma",
+      "contextoEducativo": "Los intereses intensos y las conductas repetitivas o de autorregulación (a veces llamadas 'stimming') cumplen una función de calma para muchos estudiantes con TEA. Bien encauzados, son aliados para regularse y para motivar el aprendizaje, no algo a eliminar.",
+      "dificultadesTipicas": [
+        "Recurre a movimientos repetitivos para calmarse",
+        "Se ancla en su tema de interés y le cuesta soltarlo",
+        "Se desregula cuando se le impide su forma de autorregularse"
+      ],
+      "estrategias": [
+        {
+          "que": "Permitir la autorregulación",
+          "como": "Aceptar conductas de calma que no dañan ni interrumpen gravemente; darles un espacio.",
+          "ejemplo": "Permitir apretar una pelota o balancearse mientras escucha."
+        },
+        {
+          "que": "Usar sus intereses",
+          "como": "Integrar el tema que le apasiona como puente hacia el contenido y como recompensa.",
+          "ejemplo": "Si le encantan los trenes, usar trenes en los problemas de matemáticas."
+        },
+        {
+          "que": "Enseñar estrategias de calma",
+          "como": "Practicar en momentos tranquilos técnicas simples de regulación.",
+          "ejemplo": "Respiración, rincón de calma, tarjeta de 'necesito una pausa'."
+        }
+      ],
+      "queEvitar": [
+        "Prohibir toda conducta de autorregulación que no molesta",
+        "Retirar bruscamente su tema de interés como castigo",
+        "Ridiculizar sus intereses o formas de calmarse"
+      ],
+      "comoAdaptar": [
+        "Acordar cuándo y cómo puede usar sus estrategias de calma",
+        "Canalizar el interés intenso hacia tareas y roles"
+      ],
+      "comoComunicar": [
+        "Mostrar interés genuino por su tema para conectar",
+        "Ofrecer alternativas en vez de solo prohibir"
+      ],
+      "situacionesRapidas": [
+        "Hace movimientos repetitivos para calmarse",
+        "Solo quiere hablar de su tema de interés",
+        "Se desregula si se le corta su forma de autorregularse"
+      ],
+      "fuentes": [
+        "national-autistic-society-education",
+        "nice-cg170-autism",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tea-instrucciones-estructura-visual",
+      "condicion": "TEA",
+      "area": "instrucciones",
+      "titulo": "Estructurar y hacer visibles las instrucciones",
+      "contextoEducativo": "El estudiante con TEA se apoya mucho en la información visual y en la estructura para comprender qué se espera. Las instrucciones abstractas o solo orales pueden no bastar. Hacer visible la secuencia y el resultado esperado reduce la incertidumbre.",
+      "dificultadesTipicas": [
+        "No sabe por dónde empezar una tarea abierta",
+        "Necesita ver un modelo del resultado esperado",
+        "Se pierde con instrucciones solo verbales"
+      ],
+      "estrategias": [
+        {
+          "que": "Instrucciones paso a paso visibles",
+          "como": "Presentar la secuencia con pasos numerados, imágenes o pictogramas.",
+          "ejemplo": "Tarjetas: 1) leo · 2) subrayo · 3) respondo · 4) reviso."
+        },
+        {
+          "que": "Mostrar un modelo",
+          "como": "Dar un ejemplo terminado de cómo debe quedar el trabajo.",
+          "ejemplo": "Un ejercicio ya resuelto como referencia."
+        },
+        {
+          "que": "Definir el 'terminado'",
+          "como": "Aclarar cómo se ve la tarea cuando está completa.",
+          "ejemplo": "'Terminas cuando las 4 casillas están llenas.'"
+        }
+      ],
+      "queEvitar": [
+        "Consignas abiertas y ambiguas ('haz algo sobre el tema')",
+        "Instrucciones solo orales y largas",
+        "Dar por hecho que sabe cómo debe quedar el resultado"
+      ],
+      "comoAdaptar": [
+        "Dejar la secuencia visible durante toda la tarea",
+        "Descomponer las tareas abiertas en pasos concretos"
+      ],
+      "comoComunicar": [
+        "Concreto y literal; una acción por paso",
+        "Confirmar comprensión pidiendo que muestre el primer paso"
+      ],
+      "situacionesRapidas": [
+        "No comprende las instrucciones si son abstractas",
+        "No sabe por dónde empezar la tarea",
+        "Necesita ver un ejemplo de cómo debe quedar"
+      ],
+      "fuentes": [
+        "autism-speaks-classroom",
+        "nea-teaching-autism",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "tea-aprendizaje-fortalezas-intereses",
+      "condicion": "TEA",
+      "area": "aprendizaje",
+      "titulo": "Enseñar desde las fortalezas e intereses",
+      "contextoEducativo": "Muchos estudiantes con TEA tienen fortalezas marcadas (memoria, atención al detalle, pensamiento visual, interés profundo en un tema). Partir de esas fortalezas y de sus intereses aumenta la motivación y el acceso al contenido, en lugar de centrarse solo en las dificultades.",
+      "dificultadesTipicas": [
+        "Se desmotiva con contenidos alejados de sus intereses",
+        "Rinde de forma muy desigual según el formato",
+        "Le cuesta generalizar lo aprendido a otros contextos"
+      ],
+      "estrategias": [
+        {
+          "que": "Anclar en intereses",
+          "como": "Usar su tema favorito como vehículo del contenido.",
+          "ejemplo": "Enseñar categorías clasificando su colección favorita."
+        },
+        {
+          "que": "Apoyo visual del contenido",
+          "como": "Presentar la información con esquemas, imágenes y organizadores gráficos.",
+          "ejemplo": "Mapas visuales, líneas de tiempo, diagramas."
+        },
+        {
+          "que": "Enseñar la generalización",
+          "como": "Practicar lo aprendido en varios contextos de forma explícita.",
+          "ejemplo": "Aplicar la misma suma en el juego, en la tienda y en el cuaderno."
+        }
+      ],
+      "queEvitar": [
+        "Centrarse solo en corregir déficits e ignorar fortalezas",
+        "Un único formato de enseñanza para todo",
+        "Asumir que lo aprendido en un contexto se traslada solo a otro"
+      ],
+      "comoAdaptar": [
+        "Ofrecer varias formas de acceder y de demostrar el aprendizaje (DUA)",
+        "Descomponer objetivos amplios en metas concretas y observables"
+      ],
+      "comoComunicar": [
+        "Reconocer y nombrar sus fortalezas",
+        "Explicar el propósito y el contexto de uso del contenido"
+      ],
+      "situacionesRapidas": [
+        "Se desmotiva si el tema no le interesa",
+        "¿Cómo puedo explicarle esta actividad de otra manera?",
+        "Le cuesta aplicar lo aprendido en otras situaciones"
+      ],
+      "fuentes": [
+        "nea-teaching-autism",
+        "cast-udl-guidelines",
+        "understood-udl"
+      ]
+    },
+    {
+      "id": "tea-grupo-roles-previsibilidad",
+      "condicion": "TEA",
+      "area": "trabajo-en-grupo",
+      "titulo": "Trabajo en grupo con rol claro y previsible",
+      "contextoEducativo": "El trabajo en equipo combina demandas sociales y de incertidumbre que pueden abrumar al estudiante con TEA. Con un rol definido, expectativas explícitas y previsibilidad, puede aportar desde sus fortalezas y participar con menos ansiedad.",
+      "dificultadesTipicas": [
+        "No sabe cómo negociar o repartir tareas con el grupo",
+        "Se abruma con la dinámica social del equipo",
+        "Puede rechazar el trabajo grupal por su carácter impredecible"
+      ],
+      "estrategias": [
+        {
+          "que": "Rol concreto y afín",
+          "como": "Asignarle una función clara y acorde a sus fortalezas.",
+          "ejemplo": "Encargado de datos, de la parte visual o del registro escrito."
+        },
+        {
+          "que": "Reglas de interacción explícitas",
+          "como": "Definir por escrito cómo se piden turnos y se toman decisiones en el grupo.",
+          "ejemplo": "Guion: 'cada uno propone una idea por turno'."
+        },
+        {
+          "que": "Grupo pequeño y estable",
+          "como": "Trabajar en parejas o tríos con compañeros conocidos y previsibles.",
+          "ejemplo": "Un compañero-guía fijo para las tareas en equipo."
+        }
+      ],
+      "queEvitar": [
+        "Grupos numerosos y consignas sociales ambiguas",
+        "Cambiar de grupo o de reglas sin avisar",
+        "Forzar la interacción social sin estructura"
+      ],
+      "comoAdaptar": [
+        "Anticipar cómo será la actividad y su rol",
+        "Permitir una vía de repliegue si se sobrecarga"
+      ],
+      "comoComunicar": [
+        "Explicitar expectativas y turnos antes de empezar",
+        "Reconocer su aporte concreto al equipo"
+      ],
+      "situacionesRapidas": [
+        "Tiene dificultad para trabajar en grupo",
+        "Se abruma con la dinámica social del equipo",
+        "Rechaza el trabajo grupal por lo impredecible"
+      ],
+      "fuentes": [
+        "nea-teaching-autism",
+        "autismo-espana",
+        "cast-udl-guidelines"
+      ]
+    },
+    {
+      "id": "ambos-instrucciones-dua-multiples-formas",
+      "condicion": "ambos",
+      "area": "instrucciones",
+      "titulo": "Múltiples formas de presentar una misma instrucción",
+      "contextoEducativo": "El Diseño Universal para el Aprendizaje (DUA) propone ofrecer la información de varias maneras para reducir barreras de acceso. Presentar una instrucción en formato oral, visual y escrito a la vez beneficia tanto a estudiantes con TDAH como con TEA, y al grupo entero.",
+      "dificultadesTipicas": [
+        "Un solo formato de instrucción deja fuera a parte del grupo",
+        "Las consignas solo orales se olvidan o se malinterpretan",
+        "La misma instrucción funciona distinto según el estudiante"
+      ],
+      "estrategias": [
+        {
+          "que": "Doble o triple canal",
+          "como": "Dar la instrucción oral y, a la vez, dejarla escrita y/o con apoyo visual.",
+          "ejemplo": "Decirla, escribirla en la pizarra y mostrar un ícono de la acción."
+        },
+        {
+          "que": "Verificación activa",
+          "como": "Comprobar la comprensión pidiendo que muestren o expliquen qué harán.",
+          "ejemplo": "'Muéstrame el primer paso que vas a hacer.'"
+        },
+        {
+          "que": "Instrucción disponible",
+          "como": "Mantener la consigna visible durante toda la tarea para poder consultarla.",
+          "ejemplo": "Pasos numerados en la pizarra o en una tarjeta en la mesa."
+        }
+      ],
+      "queEvitar": [
+        "Confiar todo a la instrucción oral única",
+        "Retirar la consigna de la vista apenas se empieza",
+        "Preguntar '¿entendieron?' y asumir que un sí basta"
+      ],
+      "comoAdaptar": [
+        "Ofrecer la misma información en texto, imagen y ejemplo",
+        "Permitir consultar la instrucción cuantas veces se necesite"
+      ],
+      "comoComunicar": [
+        "Una idea por frase, verbo de acción al inicio",
+        "Confirmar comprensión con evidencia, no con un 'sí' automático"
+      ],
+      "situacionesRapidas": [
+        "No comprende las instrucciones",
+        "¿Cómo puedo dar la instrucción de otra manera?",
+        "La consigna oral no le alcanza"
+      ],
+      "fuentes": [
+        "cast-udl-guidelines",
+        "understood-udl",
+        "dua-colombia-decreto-1421"
+      ]
+    },
+    {
+      "id": "ambos-aprendizaje-dua-explicar-de-otra-manera",
+      "condicion": "ambos",
+      "area": "aprendizaje",
+      "titulo": "Explicar la misma actividad de otra manera",
+      "contextoEducativo": "Cuando un estudiante no accede a un contenido por una vía, el DUA invita a ofrecer otra: cambiar el formato, el ejemplo o el nivel de apoyo sin bajar el objetivo de aprendizaje. Sirve tanto para TDAH como para TEA y suele ayudar a todo el grupo.",
+      "dificultadesTipicas": [
+        "El estudiante no comprende con la explicación estándar",
+        "Se pierde el objetivo al 'simplificar' quitando contenido",
+        "Un mismo ejemplo no conecta con todos"
+      ],
+      "estrategias": [
+        {
+          "que": "Cambiar el formato, no el objetivo",
+          "como": "Reexplicar con otro canal (visual, manipulativo, oral, ejemplo real) manteniendo la meta.",
+          "ejemplo": "Si no entendió las fracciones en el cuaderno, mostrarlas partiendo una fruta o con bloques."
+        },
+        {
+          "que": "Del concreto a lo abstracto",
+          "como": "Empezar por material concreto y ejemplos cercanos antes del símbolo abstracto.",
+          "ejemplo": "Contar objetos reales antes de escribir la operación."
+        },
+        {
+          "que": "Andamiaje graduado",
+          "como": "Dar más apoyo al inicio y retirarlo poco a poco a medida que avanza.",
+          "ejemplo": "Primero con un modelo resuelto al lado, luego sin él."
+        }
+      ],
+      "queEvitar": [
+        "Repetir la misma explicación más fuerte o más rápido",
+        "Reducir el objetivo de aprendizaje al adaptar",
+        "Un solo ejemplo o formato para todo el grupo"
+      ],
+      "comoAdaptar": [
+        "Tener lista una segunda y tercera forma de explicar cada tema clave",
+        "Ofrecer opciones de cómo demostrar lo aprendido"
+      ],
+      "comoComunicar": [
+        "Presentar la nueva explicación sin transmitir frustración",
+        "Conectar el contenido con su experiencia e intereses"
+      ],
+      "situacionesRapidas": [
+        "¿Cómo puedo explicarle esta actividad de otra manera?",
+        "No entiende con la explicación normal",
+        "Necesito adaptar la actividad sin bajar el objetivo"
+      ],
+      "fuentes": [
+        "cast-udl-guidelines",
+        "understood-udl",
+        "dua-colombia-decreto-1421"
+      ]
+    }
+  ],
+  "fichas": [
+    {
+      "tipo": "ficha-aprende",
+      "slug": "que-es-tdah",
+      "titulo": "¿Qué es el TDAH? (en el contexto del aula)",
+      "condicion": "TDAH",
+      "fuentes": [
+        "dsm-5-tr-apa",
+        "who-icd-11",
+        "nice-ng87-adhd",
+        "cdc-adhd-classroom",
+        "cadah-tdah-aula"
+      ],
+      "id": "que-es-tdah",
+      "body": "> **Importante.** Esta ficha es material **educativo**, no clínico. Describe\n> características para que el docente comprenda y apoye mejor, **no** sirve para\n> diagnosticar ni etiquetar a ningún estudiante. El diagnóstico solo lo realiza un\n> profesional de la salud cualificado.\n\n## En palabras sencillas\n\nEl TDAH (Trastorno por Déficit de Atención e Hiperactividad) es una condición del\n**neurodesarrollo**. Las clasificaciones profesionales de referencia —el **DSM-5-TR**\n(APA) y la **CIE-11** (OMS, código 6A05)— lo describen como un patrón persistente de\n**inatención** y/o **hiperactividad-impulsividad** que aparece temprano en la infancia y\nafecta el funcionamiento en más de un entorno (por ejemplo, casa y escuela).\n\nNo es falta de inteligencia, de esfuerzo ni de educación: es una forma distinta de\nfuncionar de la atención y el autocontrol, ligada a las **funciones ejecutivas** (iniciar\ntareas, sostener el foco, organizar, esperar, regular emociones).\n\n## Cómo se puede manifestar en el aula\n\nCada estudiante es distinto y no presenta todo lo siguiente. Suele agruparse en dos\ngrandes áreas:\n\n**Inatención**\n- Se distrae con facilidad con estímulos del entorno.\n- Le cuesta sostener la atención en tareas largas o poco estimulantes.\n- Deja actividades a medias; pierde u olvida materiales o pasos.\n- Parece \"no escuchar\" cuando se dan varias instrucciones juntas.\n\n**Hiperactividad / impulsividad**\n- Le cuesta permanecer quieto o en silencio en situaciones estructuradas.\n- Responde o interrumpe sin esperar turno; actúa antes de pensar.\n- Le cuesta esperar y tolerar la frustración.\n\nLa intensidad **varía según el entorno**: más estructura y menos distractores suelen\nmejorar el desempeño.\n\n## Qué ayuda (idea general)\n\nEstructura y rutinas previsibles, instrucciones cortas y de a una, apoyos visuales del\ntiempo y de los pasos, tareas divididas en metas cortas, refuerzo positivo frecuente y\noportunidades de movimiento. El marco del **Diseño Universal para el Aprendizaje (DUA)**\ny las guías clínicas basadas en evidencia (**NICE NG87**) respaldan estos apoyos en el\nentorno educativo.\n\n## Qué NO hacer\n\nNo diagnosticar ni etiquetar; no atribuir la conducta a \"mala voluntad\"; no exponer ni\navergonzar en público; no exigir atención sostenida sin pausas."
+    },
+    {
+      "tipo": "ficha-aprende",
+      "slug": "que-es-tea",
+      "titulo": "¿Qué es el TEA? (en el contexto del aula)",
+      "condicion": "TEA",
+      "fuentes": [
+        "dsm-5-tr-apa",
+        "who-icd-11",
+        "nice-cg170-autism",
+        "autism-speaks-classroom",
+        "autismo-espana"
+      ],
+      "id": "que-es-tea",
+      "body": "> **Importante.** Esta ficha es material **educativo**, no clínico. Describe\n> características para que el docente comprenda y apoye mejor, **no** sirve para\n> diagnosticar ni etiquetar a ningún estudiante. El diagnóstico solo lo realiza un\n> profesional de la salud cualificado.\n\n## En palabras sencillas\n\nEl TEA (Trastorno del Espectro Autista) es una condición del **neurodesarrollo**. Las\nclasificaciones profesionales de referencia —el **DSM-5-TR** (APA) y la **CIE-11** (OMS,\ncódigo 6A02)— lo describen en torno a dos grandes áreas: diferencias en la **comunicación\ne interacción social**, y patrones de **intereses, actividades y conductas** repetitivos o\nrestringidos, que suelen incluir diferencias en el **procesamiento sensorial**.\n\nSe habla de \"espectro\" porque su presentación es muy variada: cada persona autista es\ndistinta, con su propio perfil de fortalezas y necesidades de apoyo. No es fruto de la\ncrianza ni falta de afecto: es una forma distinta de percibir, comunicarse y procesar el\nmundo.\n\n## Cómo se puede manifestar en el aula\n\nCada estudiante es distinto y no presenta todo lo siguiente.\n\n**Comunicación e interacción social**\n- Interpretación literal del lenguaje; dificultad con ironías o dobles sentidos.\n- Puede necesitar más tiempo para procesar lo que se le dice.\n- Le cuestan las reglas sociales \"no escritas\" (turnos, distancia, iniciar una charla).\n\n**Intereses, rutinas y sensorialidad**\n- Se apoya en la rutina y la previsibilidad; la incertidumbre le genera ansiedad.\n- Intereses intensos y específicos, que pueden ser una gran fortaleza.\n- Conductas repetitivas de autorregulación; diferencias sensoriales (hiper- o\n  hiposensibilidad a ruidos, luces, texturas).\n\n## Qué ayuda (idea general)\n\nPrevisibilidad y anticipación de los cambios, apoyos visuales y estructura clara,\nlenguaje concreto y literal, enseñanza explícita de las normas sociales, respeto por sus\nnecesidades sensoriales y uso de sus intereses y fortalezas como motor del aprendizaje.\nEl marco del **DUA** y las guías clínicas basadas en evidencia (**NICE CG170**) respaldan\nestos apoyos en el entorno educativo.\n\n## Qué NO hacer\n\nNo diagnosticar ni etiquetar; no forzar contacto visual ni cercanía; no interpretar una\nsobrecarga sensorial como berrinche; no eliminar conductas de autorregulación que no\ndañan; no cambiar la rutina sin avisar."
+    }
+  ]
+}

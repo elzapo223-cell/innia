@@ -37,4 +37,4 @@ Thumbs.db
 
 # Generated content bundles (derived from research/)
 desktop/resources/base.bundle.json
-web/lib/content.generated.json
+# web/lib/content.generated.json se commitea: es el respaldo de contenido para el build/deploy.

@@ -6,7 +6,7 @@
   "scripts": {
     "gen:content": "node scripts/gen-content.mjs",
     "dev": "npm run gen:content && next dev",
-    "build": "npm run gen:content && next build",
+    "build": "next build",
     "start": "next start"
   },
   "dependencies": {

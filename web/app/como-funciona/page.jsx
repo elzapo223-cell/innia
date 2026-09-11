@@ -1,6 +1,7 @@
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
 import { MODE_ICONS, IconLock } from "../../components/Icons.jsx";
 import { DeviceLocal } from "../../components/Art.jsx";
+import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Cómo funciona · INNIA" };
 
@@ -61,7 +62,7 @@ export default function ComoFunciona() {
               ahí, todo ocurre localmente: no se envía nada a internet y funciona sin conexión.
             </p>
           </div>
-          <DeviceLocal className="w-full h-auto" />
+          <Parallax amount={28}><DeviceLocal className="w-full h-auto" /></Parallax>
         </div>
       </FadeUp>
     </div>

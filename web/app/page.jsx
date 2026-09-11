@@ -3,7 +3,8 @@ import Probador from "../components/Probador.jsx";
 import ModosTabs from "../components/ModosTabs.jsx";
 import { FadeUp, Stagger, Item, Magnetic } from "../components/Anim.jsx";
 import { IconLock, IconShield, IconCompass, IconBook } from "../components/Icons.jsx";
-import { MOTIF_BY_CONDICION, HeroScene } from "../components/Art.jsx";
+import { MOTIF_BY_CONDICION } from "../components/Art.jsx";
+import { HeroSceneAnimated } from "../components/AnimatedArt.jsx";
 import { getFichas, getFuentes } from "../lib/content.js";
 
 const PILARES = [
@@ -79,7 +80,7 @@ export default async function Home() {
         </div>
 
         <FadeUp delay={0.2}>
-          <HeroScene className="w-full h-auto" />
+          <HeroSceneAnimated className="w-full h-auto" />
         </FadeUp>
       </section>
 

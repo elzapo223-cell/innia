@@ -2,6 +2,7 @@ import { getFuentes } from "../../lib/content.js";
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
 import { IconLock, IconShield, IconCompass, IconBook } from "../../components/Icons.jsx";
 import { ShieldCare } from "../../components/Art.jsx";
+import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Confianza y privacidad · INNIA" };
 
@@ -27,7 +28,7 @@ export default function Confianza() {
               No son opcionales: gobiernan cada respuesta de INNIA.
             </p>
           </div>
-          <ShieldCare className="w-full h-auto max-w-sm mx-auto" />
+          <Parallax amount={26} className="max-w-sm mx-auto"><ShieldCare className="w-full h-auto" /></Parallax>
         </div>
       </FadeUp>
 

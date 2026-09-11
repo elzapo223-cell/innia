@@ -94,12 +94,12 @@ export function MotifTDAH({ className = "" }) {
       <path d="M70 260 C 160 230, 210 180, 288 130" stroke="url(#t_spec)" strokeWidth="1.6" strokeDasharray="2 8" opacity="0.3" />
       {/* partículas dispersas */}
       {[[70,110,10],[120,200,6],[160,90,5],[200,175,8],[95,255,4],[240,70,4],[180,240,5],[130,140,3],[50,190,4],[215,225,6]].map(([x,y,r],i)=>(
-        <circle key={i} cx={x} cy={y} r={r} fill="url(#t_spec)" opacity={0.3 + (i%3)*0.18} />
+        <circle key={i} className={i % 2 ? "a-float" : "a-float2"} style={{ animationDelay: `${i * 0.35}s` }} cx={x} cy={y} r={r} fill="url(#t_spec)" opacity={0.3 + (i%3)*0.18} />
       ))}
       {/* foco nítido */}
-      <circle cx="290" cy="120" r="34" stroke="url(#t_spec)" strokeWidth="3" />
+      <circle className="a-pulse" cx="290" cy="120" r="34" stroke="url(#t_spec)" strokeWidth="3" />
       <circle cx="290" cy="120" r="20" stroke="url(#t_spec)" strokeWidth="1.6" opacity="0.6" />
-      <circle cx="290" cy="120" r="9" fill="url(#t_spec)" />
+      <circle className="a-twinkle" cx="290" cy="120" r="9" fill="url(#t_spec)" />
     </svg>
   );
 }
@@ -124,7 +124,7 @@ export function MotifTEA({ className = "" }) {
           const x = 60 + c * 35;
           const y = 55 + r * 30;
           const on = (r + c) % 3 === 0;
-          return <circle key={`${r}-${c}`} cx={x} cy={y} r={on ? 6 : 3} fill="url(#e_spec)" opacity={on ? 0.9 : 0.28} />;
+          return <circle key={`${r}-${c}`} className={on ? "a-twinkle" : undefined} style={on ? { animationDelay: `${(r + c) * 0.25}s` } : undefined} cx={x} cy={y} r={on ? 6 : 3} fill="url(#e_spec)" opacity={on ? 0.9 : 0.28} />;
         })
       )}
       {/* camino estructurado resaltado */}
@@ -154,7 +154,7 @@ export function DeviceLocal({ className = "" }) {
       <defs><Grad id="d_spec" /><radialGradient id="d_glow" cx="0.5" cy="0.45" r="0.55"><stop offset="0" stopColor="#6ea8fe" stopOpacity="0.28"/><stop offset="1" stopColor="#6ea8fe" stopOpacity="0"/></radialGradient></defs>
       <ellipse cx="200" cy="150" rx="160" ry="110" fill="url(#d_glow)" />
       {/* órbitas de datos que se quedan dentro */}
-      <ellipse cx="200" cy="150" rx="150" ry="70" stroke="url(#d_spec)" strokeWidth="1.4" strokeDasharray="3 9" opacity="0.4" />
+      <ellipse className="a-spin-slow" cx="200" cy="150" rx="150" ry="70" stroke="url(#d_spec)" strokeWidth="1.4" strokeDasharray="3 9" opacity="0.4" />
       <rect x="108" y="78" width="184" height="120" rx="10" stroke="url(#d_spec)" strokeWidth="2.5" fill="#ffffff" fillOpacity="0.03" />
       <path d="M84 214 L 316 214 L 298 198 L 102 198 Z" stroke="url(#d_spec)" strokeWidth="2.5" strokeLinejoin="round" fill="#ffffff" fillOpacity="0.03" />
       {/* candado */}
@@ -173,7 +173,7 @@ export function ShieldCare({ className = "" }) {
       <defs><Grad id="s_spec" /><radialGradient id="s_glow" cx="0.5" cy="0.4" r="0.55"><stop offset="0" stopColor="#5eead4" stopOpacity="0.22"/><stop offset="1" stopColor="#5eead4" stopOpacity="0"/></radialGradient></defs>
       <circle cx="200" cy="140" r="130" fill="url(#s_glow)" />
       <path d="M200 45 L 300 82 v70 c0 66 -46 100 -100 128 c -54 -28 -100 -62 -100 -128 v-70 z" stroke="url(#s_spec)" strokeWidth="2.6" fill="#ffffff" fillOpacity="0.03" />
-      <path d="M200 205 c -40 -26 -58 -50 -58 -78 a 26 26 0 0 1 58 -12 a 26 26 0 0 1 58 12 c 0 28 -18 52 -58 78 z" fill="url(#s_spec)" opacity="0.75" />
+      <path className="a-pulse" d="M200 205 c -40 -26 -58 -50 -58 -78 a 26 26 0 0 1 58 -12 a 26 26 0 0 1 58 12 c 0 28 -18 52 -58 78 z" fill="url(#s_spec)" opacity="0.75" />
     </svg>
   );
 }

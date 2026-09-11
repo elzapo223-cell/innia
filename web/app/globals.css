@@ -208,6 +208,5 @@ a { color: inherit; text-decoration: none; }
   .aurora span { animation: none; }
   .reveal { opacity: 1; transform: none; transition: none; }
   .glass-hover:hover { transform: none; }
-  .marquee__track { animation: none; }
   * { scroll-behavior: auto !important; }
 }

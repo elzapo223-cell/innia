@@ -96,7 +96,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- MODOS ---------- */}
-      <section className="wrap py-28 hairline">
+      <section className="wrap py-28">
         <FadeUp>
           <div className="mb-12">
             <span className="kicker">Un asistente, cinco modos</span>
@@ -107,16 +107,16 @@ export default async function Home() {
       </section>
 
       {/* ---------- PILARES (fila con divisores, sin cajas) ---------- */}
-      <section className="wrap py-28 hairline">
+      <section className="wrap py-28">
         <FadeUp>
           <div className="mb-12 max-w-2xl">
             <span className="kicker">Por qué confiar</span>
             <h2 className="display-xl text-3xl md:text-5xl mt-4">Una base de confianza, no de promesas</h2>
           </div>
         </FadeUp>
-        <Stagger className="grid grid-cols-1 md:grid-cols-4 gap-y-8 divide-spectrum">
+        <Stagger className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-10">
           {PILARES.map((p) => (
-            <Item key={p.t} className="md:pl-8">
+            <Item key={p.t}>
               <p.Icon width={26} height={26} className="text-innia-accent" />
               <h3 className="font-display text-xl mt-5">{p.t}</h3>
               <p className="text-[13.5px] text-white/55 mt-2 leading-relaxed max-w-[260px]">{p.d}</p>
@@ -126,9 +126,11 @@ export default async function Home() {
       </section>
 
       {/* ---------- FUNDAMENTADO EN (marquee) ---------- */}
-      <section className="py-24 hairline">
+      <section className="py-24">
         <div className="wrap text-center mb-7">
-          <span className="kicker">Fundamentado en fuentes reputadas</span>
+          <span className="kicker" style={{ color: "rgba(255,255,255,0.82)" }}>
+            Fundamentado en fuentes reputadas
+          </span>
         </div>
         <div className="marquee">
           <div className="marquee__track">
@@ -153,14 +155,14 @@ export default async function Home() {
       </section>
 
       {/* ---------- PASOS (timeline) ---------- */}
-      <section className="wrap py-28 hairline">
+      <section className="wrap py-28">
         <FadeUp>
           <div className="mb-14 text-center">
             <span className="kicker">En minutos</span>
             <h2 className="display-xl text-3xl md:text-5xl mt-4">Empezar es simple</h2>
           </div>
         </FadeUp>
-        <Stagger className="grid md:grid-cols-3 gap-y-10 steps-line">
+        <Stagger className="grid md:grid-cols-3 gap-y-10">
           {PASOS.map((p) => (
             <Item key={p.n} className="text-center px-4">
               <div className="font-display text-5xl text-spectrum">{p.n}</div>
@@ -172,7 +174,7 @@ export default async function Home() {
       </section>
 
       {/* ---------- APRENDE (lista editorial) ---------- */}
-      <section className="wrap py-28 hairline">
+      <section className="wrap py-28">
         <FadeUp>
           <div className="flex items-end justify-between mb-10">
             <div>

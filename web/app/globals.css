@@ -170,6 +170,16 @@ html.lenis, html.lenis body { height: auto; }
   background-clip: text;
   color: transparent;
 }
+/* Título con degradado del espectro que fluye (efecto premium, sutil) */
+.text-flow {
+  background: linear-gradient(100deg, #6ea8fe, #a78bfa 35%, #f0abfc 55%, #6ea8fe 100%);
+  background-size: 220% auto;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: textflow 9s linear infinite;
+}
+@keyframes textflow { to { background-position: 220% center; } }
 .ribbon {
   height: 4px;
   border-radius: 999px;

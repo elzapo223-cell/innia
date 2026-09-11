@@ -1,4 +1,6 @@
 import { FadeUp } from "../../components/Anim.jsx";
+import { QuestionScene } from "../../components/Art.jsx";
+import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Preguntas frecuentes · INNIA" };
 
@@ -15,10 +17,15 @@ const FAQ = [
 export default function Faq() {
   return (
     <div className="wrap-narrow py-24">
-      <FadeUp>
-        <span className="kicker">Preguntas frecuentes</span>
-        <h1 className="display-xl text-4xl md:text-6xl mt-5">Todo lo esencial</h1>
-      </FadeUp>
+      <div className="grid md:grid-cols-[1fr_0.7fr] gap-8 items-center">
+        <FadeUp>
+          <span className="kicker">Preguntas frecuentes</span>
+          <h1 className="display-xl text-4xl md:text-6xl mt-5">Todo lo esencial</h1>
+        </FadeUp>
+        <Parallax amount={18}>
+          <QuestionScene className="w-full h-auto max-w-xs mx-auto" />
+        </Parallax>
+      </div>
 
       <FadeUp>
         <div className="mt-16">

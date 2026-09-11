@@ -47,7 +47,7 @@ export default async function Home() {
           <FadeUp delay={0.08}>
             <h1 className="display-xl mt-6 text-[2.7rem] md:text-[4rem]">
               De <span className="text-white/45">“no sé cómo manejar esto”</span>
-              <br />a <span className="text-spectrum">“tengo estrategias”</span>
+              <br />a <span className="text-flow">“tengo estrategias”</span>
             </h1>
           </FadeUp>
           <FadeUp delay={0.3}>
@@ -107,7 +107,7 @@ export default async function Home() {
         <FadeUp delay={0.15}>
           <h2 className="display-xl mt-4 text-[2.2rem] md:text-[3.4rem] max-w-4xl mx-auto">
             INNIA convierte una situación del aula en{" "}
-            <span className="text-spectrum">estrategias concretas</span>, en segundos.
+            <span className="text-flow">estrategias concretas</span>, en segundos.
           </h2>
         </FadeUp>
       </section>
@@ -230,7 +230,7 @@ export default async function Home() {
       <section className="wrap py-32 text-center glow">
         <FadeUp>
           <h2 className="display-xl text-[2.4rem] md:text-[3.6rem] max-w-3xl mx-auto">
-            Empieza hoy a <span className="text-spectrum">incluir mejor</span>
+            Empieza hoy a <span className="text-flow">incluir mejor</span>
           </h2>
           <p className="text-white/60 mt-5 max-w-xl mx-auto text-lg">
             Gratuito, privado y pensado para el aula real.

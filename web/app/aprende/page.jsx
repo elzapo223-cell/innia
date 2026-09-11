@@ -2,7 +2,8 @@ import Link from "next/link";
 import { getFichas, getEstrategias } from "../../lib/content.js";
 import AprendeFiltro from "../../components/AprendeFiltro.jsx";
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
-import { MOTIF_BY_CONDICION } from "../../components/Art.jsx";
+import { MOTIF_BY_CONDICION, LearnScene, StrategiesScene } from "../../components/Art.jsx";
+import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Aprende · INNIA" };
 
@@ -12,14 +13,19 @@ export default async function Aprende() {
 
   return (
     <div className="wrap py-24">
-      <FadeUp>
-        <span className="kicker">Contenido educativo</span>
-        <h1 className="display-xl text-4xl md:text-6xl mt-5 max-w-3xl">Aprende sobre TDAH y TEA</h1>
-        <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
-          Información educativa sobre TDAH y TEA en el aula, y estrategias por área. Material
-          educativo con fuentes públicas — no reemplaza el criterio de un profesional.
-        </p>
-      </FadeUp>
+      <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
+        <FadeUp>
+          <span className="kicker">Contenido educativo</span>
+          <h1 className="display-xl text-4xl md:text-6xl mt-5">Aprende sobre TDAH y TEA</h1>
+          <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
+            Información educativa sobre TDAH y TEA en el aula, y estrategias por área. Material
+            educativo con fuentes públicas — no reemplaza el criterio de un profesional.
+          </p>
+        </FadeUp>
+        <Parallax amount={22}>
+          <LearnScene className="w-full h-auto max-w-md mx-auto" />
+        </Parallax>
+      </div>
 
       {/* Fichas */}
       <div className="mt-20">
@@ -51,10 +57,18 @@ export default async function Aprende() {
 
       {/* Estrategias con filtro */}
       <div className="mt-24 pt-14 hairline">
-        <FadeUp>
-          <span className="kicker">Estrategias por área</span>
-          <h2 className="display-xl text-2xl md:text-4xl mt-5 mb-10">Filtra por condición y área</h2>
-        </FadeUp>
+        <div className="grid lg:grid-cols-[1fr_0.7fr] gap-10 items-center mb-10">
+          <FadeUp>
+            <span className="kicker">Estrategias por área</span>
+            <h2 className="display-xl text-2xl md:text-4xl mt-5">Filtra por condición y área</h2>
+            <p className="text-white/60 mt-3 max-w-md">
+              Explora estrategias concretas por condición y por área del aula, con sus fuentes.
+            </p>
+          </FadeUp>
+          <Parallax amount={20}>
+            <StrategiesScene className="w-full h-auto max-w-sm mx-auto" />
+          </Parallax>
+        </div>
         <AprendeFiltro estrategias={estrategias} />
       </div>
     </div>

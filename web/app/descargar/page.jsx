@@ -1,4 +1,6 @@
 import { FadeUp, Stagger, Item, Magnetic } from "../../components/Anim.jsx";
+import { AppWindow, DeviceLocal } from "../../components/Art.jsx";
+import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Descargar · INNIA" };
 
@@ -21,6 +23,7 @@ const PASOS = [
 export default function Descargar() {
   return (
     <div className="wrap py-24">
+      <div className="grid lg:grid-cols-[1.1fr_0.9fr] gap-10 items-center">
       <FadeUp>
         <span className="kicker">Descargar</span>
         <h1 className="display-xl text-4xl md:text-6xl mt-5">INNIA para Windows</h1>
@@ -47,12 +50,17 @@ export default function Descargar() {
           </span>
         </div>
       </FadeUp>
+        <Parallax amount={24}>
+          <AppWindow className="w-full h-auto max-w-md mx-auto" />
+        </Parallax>
+      </div>
 
       {/* Requisitos */}
       <FadeUp>
-        <div className="mt-24 pt-14 hairline">
+        <div className="mt-24 pt-14 hairline grid lg:grid-cols-[1fr_0.6fr] gap-10 items-center">
+          <div>
           <span className="kicker">Requisitos</span>
-          <dl className="mt-8 max-w-3xl">
+          <dl className="mt-8">
             {REQUISITOS.map(([k, v], i) => (
               <div key={k} className={`grid grid-cols-[7rem_1fr] md:grid-cols-[10rem_1fr] gap-4 py-5 ${i > 0 ? "hairline" : ""}`}>
                 <dt className="text-white/50">{k}</dt>
@@ -60,6 +68,10 @@ export default function Descargar() {
               </div>
             ))}
           </dl>
+          </div>
+          <Parallax amount={22}>
+            <DeviceLocal className="w-full h-auto max-w-xs mx-auto" />
+          </Parallax>
         </div>
       </FadeUp>
 

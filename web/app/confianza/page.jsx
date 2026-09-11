@@ -1,7 +1,7 @@
 import { getFuentes } from "../../lib/content.js";
 import { FadeUp, Stagger, Item } from "../../components/Anim.jsx";
 import { IconLock, IconShield, IconCompass, IconBook } from "../../components/Icons.jsx";
-import { ShieldCare } from "../../components/Art.jsx";
+import { ShieldCare, SourcesScene } from "../../components/Art.jsx";
 import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Confianza y privacidad · INNIA" };
@@ -48,8 +48,18 @@ export default function Confianza() {
 
       <FadeUp>
         <div className="mt-24 pt-14 hairline">
-          <span className="kicker">Fuentes</span>
-          <ul className="mt-8 max-w-3xl">
+          <div className="grid lg:grid-cols-[1fr_0.7fr] gap-10 items-center">
+            <div>
+              <span className="kicker">Fuentes</span>
+              <p className="text-white/60 mt-3 max-w-md">
+                Todo lo que dice INNIA se apoya en material citado y verificable.
+              </p>
+            </div>
+            <Parallax amount={20}>
+              <SourcesScene className="w-full h-auto max-w-sm mx-auto" />
+            </Parallax>
+          </div>
+          <ul className="mt-10 max-w-3xl">
             {fuentes.map((f, i) => (
               <li key={f.id} className={i > 0 ? "hairline" : ""}>
                 <a

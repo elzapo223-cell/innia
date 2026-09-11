@@ -197,12 +197,12 @@ export function AppWindow({ className = "" }) {
       <ellipse cx="200" cy="150" rx="170" ry="120" fill="url(#aw_glow)" />
       <rect x="70" y="70" width="260" height="176" rx="16" fill="#ffffff" fillOpacity="0.03" stroke="url(#aw_spec)" strokeWidth="2.2" />
       <path d="M70 100 H 330" stroke="url(#aw_spec)" strokeWidth="1.6" opacity="0.5" />
-      <circle className="a-twinkle" cx="90" cy="85" r="4" fill="url(#aw_spec)" />
-      <circle className="a-twinkle" style={{ animationDelay: "0.6s" }} cx="106" cy="85" r="4" fill="#ffffff" opacity="0.4" />
-      <circle className="a-twinkle" style={{ animationDelay: "1.2s" }} cx="122" cy="85" r="4" fill="#ffffff" opacity="0.3" />
-      {/* flecha de descarga */}
-      <g className="a-float">
-        <circle cx="200" cy="168" r="46" stroke="url(#aw_spec)" strokeWidth="2.4" fill="#ffffff" fillOpacity="0.03" />
+      <circle cx="90" cy="85" r="4" fill="url(#aw_spec)" />
+      <circle cx="106" cy="85" r="4" fill="#ffffff" opacity="0.4" />
+      <circle cx="122" cy="85" r="4" fill="#ffffff" opacity="0.3" />
+      {/* flecha de descarga (respira suave) */}
+      <g className="a-breathe">
+        <circle className="a-pulse" cx="200" cy="168" r="46" stroke="url(#aw_spec)" strokeWidth="2.4" fill="#ffffff" fillOpacity="0.03" />
         <path d="M200 146 v34 M186 168 l14 14 14 -14" stroke="url(#aw_spec)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
       </g>
       <rect x="150" y="224" width="100" height="4" rx="2" fill="url(#aw_spec)" opacity="0.4" />
@@ -216,13 +216,13 @@ export function QuestionScene({ className = "" }) {
     <svg viewBox="0 0 400 300" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: preguntas frecuentes">
       <defs><Grad id="q_spec" /><radialGradient id="q_glow" cx="0.5" cy="0.45" r="0.6"><stop offset="0" stopColor="#a78bfa" stopOpacity="0.26"/><stop offset="1" stopColor="#a78bfa" stopOpacity="0"/></radialGradient></defs>
       <circle cx="200" cy="150" r="140" fill="url(#q_glow)" />
-      <g className="a-float">
+      <g>
         <rect x="70" y="80" width="150" height="96" rx="18" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
         <path d="M100 176 l0 22 22 -22 z" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
         <path d="M120 118 a 22 22 0 1 1 25 22 v 8" stroke="url(#q_spec)" strokeWidth="3.5" strokeLinecap="round" fill="none" />
         <circle cx="145" cy="158" r="3.5" fill="url(#q_spec)" />
       </g>
-      <g className="a-float2">
+      <g className="a-breathe">
         <rect x="200" y="150" width="150" height="86" rx="18" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
         <path d="M320 236 l0 20 -22 -20 z" fill="#ffffff" fillOpacity="0.04" stroke="url(#q_spec)" strokeWidth="2" />
         <rect x="220" y="176" width="90" height="8" rx="4" fill="url(#q_spec)" opacity="0.6" />
@@ -251,6 +251,75 @@ export function BlogScene({ className = "" }) {
         <rect x="150" y="180" width="60" height="12" rx="6" fill="url(#b_spec)" opacity="0.4" />
       </g>
       <path className="a-twinkle" d="M312 70 l4 11 11 4 -11 4 -4 11 -4 -11 -11 -4 11 -4 z" fill="url(#b_spec)" />
+    </svg>
+  );
+}
+
+/* Aprende — libro abierto con arcos del espectro (conocimiento que sube). */
+export function LearnScene({ className = "" }) {
+  return (
+    <svg viewBox="0 0 400 300" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: aprender">
+      <defs><Grad id="l_spec" /><radialGradient id="l_glow" cx="0.5" cy="0.75" r="0.6"><stop offset="0" stopColor="#6ea8fe" stopOpacity="0.26"/><stop offset="1" stopColor="#6ea8fe" stopOpacity="0"/></radialGradient></defs>
+      <circle cx="200" cy="210" r="140" fill="url(#l_glow)" />
+      {/* arcos de conocimiento */}
+      <path className="a-flow" d="M120 120 A 90 90 0 0 1 280 120" stroke="url(#l_spec)" strokeWidth="2" strokeDasharray="4 10" opacity="0.6" />
+      <path className="a-flow" style={{ animationDelay: "0.8s" }} d="M95 130 A 115 115 0 0 1 305 130" stroke="url(#l_spec)" strokeWidth="1.6" strokeDasharray="3 11" opacity="0.4" />
+      {/* libro abierto */}
+      <g className="a-breathe">
+        <path d="M200 150 C 160 132, 110 132, 78 150 L 78 232 C 110 214, 160 214, 200 232 Z" fill="#ffffff" fillOpacity="0.04" stroke="url(#l_spec)" strokeWidth="2.2" />
+        <path d="M200 150 C 240 132, 290 132, 322 150 L 322 232 C 290 214, 240 214, 200 232 Z" fill="#ffffff" fillOpacity="0.04" stroke="url(#l_spec)" strokeWidth="2.2" />
+        <path d="M200 150 V 232" stroke="url(#l_spec)" strokeWidth="2.2" />
+        <path d="M96 165 C 130 152, 168 152, 190 165 M96 185 C 130 172, 168 172, 190 185" stroke="#ffffff" strokeOpacity="0.22" strokeWidth="2" />
+        <path d="M210 165 C 232 152, 270 152, 304 165 M210 185 C 232 172, 270 172, 304 185" stroke="#ffffff" strokeOpacity="0.22" strokeWidth="2" />
+      </g>
+    </svg>
+  );
+}
+
+/* Confianza — red de fuentes: nodo central conectado a documentos citados. */
+export function SourcesScene({ className = "" }) {
+  const nodes = [[70,80],[330,90],[60,210],[340,210],[200,55]];
+  return (
+    <svg viewBox="0 0 400 300" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: red de fuentes">
+      <defs><Grad id="src_spec" /><radialGradient id="src_glow" cx="0.5" cy="0.5" r="0.55"><stop offset="0" stopColor="#a78bfa" stopOpacity="0.24"/><stop offset="1" stopColor="#a78bfa" stopOpacity="0"/></radialGradient></defs>
+      <circle cx="200" cy="150" r="130" fill="url(#src_glow)" />
+      {nodes.map(([x,y],i)=>(
+        <path key={"l"+i} className="a-flow" style={{ animationDelay: `${i*0.4}s` }} d={`M200 150 L ${x} ${y}`} stroke="url(#src_spec)" strokeWidth="1.6" strokeDasharray="3 8" opacity="0.5" />
+      ))}
+      {nodes.map(([x,y],i)=>(
+        <g key={"n"+i}>
+          <rect x={x-22} y={y-15} width="44" height="30" rx="6" fill="#ffffff" fillOpacity="0.04" stroke="url(#src_spec)" strokeWidth="1.6" />
+          <rect x={x-14} y={y-6} width="20" height="3.5" rx="1.75" fill="url(#src_spec)" opacity="0.8" />
+          <rect x={x-14} y={y+2} width="28" height="3" rx="1.5" fill="#ffffff" opacity="0.25" />
+        </g>
+      ))}
+      <g className="a-breathe">
+        <circle cx="200" cy="150" r="30" fill="#ffffff" fillOpacity="0.05" stroke="url(#src_spec)" strokeWidth="2.4" />
+        <path d="M188 150 l8 8 16 -18" stroke="url(#src_spec)" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round" />
+      </g>
+    </svg>
+  );
+}
+
+/* Aprende/estrategias — un núcleo que se ramifica en enfoques. */
+export function StrategiesScene({ className = "" }) {
+  const ends = [[70,70],[330,70],[70,230],[330,230]];
+  return (
+    <svg viewBox="0 0 400 300" className={className} fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración: estrategias">
+      <defs><Grad id="st_spec" /><radialGradient id="st_glow" cx="0.5" cy="0.5" r="0.55"><stop offset="0" stopColor="#f0abfc" stopOpacity="0.2"/><stop offset="1" stopColor="#f0abfc" stopOpacity="0"/></radialGradient></defs>
+      <circle cx="200" cy="150" r="130" fill="url(#st_glow)" />
+      {ends.map(([x,y],i)=>(
+        <path key={"b"+i} className="a-flow" style={{ animationDelay: `${i*0.5}s` }} d={`M200 150 C ${(200+x)/2} 150, ${x} ${(150+y)/2}, ${x} ${y}`} stroke="url(#st_spec)" strokeWidth="1.8" strokeDasharray="4 9" opacity="0.55" />
+      ))}
+      {ends.map(([x,y],i)=>(
+        <g key={"c"+i}>
+          <rect x={x-30} y={y-18} width="60" height="36" rx="10" fill="#ffffff" fillOpacity="0.04" stroke="url(#st_spec)" strokeWidth="1.6" />
+          <rect x={x-18} y={y-4} width="36" height="4" rx="2" fill="url(#st_spec)" opacity="0.7" />
+        </g>
+      ))}
+      <g className="a-breathe">
+        <path d="M200 118 l9 24 24 9 -24 9 -9 24 -9 -24 -24 -9 24 -9 z" fill="url(#st_spec)" />
+      </g>
     </svg>
   );
 }

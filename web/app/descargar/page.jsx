@@ -4,7 +4,9 @@ import { Parallax } from "../../components/AnimatedArt.jsx";
 
 export const metadata = { title: "Descargar · INNIA" };
 
-const DOWNLOAD_URL = process.env.NEXT_PUBLIC_DOWNLOAD_URL || null;
+const DOWNLOAD_URL =
+  process.env.NEXT_PUBLIC_DOWNLOAD_URL ||
+  "https://github.com/elzapo223-cell/innia/releases/download/v0.1.0/INNIA-Windows-x64.zip";
 
 const REQUISITOS = [
   ["Sistema", "Windows 10 u 11 (64 bits)"],
@@ -14,7 +16,7 @@ const REQUISITOS = [
 ];
 
 const PASOS = [
-  ["01", "Descarga el instalador (.exe) y ejecútalo."],
+  ["01", "Descarga el .zip, descomprímelo y ejecuta INNIA.exe (dentro de la carpeta)."],
   ["02", "Abre INNIA. La primera vez te guía para instalar el motor local (Ollama)."],
   ["03", "INNIA descarga el modelo adecuado a tu equipo, con barra de progreso."],
   ["04", "Listo: empieza a consultar. A partir de aquí funciona sin internet."],
@@ -37,7 +39,7 @@ export default function Descargar() {
                 href={DOWNLOAD_URL}
                 className="inline-block rounded-full px-8 py-4 font-medium text-[#0a0e1a] bg-gradient-to-r from-[#6ea8fe] to-[#a78bfa] hover:brightness-110 transition"
               >
-                Descargar para Windows (.exe)
+                Descargar para Windows (.zip)
               </a>
             </Magnetic>
           ) : (

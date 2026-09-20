@@ -14,7 +14,7 @@ const display = Fraunces({
 const body = Inter({ subsets: ["latin"], display: "swap", variable: "--font-body" });
 
 export const metadata = {
-  title: "INNIA — Asistente pedagógico para aulas inclusivas (TDAH y TEA)",
+  title: "INNIA",
   description:
     "INNIA ayuda a docentes con estrategias prácticas para estudiantes con TDAH y TEA. Funciona 100% en tu computador, sin datos de estudiantes.",
 };

@@ -4,6 +4,7 @@ const os = require("node:os");
 const fs = require("node:fs");
 
 const ollama = require("./ollama.cjs");
+const motor = require("./ollama-server.cjs");
 const { Rag } = require("./rag.cjs");
 const { construirSystemPrompt } = require("./prompts.cjs");
 
@@ -64,6 +65,8 @@ function crearVentana() {
 
 app.whenReady().then(() => {
   cargarRag();
+  // Arranca el motor local embebido (Ollama propio) en paralelo, sin bloquear la ventana.
+  motor.asegurar().catch(() => {});
   crearVentana();
   app.on("activate", () => {
     if (BrowserWindow.getAllWindows().length === 0) crearVentana();
@@ -74,10 +77,15 @@ app.on("window-all-closed", () => {
   if (process.platform !== "darwin") app.quit();
 });
 
+// Apaga el motor embebido al cerrar INNIA.
+app.on("will-quit", () => motor.detener());
+
 // --- IPC ---
 
 ipcMain.handle("innia:status", async () => {
-  const disponible = await ollama.estaDisponible();
+  // Garantiza que el motor local embebido esté corriendo (lo arranca si hace falta).
+  const r = await motor.asegurar();
+  const disponible = r.ok && (await ollama.estaDisponible());
   let modelos = [];
   if (disponible) {
     try {
@@ -86,7 +94,13 @@ ipcMain.handle("innia:status", async () => {
       /* ignorar */
     }
   }
-  return { ollamaDisponible: disponible, modelos, recomendado: modeloRecomendado() };
+  return {
+    ollamaDisponible: disponible,
+    motor: r.motor,
+    motorError: r.ok ? null : r.error,
+    modelos,
+    recomendado: modeloRecomendado(),
+  };
 });
 
 ipcMain.on("innia:pull", async (evt, { modelo }) => {

@@ -37,4 +37,8 @@ Thumbs.db
 
 # Generated content bundles (derived from research/)
 desktop/resources/base.bundle.json
+
+# Motor Ollama embebido (binario descargado de la release oficial de Ollama; ~62 MB).
+# No se versiona: se descarga y recorta en el build del desktop. Ver docs/DEPLOY.md.
+desktop/resources/ollama/
 # web/lib/content.generated.json se commitea: es el respaldo de contenido para el build/deploy.

@@ -89,14 +89,16 @@ function Onboarding({ estado, onPull, pullState }) {
       {!estado.ollamaDisponible ? (
         <div className="space-y-3 text-sm text-white/75">
           <p>
-            INNIA funciona <strong>100% en tu computador</strong> usando un motor local llamado{" "}
-            <strong>Ollama</strong>. No detectamos Ollama en ejecución.
+            INNIA funciona <strong>100% en tu computador</strong> con un motor local que viene{" "}
+            <strong>incluido en la app</strong>. No necesitas instalar ni conectar nada.
           </p>
-          <ol className="list-decimal ml-5 space-y-1">
-            <li>Descarga e instala Ollama desde <span className="text-innia-accent">ollama.com/download</span>.</li>
-            <li>Ábrelo (queda corriendo en segundo plano).</li>
-            <li>Vuelve aquí y presiona “Reintentar”.</li>
-          </ol>
+          <p>No se pudo iniciar el motor local automáticamente.</p>
+          {estado.motorError && (
+            <p className="text-white/45 text-[12px]">Detalle: {estado.motorError}</p>
+          )}
+          <p className="text-white/60 text-[13px]">
+            Cierra y vuelve a abrir INNIA, o presiona <strong>“Reintentar”</strong> arriba a la derecha.
+          </p>
           <p className="text-white/50 text-[12.5px]">
             Equipo detectado: ~{rec.ramGb} GB de RAM · modelo sugerido: <b>{rec.modelo}</b> ({rec.nivel}).
           </p>
@@ -104,11 +106,11 @@ function Onboarding({ estado, onPull, pullState }) {
       ) : (
         <div className="space-y-3 text-sm text-white/75">
           <p>
-            Ollama está listo. Falta descargar el modelo recomendado para tu equipo:{" "}
+            Motor local listo ✓. Preparando el modelo de IA para tu equipo:{" "}
             <b>{rec.modelo}</b> ({rec.nivel}, ~{rec.ramGb} GB RAM).
           </p>
           <p className="text-white/50 text-[12.5px]">
-            Es una descarga de varios GB; solo se hace una vez y luego funciona sin internet.
+            Se descarga automáticamente una sola vez (varios GB). Después INNIA funciona sin internet.
           </p>
           {pullState?.activo ? (
             <div>
@@ -120,13 +122,20 @@ function Onboarding({ estado, onPull, pullState }) {
               </div>
               <div className="text-[12px] text-white/55 mt-1">{pullState.texto}</div>
             </div>
+          ) : pullState?.error ? (
+            <div className="space-y-2">
+              <p className="text-amber-300/90 text-[12.5px]">
+                No se pudo descargar el modelo: {pullState.error}
+              </p>
+              <button
+                onClick={() => onPull(rec.modelo)}
+                className="glass glass-hover rounded-xl px-4 py-2 text-sm font-medium"
+              >
+                Reintentar descarga
+              </button>
+            </div>
           ) : (
-            <button
-              onClick={() => onPull(rec.modelo)}
-              className="glass glass-hover rounded-xl px-4 py-2 text-sm font-medium"
-            >
-              Descargar {rec.modelo}
-            </button>
+            <div className="text-[12px] text-white/55">Iniciando descarga automática…</div>
           )}
         </div>
       )}
@@ -180,9 +189,24 @@ export default function App() {
         await cargarEstado();
         setModeloActivo(modelo);
       },
-      onError: (e) => setPullState({ activo: true, pct: 0, texto: "Error: " + e.error }),
+      onError: (e) => setPullState({ activo: false, error: e.error }),
     });
   };
+
+  // Primera apertura: si el motor está listo pero aún no hay modelo, descárgalo solo.
+  const autoPullRef = useRef(false);
+  useEffect(() => {
+    if (
+      !bridge._navegador &&
+      estado?.ollamaDisponible &&
+      estado.modelos.length === 0 &&
+      !pullState &&
+      !autoPullRef.current
+    ) {
+      autoPullRef.current = true;
+      pull(estado.recomendado.modelo);
+    }
+  }, [estado, pullState]);
 
   const enviar = (texto) => {
     const contenido = (texto ?? input).trim();
@@ -308,9 +332,9 @@ export default function App() {
                 ? "border-emerald-400/30 text-emerald-300/90"
                 : "border-amber-400/30 text-amber-300/90"
             }`}
-            title="Estado de Ollama"
+            title="Estado del motor local"
           >
-            {estado?.ollamaDisponible ? `● ${modeloActivo || "listo"}` : "○ Ollama no detectado"}
+            {estado?.ollamaDisponible ? `● ${modeloActivo || "listo"}` : "○ motor local no disponible"}
           </div>
           <button onClick={cargarEstado} className="text-[11.5px] text-white/50 hover:text-white/80">
             Reintentar

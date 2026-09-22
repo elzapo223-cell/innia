@@ -8,6 +8,9 @@ const DOWNLOAD_URL =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL ||
   "https://github.com/elzapo223-cell/innia/releases/download/v0.1.2/INNIA-Windows-x64.zip";
 
+// Versión derivada del enlace de descarga (queda sincronizada con cada release).
+const VERSION = (DOWNLOAD_URL.match(/\/(v[0-9][0-9.]*)\//) || [])[1] || "";
+
 const REQUISITOS = [
   ["Sistema", "Windows 10 u 11 (64 bits)"],
   ["RAM", "8 GB mínimo · 16 GB recomendado para el modelo de mejor calidad"],
@@ -32,6 +35,11 @@ export default function Descargar() {
         <p className="mt-6 text-white/65 text-lg max-w-2xl leading-relaxed">
           Gratuito y privado. El motor de IA se instala y corre en tu propio equipo.
         </p>
+        {VERSION && (
+          <p className="mt-3 text-[13px] text-white/55">
+            Versión actual: <b className="text-white/80">INNIA {VERSION}</b>
+          </p>
+        )}
         <div className="mt-9 flex flex-wrap items-center gap-4">
           {DOWNLOAD_URL ? (
             <Magnetic>

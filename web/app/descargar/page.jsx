@@ -6,7 +6,7 @@ export const metadata = { title: "Descargar · INNIA" };
 
 const DOWNLOAD_URL =
   process.env.NEXT_PUBLIC_DOWNLOAD_URL ||
-  "https://github.com/elzapo223-cell/innia/releases/download/v0.1.1/INNIA-Windows-x64.zip";
+  "https://github.com/elzapo223-cell/innia/releases/download/v0.1.2/INNIA-Windows-x64.zip";
 
 const REQUISITOS = [
   ["Sistema", "Windows 10 u 11 (64 bits)"],

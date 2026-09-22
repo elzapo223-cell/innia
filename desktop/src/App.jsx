@@ -270,6 +270,9 @@ export default function App() {
         <div className="px-4 pt-4 pb-3">
           <div className="font-display text-2xl font-semibold tracking-tight">
             INN<span className="text-innia-accent">IA</span>
+            <span className="ml-2 align-middle text-[10px] font-normal text-white/40 tracking-normal">
+              v{typeof __APP_VERSION__ !== "undefined" ? __APP_VERSION__ : "dev"}
+            </span>
           </div>
           <div className="text-[11.5px] text-white/50">Asistente pedagógico · TDAH y TEA</div>
         </div>
